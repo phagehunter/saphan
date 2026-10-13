@@ -36,6 +36,8 @@ STATIC = ROOT / "app" / "static"
 LANGS = ("en", "th", "my", "mnw")
 PATIENT_LANGS = ("my", "mnw")
 STATUS_RANK = {"draft": 0, "machine": 1, "human": 2, "clinical": 3}
+ZAWGYI_MIN_LEN = 12      # characters; below this the ML detector guesses
+ZAWGYI_THRESHOLD = 0.85  # above this the record is rejected; 0.5-0.85 is a warning
 DOMAIN_IDS = {d["id"] for d in json.loads((CONTENT / "domains.json").read_text(encoding="utf-8"))["domains"]}
 
 THAI_BLOCK = re.compile(r"^[฀-๿\s0-9A-Za-z.,;:!?()\-/'\"%]+$")
@@ -71,11 +73,16 @@ def check_text(lang: str, text: str, is_mon_allowed: bool, where: str, errors: l
         if lang == "mnw" and BURMESE_ONLY_HINT.intersection(text):
             warns.append(f"{where}: mnw text contains U+1027 (Burmese E); Mon normally uses U+1028")
         if lang == "my":
-            p = zawgyi_probability(text)
-            if p is not None and p > 0.5:
+            # The ML detector is unreliable on very short strings (a four-letter "I don't know"
+            # scored 0.59), so short text gets the code-point heuristic only, and longer text
+            # needs a high probability before it is treated as an error.
+            p = zawgyi_probability(text) if len(text) >= ZAWGYI_MIN_LEN else None
+            if ZAWGYI_SUSPECT.search(text):
+                errors.append(f"{where}: my text has Zawgyi-suspect code points")
+            elif p is not None and p > ZAWGYI_THRESHOLD:
                 errors.append(f"{where}: my text looks like Zawgyi (probability {p:.2f})")
-            elif p is None and ZAWGYI_SUSPECT.search(text):
-                errors.append(f"{where}: my text has Zawgyi-suspect code points (install myanmar-tools for the model check)")
+            elif p is not None and p > 0.5:
+                warns.append(f"{where}: my text might be Zawgyi (probability {p:.2f}); a reviewer should look")
 
 
 def check_phrase(path: Path, schema: dict, sources: dict) -> tuple[list[str], list[str]]:

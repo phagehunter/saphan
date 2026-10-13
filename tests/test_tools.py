@@ -111,6 +111,19 @@ class ValidateTests(unittest.TestCase):
         errors, _ = self._run(rec)
         self.assertTrue(any("outside the Thai block" in e for e in errors), errors)
 
+    def test_legacy_font_soup_rejected(self):
+        rec = copy.deepcopy(SAMPLE)
+        rec["text"]["mnw"] = "u}c\\Ak'c AmX["  # what legacy-font Mon looks like when pasted as text
+        rec["status"]["mnw"] = "draft"
+        errors, _ = self._run(rec)
+        self.assertTrue(any("legacy" in e for e in errors), errors)
+
+    def test_thai_mon_variant_needs_reviewer(self):
+        rec = copy.deepcopy(SAMPLE)
+        rec["variants"] = {"mnw-TH": {"text": "ၚ", "status": "human"}}
+        errors, _ = self._run(rec)
+        self.assertTrue(any("variant mnw-TH" in e for e in errors), errors)
+
     def test_whole_content_folder_passes(self):
         self.assertEqual(validate.main(), 0)
 

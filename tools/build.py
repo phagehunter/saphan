@@ -65,6 +65,10 @@ def compile_phrase(rec: dict) -> dict | None:
         if lang in rec.get("review", {}):
             r = rec["review"][lang]
             entry["reviewed_by"] = f"{r['reviewer']} ({r['role']}, {r['date']})"
+        if lang == "mnw" and "mnw-TH" in rec.get("variants", {}):
+            var = rec["variants"]["mnw-TH"]
+            if STATUS_RANK[var["status"]] >= need:
+                entry["variant_th"] = {"text": var["text"], "display": with_zwsp(var["text"], "mnw"), "status": var["status"], "audio": var.get("audio")}
         langs[lang] = entry
     return {
         "id": rec["id"],

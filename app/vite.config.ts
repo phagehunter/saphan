@@ -32,6 +32,15 @@ export default defineConfig({
 			workbox: {
 				// Precache everything the phrasebook needs, audio included, so Mode A works with no signal.
 				globPatterns: ['client/**/*.{js,css,ico,png,svg,woff2,json}', 'prerendered/**/*.html', 'client/audio/**/*.{wav,ogg,opus,mp3}'],
+				// The 2.9 MB lexicon is a reviewer tool: fetched on first open, then kept offline.
+				globIgnores: ['client/lexicon/**'],
+				runtimeCaching: [
+					{
+						urlPattern: ({ url }) => url.pathname.includes('/lexicon/') && url.pathname.endsWith('.json'),
+						handler: 'CacheFirst',
+						options: { cacheName: 'saphan-lexicon', expiration: { maxEntries: 4 }, cacheableResponse: { statuses: [0, 200] } }
+					}
+				],
 				maximumFileSizeToCacheInBytes: 10 * 1024 * 1024
 			},
 			kit: { includeVersionFile: true }

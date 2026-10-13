@@ -234,6 +234,39 @@
     },
     "notes": {
       "type": "string"
+    },
+    "variants": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Optional regional wordings. mnw-TH = Mon as spoken on the Thai side (Sangkhlaburi), same script; used when the Myanmar-side wording would sound foreign.",
+      "properties": {
+        "mnw-TH": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "text",
+            "status"
+          ],
+          "properties": {
+            "text": {
+              "type": "string",
+              "minLength": 1
+            },
+            "status": {
+              "$ref": "#/$defs/status"
+            },
+            "review": {
+              "$ref": "#/$defs/review"
+            },
+            "audio": {
+              "$ref": "#/$defs/audio"
+            },
+            "note": {
+              "type": "string"
+            }
+          }
+        }
+      }
     }
   },
   "$defs": {

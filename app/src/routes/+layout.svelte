@@ -14,7 +14,7 @@
 	const tabs = [
 		{ href: '/', key: 'home', ico: '🏠' },
 		{ href: '/listen/', key: 'listen', ico: '🎤' },
-		{ href: '/translate/', key: 'translate', ico: '✍️' },
+		{ href: '/lexicon/', key: 'lexicon', ico: '📖' },
 		{ href: '/record/', key: 'record', ico: '⏺' },
 		{ href: '/about/', key: 'about', ico: 'ℹ️' }
 	];

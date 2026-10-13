@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import { bundle } from '$lib/content';
 	import { t } from '$lib/i18n';
 	const locked = bundle.phrases.flatMap((p) => (['my', 'mnw'] as const).filter((l) => p.lang[l].locked)).length;
@@ -31,5 +32,7 @@
 	{#each Object.values(bundle.sources) as s}
 		<p class="mb-2"><strong>{s.title}</strong> — {s.license}{#if s.url} · <a class="underline" href={s.url} rel="noopener">{s.url}</a>{/if}<br /><span style="color: var(--muted)">{s.attribution}</span></p>
 	{/each}
+	<p class="mb-2"><strong>Mon lexicon</strong> (reviewer tool): Nenemin95 Mon-Eng-Mya-Pali lexicon, CC BY 4.0, <a class="underline" href="https://huggingface.co/datasets/Nenemin95/mon-eng-mya-pali-lexicon" rel="noopener">huggingface.co</a>; MonDictDB Mon-Thai dictionary, MIT, <a class="underline" href="https://github.com/Barnista/MonDictDB" rel="noopener">github.com/Barnista/MonDictDB</a>.</p>
 	<p>App code: MIT. Content: CC BY-NC-SA 4.0. Synthetic voices, when present: Meta MMS-TTS, CC BY-NC 4.0.</p>
+	<p class="mt-3"><a class="underline" href="{base}/translate/">Free-text translation mock-up (Mode C, disabled)</a></p>
 </section>

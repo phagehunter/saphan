@@ -58,9 +58,26 @@ def zawgyi_probability(text: str) -> float | None:
     return float(ZawgyiDetector().get_zawgyi_probability(text))
 
 
+LEGACY_FONT_MIN_LEN = 6
+
+
+def looks_like_legacy_font(text: str) -> bool:
+    """Legacy (non-Unicode) Mon and Burmese fonts map glyphs onto Latin letters and symbols, so
+    'Mon text' typed in such a font arrives as a soup of ASCII with few Myanmar code points."""
+    body = [c for c in text if not c.isspace()]
+    if len(body) < LEGACY_FONT_MIN_LEN:
+        return False
+    myanmar = sum(1 for c in body if "\u1000" <= c <= "\u109f")
+    latin = sum(1 for c in body if c.isascii() and (c.isalpha() or c in "@#$%^&*[]{}|<>~`"))
+    return latin >= 3 and latin > myanmar
+
+
 def check_text(lang: str, text: str, is_mon_allowed: bool, where: str, errors: list[str], warns: list[str]) -> None:
     if unicodedata.normalize("NFC", text) != text:
         errors.append(f"{where}: {lang} text is not NFC-normalized")
+    if lang in PATIENT_LANGS and looks_like_legacy_font(text):
+        errors.append(f"{where}: {lang} text looks like a legacy (non-Unicode) font encoding; retype it with a Unicode keyboard")
+        return
     if lang == "th" and not THAI_BLOCK.match(text):
         errors.append(f"{where}: th text contains characters outside the Thai block")
     if lang in PATIENT_LANGS:
@@ -120,6 +137,13 @@ def check_phrase(path: Path, schema: dict, sources: dict) -> tuple[list[str], li
             role = rec["review"].get(lang, {}).get("role")
             if role not in ("nurse", "physician", "pharmacist", "midwife"):
                 errors.append(f"{where}: {lang} status 'clinical' needs a clinician reviewer role")
+
+    for vname, var in rec.get("variants", {}).items():
+        check_text("mnw", var["text"], True, f"{where} [{vname}]", errors, warns)
+        if STATUS_RANK[var["status"]] >= STATUS_RANK["human"] and "review" not in var:
+            errors.append(f"{where}: variant {vname} status '{var['status']}' needs a review entry")
+        if rec["text"]["mnw"] is None:
+            warns.append(f"{where}: variant {vname} given but the main mnw text is empty; fill mnw first")
 
     if rec["risk"] == "high":
         unverified = [l for l in PATIENT_LANGS if rec["status"][l] != "clinical"]

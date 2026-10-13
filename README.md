@@ -7,8 +7,8 @@ carries a visible review badge, and nothing unreviewed ever reaches a patient.
 
 Status: **scaffold with a worked example**. 34 phrases across four topics,
 seeded from the myMediCon medical text corpus, a validator, a build step, the
-app's phrasebook mode working end to end with synthetic Burmese audio, and the
-speech and free-text modes present as labeled stubs. Builds and type-checks
+app's phrasebook mode working end to end with synthetic Burmese audio, a 26,857-entry Mon
+lexicon for reviewers, and the speech and free-text modes present as labeled stubs. Builds and type-checks
 clean. Not deployed. No partners confirmed. Mon slots empty.
 
 Working name only. See `docs/2026-10-13-decisions.md`.
@@ -42,6 +42,10 @@ python3 -m tools.validate
 
 ```bash
 python3 -m tools.build
+```
+
+```bash
+python3 -m tools.build_lexicon
 ```
 
 ```bash
@@ -98,9 +102,10 @@ the checker tells you if anything is wrong.
 | `content/phrases/` | the phrases, one file each, grouped by topic |
 | `content/answers/answers.json` | patient reply buttons (yes, no, a little, ...) |
 | `content/sources.json` | where text came from and under what license |
+| `content/lexicon/` | two open Mon dictionaries (CC BY 4.0, MIT) and the build step for the Lexicon screen |
 | `content/domains.json` | topic order, labels, and pictograms; edit this to re-rank topics, no code change needed |
 | `tools/` | validator, builder, syllable breaker, audio script |
-| `tests/` | 20 unit tests for the tools and the safety gates |
+| `tests/` | 22 unit tests for the tools and the safety gates |
 | `app/` | the SvelteKit progressive web app |
 | `app/static/audio/my/` | 34 synthetic Burmese clips (Meta MMS voice, Opus, 564 KB total), each labeled "computer voice" in the app |
 | `app/pnpm-workspace.yaml` | lets esbuild run its install script; pnpm 11 blocks all others by default |

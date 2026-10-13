@@ -78,9 +78,19 @@
 				{:else}
 					<AudioButton clip={e.audio} />
 				{/if}
+				{#if e.variant_th}
+					<div class="card-flat p-3 mt-1" style="background: var(--surface-2)">
+						<p class="text-xs font-semibold uppercase tracking-wide mb-1" style="color: var(--muted)">{$t('thai_mon_wording')}</p>
+						<p class="font-my text-xl" lang="mnw">{e.variant_th.display}</p>
+						{#if !e.locked}<AudioButton clip={e.variant_th.audio} />{/if}
+					</div>
+				{/if}
 			{:else}
 				<p style="color: var(--muted)">{$t('no_translation')}</p>
-				<a class="text-sm underline" href="https://github.com/phagehunter/saphan/blob/main/docs/contributing-a-phrase.md" rel="noopener">{$t('help_translate')} →</a>
+				<div class="flex flex-wrap gap-3 text-sm">
+					<a class="underline" href="{base}/lexicon/?q={encodeURIComponent((p.lang.en.text ?? '').split(' ').slice(0, 2).join(' ').replace(/[?.,]/g, ''))}">📖 {$t('lexicon')}</a>
+					<a class="underline" href="https://github.com/phagehunter/saphan/blob/main/docs/contributing-a-phrase.md" rel="noopener">{$t('help_translate')} →</a>
+				</div>
 			{/if}
 		</section>
 	{/each}

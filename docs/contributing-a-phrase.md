@@ -23,6 +23,23 @@ You need a GitHub account and a browser. No software to install.
 7. The automatic checker runs within a minute. Green check: a maintainer will
    merge. Red X: click "Details" to read which line it did not like.
 
+## A2. Thai-side Mon wording (optional)
+
+If the Myanmar-side Mon sentence would sound foreign in Sangkhlaburi, add a `variants` block
+next to `text` with the local wording. It needs its own status and reviewer:
+
+```json
+"variants": { "mnw-TH": { "text": "...", "status": "human", "review": { "reviewer": "Your Name", "role": "native-speaker", "date": "2026-11-02" } } }
+```
+
+The app shows it under the main Mon text as "Thai-side Mon wording."
+
+## A3. Looking up words
+
+Open the app's Lexicon tab (📖). It searches 26,857 entries from two open dictionaries in Mon,
+English, Burmese, and Thai. It is a reviewer tool: never paste a dictionary phrase straight into
+a record without a fluent speaker checking the sentence.
+
 ## B. Add a brand-new phrase
 
 Copy an existing file in the same topic folder, rename it to the next number
@@ -39,7 +56,7 @@ maintainer converts it and adds it to `app/static/audio/<lang>/`.
 
 ## What the checker refuses
 
-- Text with characters from the wrong script, or Zawgyi-encoded Burmese.
+- Text with characters from the wrong script, Zawgyi-encoded Burmese, or Mon typed in a legacy (non-Unicode) font, which arrives as Latin-letter soup.
 - A status of `human` or `clinical` with no reviewer named.
 - `clinical` with a non-clinician role.
 - A missing language slot (every phrase must list en, th, my, mnw, even if null).

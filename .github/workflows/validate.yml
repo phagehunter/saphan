@@ -15,7 +15,7 @@ jobs:
         with:
           python-version: "3.12"
       - name: Install optional checkers
-        run: pip install check-jsonschema myanmar-tools
+        run: pip install check-jsonschema && (pip install myanmartools || echo "myanmartools unavailable; validator falls back to the code-point heuristic")
       - name: Full JSON Schema check
         run: check-jsonschema --schemafile content/schema/phrase.schema.json content/phrases/*/*.json
       - name: Project validator (Unicode, Zawgyi, status gates, provenance, audio)

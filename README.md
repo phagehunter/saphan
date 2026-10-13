@@ -98,6 +98,7 @@ the checker tells you if anything is wrong.
 | `content/phrases/` | the phrases, one file each, grouped by topic |
 | `content/answers/answers.json` | patient reply buttons (yes, no, a little, ...) |
 | `content/sources.json` | where text came from and under what license |
+| `content/domains.json` | topic order, labels, and pictograms; edit this to re-rank topics, no code change needed |
 | `tools/` | validator, builder, syllable breaker, audio script |
 | `tests/` | 20 unit tests for the tools and the safety gates |
 | `app/` | the SvelteKit progressive web app |
@@ -118,4 +119,4 @@ means this cannot be sold; free distribution by health services is fine.
 - Any Mon translation (needs Mon speakers; see docs/2026-10-13-research-dossier.md section 7 for partners).
 - Any Thai review (the seed Thai is Google Translate output and is badged as such).
 - Any trained speech model, any cloud key, any Play Store packaging.
-- A git repository: this folder has not been initialized or pushed.
+- A GitHub remote: the local repository exists and has one commit; it has not been pushed.

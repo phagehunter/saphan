@@ -1,0 +1,44 @@
+{
+  "id": "medication-008",
+  "domain": "medication",
+  "intent": "dose_trimethoprim_200_bid",
+  "speaker": "provider",
+  "risk": "high",
+  "expects": "none",
+  "choices": [],
+  "pictogram": "💊",
+  "text": {
+    "en": "Trimethoprim 200 mg taken twice a day by mouth",
+    "th": "Trimethoprim - 200 มก. รับประทานวันละสองครั้ง",
+    "my": "ထရီမယ်သိုပရင်-တစ်နေ့ကို၂၀၀မီလီဂရမ်သောက်ဆေး",
+    "mnw": null
+  },
+  "status": {
+    "en": "machine",
+    "th": "machine",
+    "my": "human",
+    "mnw": "draft"
+  },
+  "review": {},
+  "audio": {
+    "my": {
+      "file": "audio/my/medication-008.ogg",
+      "kind": "synthetic",
+      "voice": "facebook/mms-tts-mya",
+      "date": "2026-10-13"
+    },
+    "mnw": null
+  },
+  "source": {
+    "id": "mymedicon-text-v0.8",
+    "line": 2590,
+    "license": "CC-BY-NC-SA-4.0",
+    "source_text": {
+      "en": "Trimethoprim 200 mg taken twice a day by mouth",
+      "th": "Trimethoprim  -  200   มก.   รับประทาน วัน ละ สองครั้ง",
+      "my": "ထရီမယ်သိုပရင် - တစ်နေ့ ကို ၂၀၀ မီလီဂရမ် သောက်ဆေး"
+    },
+    "note": "English is a Quillbot paraphrase of the clinical handbook; Burmese was human-translated by university students; Thai is Google Translate output. Whitespace removed from Thai and Burmese for display."
+  },
+  "notes": "Dose text. Burmese line omits 'twice a day' and says 'per day'. High risk; locked until clinically verified."
+}

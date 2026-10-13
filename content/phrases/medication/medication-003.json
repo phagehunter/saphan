@@ -1,0 +1,44 @@
+{
+  "id": "medication-003",
+  "domain": "medication",
+  "intent": "ask_recent_antibiotics",
+  "speaker": "provider",
+  "risk": "low",
+  "expects": "yes_no",
+  "choices": [],
+  "pictogram": "💊",
+  "text": {
+    "en": "Have you taken any antibiotics recently?",
+    "th": "คุณเพิ่งได้รับยาปฏิชีวนะหรือไม่?",
+    "my": "ခင်ဗျားမကြာသေးခင်ကပဋိဇီဝဆေးတွေသောက်နေခဲ့လား။",
+    "mnw": null
+  },
+  "status": {
+    "en": "machine",
+    "th": "machine",
+    "my": "human",
+    "mnw": "draft"
+  },
+  "review": {},
+  "audio": {
+    "my": {
+      "file": "audio/my/medication-003.ogg",
+      "kind": "synthetic",
+      "voice": "facebook/mms-tts-mya",
+      "date": "2026-10-13"
+    },
+    "mnw": null
+  },
+  "source": {
+    "id": "mymedicon-text-v0.8",
+    "line": 520,
+    "license": "CC-BY-NC-SA-4.0",
+    "source_text": {
+      "en": "Have you taken any antibiotics recently?",
+      "th": "คุณ เพิ่ง ได ้รั บย าปฏิ ชี วน ะหรื อไม ่?",
+      "my": "ခင်ဗျား မကြာသေးခင် က ပဋိဇီဝဆေး တွေ သောက် နေ ခဲ့ လား ။"
+    },
+    "note": "English is a Quillbot paraphrase of the clinical handbook; Burmese was human-translated by university students; Thai is Google Translate output. Whitespace removed from Thai and Burmese for display."
+  },
+  "notes": ""
+}

@@ -1,0 +1,44 @@
+{
+  "id": "triage-012",
+  "domain": "triage",
+  "intent": "ask_diarrhea_onset",
+  "speaker": "provider",
+  "risk": "low",
+  "expects": "free",
+  "choices": [],
+  "pictogram": "🚽",
+  "text": {
+    "en": "When did you start experiencing diarrhoea?",
+    "th": "คุณเริ่มมีอาการท้องร่วงเมื่อไหร่?",
+    "my": "ခင်ဗျားဘယ်အချိန်ကစပြီးဝမ်းသွားနေခဲ့တာလဲ။",
+    "mnw": null
+  },
+  "status": {
+    "en": "machine",
+    "th": "machine",
+    "my": "human",
+    "mnw": "draft"
+  },
+  "review": {},
+  "audio": {
+    "my": {
+      "file": "audio/my/triage-012.ogg",
+      "kind": "synthetic",
+      "voice": "facebook/mms-tts-mya",
+      "date": "2026-10-13"
+    },
+    "mnw": null
+  },
+  "source": {
+    "id": "mymedicon-text-v0.8",
+    "line": 497,
+    "license": "CC-BY-NC-SA-4.0",
+    "source_text": {
+      "en": "When did you start experiencing diarrhoea ?",
+      "th": "คุณ เริ่ม มีอาการ ท้อ งร่ว งเ มื่ อไ หร่?",
+      "my": "ခင်ဗျား ဘယ် အချိန် က စ ပြီး ဝမ်းသွား နေ ခဲ့ တာ လဲ ။"
+    },
+    "note": "English is a Quillbot paraphrase of the clinical handbook; Burmese was human-translated by university students; Thai is Google Translate output. Whitespace removed from Thai and Burmese for display."
+  },
+  "notes": ""
+}

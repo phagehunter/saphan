@@ -1,0 +1,44 @@
+{
+  "id": "antenatal-006",
+  "domain": "antenatal",
+  "intent": "reassure_baby_safe",
+  "speaker": "provider",
+  "risk": "high",
+  "expects": "none",
+  "choices": [],
+  "pictogram": "👶",
+  "text": {
+    "en": "You should not be concerned; this condition won't harm your baby.",
+    "th": "ไม่ต้องกังวล ลูกน้อยของคุณจะไม่ได้รับผลกระทบจากภาวะนี้",
+    "my": "ဘာမှမစိုးရိမ်ပါနဲ့၊ဒီလိုအခြေအနေကြောင့်ခင်ဗျားကလေးကိုထိခိုက်တာမျိုးမရှိပါဘူး။",
+    "mnw": null
+  },
+  "status": {
+    "en": "machine",
+    "th": "machine",
+    "my": "human",
+    "mnw": "draft"
+  },
+  "review": {},
+  "audio": {
+    "my": {
+      "file": "audio/my/antenatal-006.ogg",
+      "kind": "synthetic",
+      "voice": "facebook/mms-tts-mya",
+      "date": "2026-10-13"
+    },
+    "mnw": null
+  },
+  "source": {
+    "id": "mymedicon-text-v0.8",
+    "line": 4994,
+    "license": "CC-BY-NC-SA-4.0",
+    "source_text": {
+      "en": "You should not be concerned; this condition won't harm your baby.",
+      "th": "ไม่ ต้อง กั งว ล;   ลูก น้อย ของคุณ จะ ไม่ ได้รับ ผลกระทบ จาก ภาวะ นี้",
+      "my": "ဘာမှ မစိုးရိမ်ပါနဲ့ ၊ ဒီလို အခြေအနေ ကြောင့် ခင်ဗျား ကလေး ကို ထိခိုက်တာ မျိုး မရှိ ပါ ဘူး ။"
+    },
+    "note": "English is a Quillbot paraphrase of the clinical handbook; Burmese was human-translated by university students; Thai is Google Translate output. Whitespace removed from Thai and Burmese for display."
+  },
+  "notes": "Reassurance about the baby is a clinical statement. High risk; locked until clinically verified."
+}

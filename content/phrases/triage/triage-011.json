@@ -1,0 +1,44 @@
+{
+  "id": "triage-011",
+  "domain": "triage",
+  "intent": "ask_pain_now",
+  "speaker": "provider",
+  "risk": "low",
+  "expects": "yes_no",
+  "choices": [],
+  "pictogram": "😣",
+  "text": {
+    "en": "Are you in pain at the moment?",
+    "th": "ช่วงนี้คุณปวดฉี่?",
+    "my": "ခင်ဗျားအခုနာကျင်နေလား။",
+    "mnw": null
+  },
+  "status": {
+    "en": "machine",
+    "th": "machine",
+    "my": "human",
+    "mnw": "draft"
+  },
+  "review": {},
+  "audio": {
+    "my": {
+      "file": "audio/my/triage-011.ogg",
+      "kind": "synthetic",
+      "voice": "facebook/mms-tts-mya",
+      "date": "2026-10-13"
+    },
+    "mnw": null
+  },
+  "source": {
+    "id": "mymedicon-text-v0.8",
+    "line": 2275,
+    "license": "CC-BY-NC-SA-4.0",
+    "source_text": {
+      "en": "Are you in pain at the moment ?",
+      "th": "ช่วง นี้ คุ ณปว ดฉี ่?",
+      "my": "ခင်ဗျား အခု နာကျင် နေ လား ။"
+    },
+    "note": "English is a Quillbot paraphrase of the clinical handbook; Burmese was human-translated by university students; Thai is Google Translate output. Whitespace removed from Thai and Burmese for display."
+  },
+  "notes": "Machine Thai is garbled ('ปวดฉี่' means painful urination). Needs a Thai reviewer."
+}

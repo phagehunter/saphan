@@ -1,0 +1,44 @@
+{
+  "id": "triage-002",
+  "domain": "triage",
+  "intent": "ask_onset_duration",
+  "speaker": "provider",
+  "risk": "low",
+  "expects": "free",
+  "choices": [],
+  "pictogram": "🕒",
+  "text": {
+    "en": "When did it begin? or How long have you been experiencing these symptoms?",
+    "th": "มันเริ่มเมื่อไหร่? หรือมีอาการเหล่านี้มานานแค่ไหนแล้ว?",
+    "my": "ဘယ်အချိန်ကစဖြစ်ခဲ့တာလဲ။ခင်ဗျားဒီရောဂါလက္ခဏာဖြစ်နေတာဘယ်လောက်ကြာပြီလဲ။",
+    "mnw": null
+  },
+  "status": {
+    "en": "machine",
+    "th": "machine",
+    "my": "human",
+    "mnw": "draft"
+  },
+  "review": {},
+  "audio": {
+    "my": {
+      "file": "audio/my/triage-002.ogg",
+      "kind": "synthetic",
+      "voice": "facebook/mms-tts-mya",
+      "date": "2026-10-13"
+    },
+    "mnw": null
+  },
+  "source": {
+    "id": "mymedicon-text-v0.8",
+    "line": 136,
+    "license": "CC-BY-NC-SA-4.0",
+    "source_text": {
+      "en": "When did it begin? or How long have you been experiencing these symptoms?",
+      "th": "มัน เร ิ่ มเ มื่ อไ หร่?   หรือ มีอาการ เหล่านี้ มา นาน แค่ ไหน แล้ ว?",
+      "my": "ဘယ် အချိန် က စ ဖြစ် ခဲ့ တာ လဲ ။ ခင်ဗျား ဒီ ရောဂါ လက္ခဏာ ဖြစ် နေ တာ ဘယ်လောက် ကြာ ပြီ လဲ ။"
+    },
+    "note": "English is a Quillbot paraphrase of the clinical handbook; Burmese was human-translated by university students; Thai is Google Translate output. Whitespace removed from Thai and Burmese for display."
+  },
+  "notes": ""
+}

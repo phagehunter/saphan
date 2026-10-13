@@ -1,0 +1,33 @@
+{
+  "id": "injury-001",
+  "domain": "injury",
+  "intent": "snakebite_keep_still_come_now",
+  "speaker": "provider",
+  "risk": "high",
+  "expects": "none",
+  "choices": [],
+  "pictogram": "🐍",
+  "text": {
+    "en": "If a snake bit you: keep still, do not cut or suck the bite, do not tie it tight. Come to the hospital now.",
+    "th": "ถ้าถูกงูกัด อยู่นิ่งๆ ห้ามกรีดหรือดูดแผล ห้ามขันชะเนาะ มาโรงพยาบาลทันที",
+    "my": null,
+    "mnw": null
+  },
+  "status": {
+    "en": "draft",
+    "th": "draft",
+    "my": "draft",
+    "mnw": "draft"
+  },
+  "review": {},
+  "audio": {
+    "my": null,
+    "mnw": null
+  },
+  "source": {
+    "id": "saphan-authored",
+    "license": "CC-BY-NC-SA-4.0",
+    "note": "Written 2026-10-13 from the disease-burden report. English and Thai are unreviewed drafts by the scaffold author."
+  },
+  "notes": "Viper bites dominate in both countries; first-aid myths cause harm. Clinical review required before use. This record is skipped at build until Burmese or Mon reaches status 'human'."
+}

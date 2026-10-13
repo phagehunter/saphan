@@ -1,0 +1,44 @@
+{
+  "id": "medication-005",
+  "domain": "medication",
+  "intent": "instruct_adherence",
+  "speaker": "provider",
+  "risk": "high",
+  "expects": "none",
+  "choices": [],
+  "pictogram": "📅",
+  "text": {
+    "en": "Always take your medication as directed; try to take it at the same time every day and don't miss any doses.",
+    "th": "ใช้ยาตามที่กำหนดอย่าพลาดปริมาณใดๆและพยายามใช้ยานี้ในเวลาเดียวกันทุกวัน",
+    "my": "ဆေးညွှန်းအတိုင်းခင်ဗျားရဲ့ဆေးတွေကိုအချိန်တိုင်းသောက်ပါ၊ဘယ်ဆေးမှမလွတ်စေပါနဲ့ပြီးတော့နေ့စဥ်ဒီဆေးကိုပုံမှန်အချိန်မှာသောက်ရန်ကြိုးစားပါ။",
+    "mnw": null
+  },
+  "status": {
+    "en": "machine",
+    "th": "machine",
+    "my": "human",
+    "mnw": "draft"
+  },
+  "review": {},
+  "audio": {
+    "my": {
+      "file": "audio/my/medication-005.ogg",
+      "kind": "synthetic",
+      "voice": "facebook/mms-tts-mya",
+      "date": "2026-10-13"
+    },
+    "mnw": null
+  },
+  "source": {
+    "id": "mymedicon-text-v0.8",
+    "line": 1193,
+    "license": "CC-BY-NC-SA-4.0",
+    "source_text": {
+      "en": "Always take your medication as directed; try to take it at the same time every day and don't miss any doses.",
+      "th": "ใช้ยา ตามที่ กำหนด   อย่า พลาด ปริมาณ ใด  ๆ   และ พยายาม ใช้ยา นี้ ในเวลาเดียวกัน ทุกวัน",
+      "my": "ဆေးညွှန်း အတိုင်း ခင်ဗျား ရဲ့ ဆေး တွေ ကို အချိန်တိုင်း သောက် ပါ ၊ ဘယ် ဆေး မှ မ လွတ် စေ ပါ နဲ့ ပြီးတော့ နေ့စဥ် ဒီ ဆေး ကို ပုံမှန် အချိန် မှာ သောက် ရန် ကြိုးစား ပါ ။"
+    },
+    "note": "English is a Quillbot paraphrase of the clinical handbook; Burmese was human-translated by university students; Thai is Google Translate output. Whitespace removed from Thai and Burmese for display."
+  },
+  "notes": "High risk instruction about adherence; locked until clinically verified."
+}

@@ -1,0 +1,44 @@
+{
+  "id": "triage-008",
+  "domain": "triage",
+  "intent": "ask_fever_onset",
+  "speaker": "provider",
+  "risk": "low",
+  "expects": "free",
+  "choices": [],
+  "pictogram": "🌡️",
+  "text": {
+    "en": "When did the elevated temperature start to affect you?",
+    "th": "คุณเริ่มประสบกับอุณหภูมิสูงเมื่อใด",
+    "my": "ခင်ဗျားအပူချိန်တက်နေတာကိုဘယ်အချိန်ကစတင်တွေ့ကြုံနေခဲ့တာလဲ။",
+    "mnw": null
+  },
+  "status": {
+    "en": "machine",
+    "th": "machine",
+    "my": "human",
+    "mnw": "draft"
+  },
+  "review": {},
+  "audio": {
+    "my": {
+      "file": "audio/my/triage-008.ogg",
+      "kind": "synthetic",
+      "voice": "facebook/mms-tts-mya",
+      "date": "2026-10-13"
+    },
+    "mnw": null
+  },
+  "source": {
+    "id": "mymedicon-text-v0.8",
+    "line": 732,
+    "license": "CC-BY-NC-SA-4.0",
+    "source_text": {
+      "en": "When did the elevated temperature start to affect you?",
+      "th": "คุณ เริ่ม ประสบ กับ อุณหภูมิสูง เมื่อ ใด",
+      "my": "ခင်ဗျား အပူချိန် တက် နေ တာ ကို ဘယ် အချိန် က စတင် တွေ့ကြုံ နေ ခဲ့ တာ လဲ ။"
+    },
+    "note": "English is a Quillbot paraphrase of the clinical handbook; Burmese was human-translated by university students; Thai is Google Translate output. Whitespace removed from Thai and Burmese for display."
+  },
+  "notes": ""
+}

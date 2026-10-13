@@ -1,0 +1,44 @@
+{
+  "id": "triage-013",
+  "domain": "triage",
+  "intent": "ask_any_questions",
+  "speaker": "provider",
+  "risk": "low",
+  "expects": "yes_no",
+  "choices": [],
+  "pictogram": "❓",
+  "text": {
+    "en": "Do you have any questions for me?",
+    "th": "คุณต้องการถามอะไรฉันไหม",
+    "my": "ခင်ဗျားကျွန်တော့်ကိုတစ်ခုခုမေးဖို့လိုအပ်လား။",
+    "mnw": null
+  },
+  "status": {
+    "en": "machine",
+    "th": "machine",
+    "my": "human",
+    "mnw": "draft"
+  },
+  "review": {},
+  "audio": {
+    "my": {
+      "file": "audio/my/triage-013.ogg",
+      "kind": "synthetic",
+      "voice": "facebook/mms-tts-mya",
+      "date": "2026-10-13"
+    },
+    "mnw": null
+  },
+  "source": {
+    "id": "mymedicon-text-v0.8",
+    "line": 1787,
+    "license": "CC-BY-NC-SA-4.0",
+    "source_text": {
+      "en": "Do you have any questions for me?",
+      "th": "คุณ ต้องการ ถาม อะไร ฉัน ไหม",
+      "my": "ခင်ဗျား ကျွန်တော့် ကို တစ်ခုခု မေး ဖို့ လိုအပ် လား ။"
+    },
+    "note": "English is a Quillbot paraphrase of the clinical handbook; Burmese was human-translated by university students; Thai is Google Translate output. Whitespace removed from Thai and Burmese for display."
+  },
+  "notes": ""
+}

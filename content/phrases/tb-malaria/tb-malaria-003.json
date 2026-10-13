@@ -1,0 +1,44 @@
+{
+  "id": "tb-malaria-003",
+  "domain": "tb-malaria",
+  "intent": "ask_night_sweats",
+  "speaker": "provider",
+  "risk": "low",
+  "expects": "yes_no",
+  "choices": [],
+  "pictogram": "🌙",
+  "text": {
+    "en": "Do you have sweats at night?",
+    "th": "เหงื่อออกตอนกลางคืนหรือไม่?",
+    "my": "ညဘက်ချွေးပြန်တာမျိုးရှိသလား။",
+    "mnw": null
+  },
+  "status": {
+    "en": "machine",
+    "th": "machine",
+    "my": "human",
+    "mnw": "draft"
+  },
+  "review": {},
+  "audio": {
+    "my": {
+      "file": "audio/my/tb-malaria-003.ogg",
+      "kind": "synthetic",
+      "voice": "facebook/mms-tts-mya",
+      "date": "2026-10-13"
+    },
+    "mnw": null
+  },
+  "source": {
+    "id": "mymedicon-text-v0.8",
+    "line": 649,
+    "license": "CC-BY-NC-SA-4.0",
+    "source_text": {
+      "en": "Do you have sweats at night?",
+      "th": "เหงื่อออก ตอน กลา งคื นหรื อไม ่?",
+      "my": "ညဘက် ချွေးပြန် တာမျိုး ရှိ သလား ။"
+    },
+    "note": "English is a Quillbot paraphrase of the clinical handbook; Burmese was human-translated by university students; Thai is Google Translate output. Whitespace removed from Thai and Burmese for display."
+  },
+  "notes": ""
+}

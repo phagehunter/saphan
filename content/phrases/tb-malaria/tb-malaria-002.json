@@ -1,0 +1,44 @@
+{
+  "id": "tb-malaria-002",
+  "domain": "tb-malaria",
+  "intent": "ask_blood_in_sputum",
+  "speaker": "provider",
+  "risk": "medium",
+  "expects": "yes_no",
+  "choices": [],
+  "pictogram": "🩸",
+  "text": {
+    "en": "Do you have blood in your phlegm?",
+    "th": "มีเสมหะในเลือดหรือไม่?",
+    "my": "ခင်ဗျားရဲ့သလိပ်ထဲမှာသွေးပါလား။",
+    "mnw": null
+  },
+  "status": {
+    "en": "machine",
+    "th": "machine",
+    "my": "human",
+    "mnw": "draft"
+  },
+  "review": {},
+  "audio": {
+    "my": {
+      "file": "audio/my/tb-malaria-002.ogg",
+      "kind": "synthetic",
+      "voice": "facebook/mms-tts-mya",
+      "date": "2026-10-13"
+    },
+    "mnw": null
+  },
+  "source": {
+    "id": "mymedicon-text-v0.8",
+    "line": 628,
+    "license": "CC-BY-NC-SA-4.0",
+    "source_text": {
+      "en": "Do you have blood in your phlegm?",
+      "th": "มี เส มห ะใ นเ ลือ ดหรื อไม ่?",
+      "my": "ခင်ဗျား ရဲ့ သလိပ် ထဲ မှာ သွေး ပါ လား ။"
+    },
+    "note": "English is a Quillbot paraphrase of the clinical handbook; Burmese was human-translated by university students; Thai is Google Translate output. Whitespace removed from Thai and Burmese for display."
+  },
+  "notes": "KNOWN ERROR in the machine Thai: it says 'phlegm in the blood' instead of 'blood in the phlegm'. Left in on purpose as a reviewer test case; status is 'machine' so it is shown to the volunteer with a warning and never to the patient."
+}

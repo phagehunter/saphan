@@ -1,0 +1,1733 @@
+{
+ "version": "2026-10-13",
+ "domains": [
+  {
+   "id": "fever",
+   "pictogram": "🌡️",
+   "label": {
+    "en": "Fever: malaria and dengue",
+    "th": "ไข้ มาลาเรีย ไข้เลือดออก",
+    "my": "အဖျား၊ ငှက်ဖျား၊ သွေးလွန်တုပ်ကွေး",
+    "mnw": null
+   },
+   "show_when_empty": true,
+   "count": 0
+  },
+  {
+   "id": "antenatal",
+   "pictogram": "🤰",
+   "label": {
+    "en": "Pregnancy and birth",
+    "th": "ฝากครรภ์และคลอด",
+    "my": "ကိုယ်ဝန်နှင့်မွေးဖွား",
+    "mnw": null
+   },
+   "show_when_empty": false,
+   "count": 8
+  },
+  {
+   "id": "child-health",
+   "pictogram": "👶",
+   "label": {
+    "en": "Children and vaccines",
+    "th": "เด็กและวัคซีน",
+    "my": "ကလေးနှင့်ကာကွယ်ဆေး",
+    "mnw": null
+   },
+   "show_when_empty": true,
+   "count": 0
+  },
+  {
+   "id": "injury",
+   "pictogram": "🩹",
+   "label": {
+    "en": "Injury, first aid, snakebite",
+    "th": "บาดเจ็บ ปฐมพยาบาล งูกัด",
+    "my": "ဒဏ်ရာ၊ ရှေးဦးသူနာပြု၊ မြွေကိုက်",
+    "mnw": null
+   },
+   "show_when_empty": true,
+   "count": 0
+  },
+  {
+   "id": "pharmacy",
+   "pictogram": "💊",
+   "label": {
+    "en": "Pharmacy and medicines",
+    "th": "ยาและการใช้ยา",
+    "my": "ဆေးနှင့်ဆေးသုံးနည်း",
+    "mnw": null
+   },
+   "show_when_empty": true,
+   "count": 0
+  },
+  {
+   "id": "triage",
+   "pictogram": "🩺",
+   "label": {
+    "en": "Triage and symptoms",
+    "th": "คัดกรองและอาการ",
+    "my": "လက္ခဏာများ",
+    "mnw": null
+   },
+   "show_when_empty": false,
+   "count": 13
+  },
+  {
+   "id": "tb-malaria",
+   "pictogram": "🦟",
+   "label": {
+    "en": "TB and malaria",
+    "th": "วัณโรคและมาลาเรีย",
+    "my": "တီဘီနှင့်ငှက်ဖျား",
+    "mnw": null
+   },
+   "show_when_empty": false,
+   "count": 5
+  },
+  {
+   "id": "medication",
+   "pictogram": "💊",
+   "label": {
+    "en": "Medication",
+    "th": "ยา",
+    "my": "ဆေးဝါး",
+    "mnw": null
+   },
+   "show_when_empty": false,
+   "count": 8
+  }
+ ],
+ "phrases": [
+  {
+   "id": "antenatal-001",
+   "domain": "antenatal",
+   "intent": "ask_last_period",
+   "risk": "low",
+   "expects": "date",
+   "choices": [],
+   "pictogram": "📆",
+   "lang": {
+    "en": {
+     "text": "When did you most recently get a period?",
+     "status": "machine",
+     "display": "When did you most recently get a period?"
+    },
+    "th": {
+     "text": "ประจำเดือนครั้งสุดท้ายของคุณคือเมื่อไหร่?",
+     "status": "machine",
+     "display": "ประจำเดือนครั้งสุดท้ายของคุณคือเมื่อไหร่?"
+    },
+    "my": {
+     "text": "ခင်ဗျားနောက်ဆုံးရာသီလာတာဘယ်အချိန်ကပါလဲ။",
+     "status": "human",
+     "display": "ခင်​ဗျား​နောက်​ဆုံး​ရာ​သီ​လာ​တာ​ဘယ်​အ​ချိန်​က​ပါ​လဲ​။",
+     "audio": {
+      "file": "audio/my/antenatal-001.ogg",
+      "kind": "synthetic",
+      "voice": "facebook/mms-tts-mya",
+      "date": "2026-10-13"
+     }
+    },
+    "mnw": {
+     "text": null,
+     "status": "draft",
+     "display": null
+    }
+   },
+   "source": "mymedicon-text-v0.8",
+   "notes": ""
+  },
+  {
+   "id": "antenatal-002",
+   "domain": "antenatal",
+   "intent": "inform_pregnancy_test",
+   "risk": "medium",
+   "expects": "none",
+   "choices": [],
+   "pictogram": "🧪",
+   "lang": {
+    "en": {
+     "text": "We must take a pregnancy test.",
+     "status": "machine",
+     "display": "We must take a pregnancy test."
+    },
+    "th": {
+     "text": "เราจำเป็นต้องทำการทดสอบการตั้งครรภ์",
+     "status": "machine",
+     "display": "เราจำเป็นต้องทำการทดสอบการตั้งครรภ์"
+    },
+    "my": {
+     "text": "ကိုယ်ဝန်ရှိမရှိကျွန်တော်တို့စစ်ဆေးဖို့လိုပါတယ်။",
+     "status": "human",
+     "display": "ကိုယ်​ဝန်​ရှိ​မ​ရှိ​ကျွန်​တော်​တို့​စစ်​ဆေး​ဖို့​လို​ပါ​တယ်​။",
+     "audio": {
+      "file": "audio/my/antenatal-002.ogg",
+      "kind": "synthetic",
+      "voice": "facebook/mms-tts-mya",
+      "date": "2026-10-13"
+     }
+    },
+    "mnw": {
+     "text": null,
+     "status": "draft",
+     "display": null
+    }
+   },
+   "source": "mymedicon-text-v0.8",
+   "notes": ""
+  },
+  {
+   "id": "antenatal-003",
+   "domain": "antenatal",
+   "intent": "explain_pregnancy_test_routine",
+   "risk": "medium",
+   "expects": "none",
+   "choices": [],
+   "pictogram": "🧪",
+   "lang": {
+    "en": {
+     "text": "Because some medications are not safe to provide to pregnant women, we routinely do pregnancy tests on all women.",
+     "status": "machine",
+     "display": "Because some medications are not safe to provide to pregnant women, we routinely do pregnancy tests on all women."
+    },
+    "th": {
+     "text": "เรามักจะทำการทดสอบการตั้งครรภ์ในสตรีทุกคนตามปกติเนื่องจากมียาบางชนิดที่ไม่สามารถให้กับสตรีมีครรภ์ได้",
+     "status": "machine",
+     "display": "เรามักจะทำการทดสอบการตั้งครรภ์ในสตรีทุกคนตามปกติเนื่องจากมียาบางชนิดที่ไม่สามารถให้กับสตรีมีครรภ์ได้"
+    },
+    "my": {
+     "text": "ကျွန်တော်တို့အမျိုးသမီးတိုင်းကိုကိုယ်ဝန်ရှိမရှိစစ်ဆေးပါတယ်၊တချို့ဆေးတွေကကိုယ်ဝန်ဆောင်အမျိုးသမီးများကိုပေးဖို့မသင့်တော်တာကြောင့်ဖြစ်ပါတယ်။",
+     "status": "human",
+     "display": "ကျွန်​တော်​တို့​အ​မျိုး​သ​မီး​တိုင်း​ကို​ကိုယ်​ဝန်​ရှိ​မ​ရှိ​စစ်​ဆေး​ပါ​တယ်​၊​တ​ချို့​ဆေး​တွေ​က​ကိုယ်​ဝန်​ဆောင်​အ​မျိုး​သ​မီး​များ​ကို​ပေး​ဖို့​မ​သ​င့်​တော်​တာ​ကြော​င့်​ဖြစ်​ပါ​တယ်​။",
+     "audio": {
+      "file": "audio/my/antenatal-003.ogg",
+      "kind": "synthetic",
+      "voice": "facebook/mms-tts-mya",
+      "date": "2026-10-13"
+     }
+    },
+    "mnw": {
+     "text": null,
+     "status": "draft",
+     "display": null
+    }
+   },
+   "source": "mymedicon-text-v0.8",
+   "notes": ""
+  },
+  {
+   "id": "antenatal-004",
+   "domain": "antenatal",
+   "intent": "ask_bleeding",
+   "risk": "medium",
+   "expects": "yes_no",
+   "choices": [],
+   "pictogram": "🩸",
+   "lang": {
+    "en": {
+     "text": "Is there bleeding?",
+     "status": "machine",
+     "display": "Is there bleeding?"
+    },
+    "th": {
+     "text": "มันมีเลือดออกหรือไม่?",
+     "status": "machine",
+     "display": "มันมีเลือดออกหรือไม่?"
+    },
+    "my": {
+     "text": "သွေးထွက်လား။",
+     "status": "human",
+     "display": "သွေး​ထွက်​လား​။",
+     "audio": {
+      "file": "audio/my/antenatal-004.ogg",
+      "kind": "synthetic",
+      "voice": "facebook/mms-tts-mya",
+      "date": "2026-10-13"
+     }
+    },
+    "mnw": {
+     "text": null,
+     "status": "draft",
+     "display": null
+    }
+   },
+   "source": "mymedicon-text-v0.8",
+   "notes": ""
+  },
+  {
+   "id": "antenatal-005",
+   "domain": "antenatal",
+   "intent": "ask_breastfeeding",
+   "risk": "low",
+   "expects": "yes_no",
+   "choices": [],
+   "pictogram": "🤱",
+   "lang": {
+    "en": {
+     "text": "Does your child receive breast milk?",
+     "status": "machine",
+     "display": "Does your child receive breast milk?"
+    },
+    "th": {
+     "text": "คุณให้นมลูกหรือไม่?",
+     "status": "machine",
+     "display": "คุณให้นมลูกหรือไม่?"
+    },
+    "my": {
+     "text": "ခင်ဗျားကလေးကိုနို့တိုက်လား။",
+     "status": "human",
+     "display": "ခင်​ဗျား​က​လေး​ကို​နို့​တိုက်​လား​။",
+     "audio": {
+      "file": "audio/my/antenatal-005.ogg",
+      "kind": "synthetic",
+      "voice": "facebook/mms-tts-mya",
+      "date": "2026-10-13"
+     }
+    },
+    "mnw": {
+     "text": null,
+     "status": "draft",
+     "display": null
+    }
+   },
+   "source": "mymedicon-text-v0.8",
+   "notes": ""
+  },
+  {
+   "id": "antenatal-006",
+   "domain": "antenatal",
+   "intent": "reassure_baby_safe",
+   "risk": "high",
+   "expects": "none",
+   "choices": [],
+   "pictogram": "👶",
+   "lang": {
+    "en": {
+     "text": "You should not be concerned; this condition won't harm your baby.",
+     "status": "machine",
+     "display": "You should not be concerned; this condition won't harm your baby."
+    },
+    "th": {
+     "text": "ไม่ต้องกังวล ลูกน้อยของคุณจะไม่ได้รับผลกระทบจากภาวะนี้",
+     "status": "machine",
+     "display": "ไม่ต้องกังวล ลูกน้อยของคุณจะไม่ได้รับผลกระทบจากภาวะนี้"
+    },
+    "my": {
+     "text": "ဘာမှမစိုးရိမ်ပါနဲ့၊ဒီလိုအခြေအနေကြောင့်ခင်ဗျားကလေးကိုထိခိုက်တာမျိုးမရှိပါဘူး။",
+     "status": "human",
+     "display": "ဘာ​မှ​မ​စိုး​ရိမ်​ပါ​နဲ့​၊​ဒီ​လို​အ​ခြေ​အ​နေ​ကြော​င့်​ခင်​ဗျား​က​လေး​ကို​ထိ​ခိုက်​တာ​မျိုး​မ​ရှိ​ပါ​ဘူး​။",
+     "locked": true,
+     "lock_reason": "needs_clinical_review",
+     "audio": null
+    },
+    "mnw": {
+     "text": null,
+     "status": "draft",
+     "display": null
+    }
+   },
+   "source": "mymedicon-text-v0.8",
+   "notes": "Reassurance about the baby is a clinical statement. High risk; locked until clinically verified."
+  },
+  {
+   "id": "antenatal-007",
+   "domain": "antenatal",
+   "intent": "consent_breast_exam",
+   "risk": "high",
+   "expects": "yes_no",
+   "choices": [],
+   "pictogram": "🩺",
+   "lang": {
+    "en": {
+     "text": "I am here to examine you, and as part of that examination, I will touch and look at your breasts. Are you okay with that?",
+     "status": "machine",
+     "display": "I am here to examine you, and as part of that examination, I will touch and look at your breasts. Are you okay with that?"
+    },
+    "th": {
+     "text": "ฉันมาที่นี่เพื่อตรวจสอบคุณการตรวจของฉันจะเกี่ยวข้องกับการดูและสัมผัสหน้าอกของคุณตกลงกับคุณไหม",
+     "status": "machine",
+     "display": "ฉันมาที่นี่เพื่อตรวจสอบคุณการตรวจของฉันจะเกี่ยวข้องกับการดูและสัมผัสหน้าอกของคุณตกลงกับคุณไหม"
+    },
+    "my": {
+     "text": "ကျွန်တော်ခင်ဗျားကိုစမ်းသပ်ဖို့ရောက်ရှိနေပါတယ်။ကျွန်တော်ခင်ဗျားရဲ့ရင်သားကိုထိပြီးစစ်ဆေးကြည့်ရှုဖို့ပါ၀င်ပါတယ်။အဲဒါအဆင်ပြေပါသလား။",
+     "status": "human",
+     "display": "ကျွန်​တော်​ခင်​ဗျား​ကို​စမ်း​သပ်​ဖို့​ရောက်​ရှိ​နေ​ပါ​တယ်​။​ကျွန်​တော်​ခင်​ဗျား​ရဲ့​ရင်​သား​ကို​ထိ​ပြီး​စစ်​ဆေး​ကြ​ည့်​ရှု​ဖို့​ပါ​၀င်​ပါ​တယ်​။​အဲ​ဒါ​အ​ဆင်​ပြေ​ပါ​သ​လား​။",
+     "locked": true,
+     "lock_reason": "needs_clinical_review",
+     "audio": null
+    },
+    "mnw": {
+     "text": null,
+     "status": "draft",
+     "display": null
+    }
+   },
+   "source": "mymedicon-text-v0.8",
+   "notes": "Consent for a physical exam. High risk; locked until clinically verified."
+  },
+  {
+   "id": "antenatal-008",
+   "domain": "antenatal",
+   "intent": "consent_personal_questions",
+   "risk": "medium",
+   "expects": "yes_no",
+   "choices": [],
+   "pictogram": "🤝",
+   "lang": {
+    "en": {
+     "text": "I have some personal inquiries for you. Is that okay?",
+     "status": "machine",
+     "display": "I have some personal inquiries for you. Is that okay?"
+    },
+    "th": {
+     "text": "ฉันต้องการถามคำถามส่วนตัวกับคุณ ไม่เป็นไร?",
+     "status": "machine",
+     "display": "ฉันต้องการถามคำถามส่วนตัวกับคุณ ไม่เป็นไร?"
+    },
+    "my": {
+     "text": "ကျွန်တော်ခင်ဗျားကိုကိုယ်ရေးကိုယ်တာအချက်လက်လေးတချို့မေးမယ်၊အဲဒါအဆင်ပြေလား။",
+     "status": "human",
+     "display": "ကျွန်​တော်​ခင်​ဗျား​ကို​ကိုယ်​ရေး​ကိုယ်​တာ​အ​ချက်​လက်​လေး​တ​ချို့​မေး​မယ်​၊​အဲ​ဒါ​အ​ဆင်​ပြေ​လား​။",
+     "audio": {
+      "file": "audio/my/antenatal-008.ogg",
+      "kind": "synthetic",
+      "voice": "facebook/mms-tts-mya",
+      "date": "2026-10-13"
+     }
+    },
+    "mnw": {
+     "text": null,
+     "status": "draft",
+     "display": null
+    }
+   },
+   "source": "mymedicon-text-v0.8",
+   "notes": ""
+  },
+  {
+   "id": "medication-001",
+   "domain": "medication",
+   "intent": "ask_allergies",
+   "risk": "medium",
+   "expects": "yes_no",
+   "choices": [],
+   "pictogram": "⚠️",
+   "lang": {
+    "en": {
+     "text": "Do you have any allergies?",
+     "status": "machine",
+     "display": "Do you have any allergies?"
+    },
+    "th": {
+     "text": "คุณแพ้อะไรไหม?",
+     "status": "machine",
+     "display": "คุณแพ้อะไรไหม?"
+    },
+    "my": {
+     "text": "ခင်ဗျားတစ်ခုခုနဲ့ဓာတ်မတည့်တာရှိပါသလား။",
+     "status": "human",
+     "display": "ခင်​ဗျား​တစ်​ခု​ခု​နဲ့​ဓာတ်​မ​တ​ည့်​တာ​ရှိ​ပါ​သ​လား​။",
+     "audio": {
+      "file": "audio/my/medication-001.ogg",
+      "kind": "synthetic",
+      "voice": "facebook/mms-tts-mya",
+      "date": "2026-10-13"
+     }
+    },
+    "mnw": {
+     "text": null,
+     "status": "draft",
+     "display": null
+    }
+   },
+   "source": "mymedicon-text-v0.8",
+   "notes": ""
+  },
+  {
+   "id": "medication-002",
+   "domain": "medication",
+   "intent": "ask_drug_allergies",
+   "risk": "medium",
+   "expects": "yes_no",
+   "choices": [],
+   "pictogram": "💊",
+   "lang": {
+    "en": {
+     "text": "Are you allergic to any medications?",
+     "status": "machine",
+     "display": "Are you allergic to any medications?"
+    },
+    "th": {
+     "text": "คุณมีอาการแพ้ยาใดๆหรือไม่?",
+     "status": "machine",
+     "display": "คุณมีอาการแพ้ยาใดๆหรือไม่?"
+    },
+    "my": {
+     "text": "ခင်ဗျားမှာဆေးတွေနဲ့ဓာတ်မတည့်မှုရှိလား။",
+     "status": "human",
+     "display": "ခင်​ဗျား​မှာ​ဆေး​တွေ​နဲ့​ဓာတ်​မ​တ​ည့်​မှု​ရှိ​လား​။",
+     "audio": {
+      "file": "audio/my/medication-002.ogg",
+      "kind": "synthetic",
+      "voice": "facebook/mms-tts-mya",
+      "date": "2026-10-13"
+     }
+    },
+    "mnw": {
+     "text": null,
+     "status": "draft",
+     "display": null
+    }
+   },
+   "source": "mymedicon-text-v0.8",
+   "notes": ""
+  },
+  {
+   "id": "medication-003",
+   "domain": "medication",
+   "intent": "ask_recent_antibiotics",
+   "risk": "low",
+   "expects": "yes_no",
+   "choices": [],
+   "pictogram": "💊",
+   "lang": {
+    "en": {
+     "text": "Have you taken any antibiotics recently?",
+     "status": "machine",
+     "display": "Have you taken any antibiotics recently?"
+    },
+    "th": {
+     "text": "คุณเพิ่งได้รับยาปฏิชีวนะหรือไม่?",
+     "status": "machine",
+     "display": "คุณเพิ่งได้รับยาปฏิชีวนะหรือไม่?"
+    },
+    "my": {
+     "text": "ခင်ဗျားမကြာသေးခင်ကပဋိဇီဝဆေးတွေသောက်နေခဲ့လား။",
+     "status": "human",
+     "display": "ခင်​ဗျား​မ​ကြာ​သေး​ခင်​က​ပ​ဋိ​ဇီ​ဝ​ဆေး​တွေ​သောက်​နေ​ခဲ့​လား​။",
+     "audio": {
+      "file": "audio/my/medication-003.ogg",
+      "kind": "synthetic",
+      "voice": "facebook/mms-tts-mya",
+      "date": "2026-10-13"
+     }
+    },
+    "mnw": {
+     "text": null,
+     "status": "draft",
+     "display": null
+    }
+   },
+   "source": "mymedicon-text-v0.8",
+   "notes": ""
+  },
+  {
+   "id": "medication-004",
+   "domain": "medication",
+   "intent": "ask_painkillers",
+   "risk": "low",
+   "expects": "yes_no",
+   "choices": [],
+   "pictogram": "💊",
+   "lang": {
+    "en": {
+     "text": "Are you taking any painkillers?",
+     "status": "machine",
+     "display": "Are you taking any painkillers?"
+    },
+    "th": {
+     "text": "คุณทานยาแก้ปวดหรือไม่?",
+     "status": "machine",
+     "display": "คุณทานยาแก้ปวดหรือไม่?"
+    },
+    "my": {
+     "text": "ခင်ဗျားအကိုက်အခဲပျောက်ဆေးတစ်ခုခုသောက်နေလား။",
+     "status": "human",
+     "display": "ခင်​ဗျား​အ​ကိုက်​အ​ခဲ​ပျောက်​ဆေး​တစ်​ခု​ခု​သောက်​နေ​လား​။",
+     "audio": {
+      "file": "audio/my/medication-004.ogg",
+      "kind": "synthetic",
+      "voice": "facebook/mms-tts-mya",
+      "date": "2026-10-13"
+     }
+    },
+    "mnw": {
+     "text": null,
+     "status": "draft",
+     "display": null
+    }
+   },
+   "source": "mymedicon-text-v0.8",
+   "notes": ""
+  },
+  {
+   "id": "medication-005",
+   "domain": "medication",
+   "intent": "instruct_adherence",
+   "risk": "high",
+   "expects": "none",
+   "choices": [],
+   "pictogram": "📅",
+   "lang": {
+    "en": {
+     "text": "Always take your medication as directed; try to take it at the same time every day and don't miss any doses.",
+     "status": "machine",
+     "display": "Always take your medication as directed; try to take it at the same time every day and don't miss any doses."
+    },
+    "th": {
+     "text": "ใช้ยาตามที่กำหนดอย่าพลาดปริมาณใดๆและพยายามใช้ยานี้ในเวลาเดียวกันทุกวัน",
+     "status": "machine",
+     "display": "ใช้ยาตามที่กำหนดอย่าพลาดปริมาณใดๆและพยายามใช้ยานี้ในเวลาเดียวกันทุกวัน"
+    },
+    "my": {
+     "text": "ဆေးညွှန်းအတိုင်းခင်ဗျားရဲ့ဆေးတွေကိုအချိန်တိုင်းသောက်ပါ၊ဘယ်ဆေးမှမလွတ်စေပါနဲ့ပြီးတော့နေ့စဥ်ဒီဆေးကိုပုံမှန်အချိန်မှာသောက်ရန်ကြိုးစားပါ။",
+     "status": "human",
+     "display": "ဆေး​ညွှန်း​အ​တိုင်း​ခင်​ဗျား​ရဲ့​ဆေး​တွေ​ကို​အ​ချိန်​တိုင်း​သောက်​ပါ​၊​ဘယ်​ဆေး​မှ​မ​လွတ်​စေ​ပါ​နဲ့​ပြီး​တော့​နေ့​စ​ဥ်​ဒီ​ဆေး​ကို​ပုံ​မှန်​အ​ချိန်​မှာ​သောက်​ရန်​ကြိုး​စား​ပါ​။",
+     "locked": true,
+     "lock_reason": "needs_clinical_review",
+     "audio": null
+    },
+    "mnw": {
+     "text": null,
+     "status": "draft",
+     "display": null
+    }
+   },
+   "source": "mymedicon-text-v0.8",
+   "notes": "High risk instruction about adherence; locked until clinically verified."
+  },
+  {
+   "id": "medication-006",
+   "domain": "medication",
+   "intent": "ask_side_effects",
+   "risk": "low",
+   "expects": "yes_no",
+   "choices": [],
+   "pictogram": "💊",
+   "lang": {
+    "en": {
+     "text": "Does the drug have any side effects?",
+     "status": "machine",
+     "display": "Does the drug have any side effects?"
+    },
+    "th": {
+     "text": "มีผลข้างเคียงของยาหรือไม่?",
+     "status": "machine",
+     "display": "มีผลข้างเคียงของยาหรือไม่?"
+    },
+    "my": {
+     "text": "ဆေးရဲ့ဘေးထွက်ဆိုးကျိုးတွေရှိလား။",
+     "status": "human",
+     "display": "ဆေး​ရဲ့​ဘေး​ထွက်​ဆိုး​ကျိုး​တွေ​ရှိ​လား​။",
+     "audio": {
+      "file": "audio/my/medication-006.ogg",
+      "kind": "synthetic",
+      "voice": "facebook/mms-tts-mya",
+      "date": "2026-10-13"
+     }
+    },
+    "mnw": {
+     "text": null,
+     "status": "draft",
+     "display": null
+    }
+   },
+   "source": "mymedicon-text-v0.8",
+   "notes": ""
+  },
+  {
+   "id": "medication-007",
+   "domain": "medication",
+   "intent": "dose_aspirin_75_daily",
+   "risk": "high",
+   "expects": "none",
+   "choices": [],
+   "pictogram": "💊",
+   "lang": {
+    "en": {
+     "text": "75 milligrams of aspirin once a day",
+     "status": "machine",
+     "display": "75 milligrams of aspirin once a day"
+    },
+    "th": {
+     "text": "แอสไพริน 75 มก. วันละครั้ง",
+     "status": "machine",
+     "display": "แอสไพริน 75 มก. วันละครั้ง"
+    },
+    "my": {
+     "text": "အက်စပရင်၇၅မီလီဂရမ်နေ့စဉ်တစ်ကြိမ်",
+     "status": "human",
+     "display": "အက်​စ​ပ​ရင်​၇​၅​မီ​လီ​ဂ​ရမ်​နေ့​စဉ်​တစ်​ကြိမ်",
+     "locked": true,
+     "lock_reason": "needs_clinical_review",
+     "audio": null
+    },
+    "mnw": {
+     "text": null,
+     "status": "draft",
+     "display": null
+    }
+   },
+   "source": "mymedicon-text-v0.8",
+   "notes": "Dose text. High risk: patient-facing text and audio stay locked until a clinician verifies every language."
+  },
+  {
+   "id": "medication-008",
+   "domain": "medication",
+   "intent": "dose_trimethoprim_200_bid",
+   "risk": "high",
+   "expects": "none",
+   "choices": [],
+   "pictogram": "💊",
+   "lang": {
+    "en": {
+     "text": "Trimethoprim 200 mg taken twice a day by mouth",
+     "status": "machine",
+     "display": "Trimethoprim 200 mg taken twice a day by mouth"
+    },
+    "th": {
+     "text": "Trimethoprim - 200 มก. รับประทานวันละสองครั้ง",
+     "status": "machine",
+     "display": "Trimethoprim - 200 มก. รับประทานวันละสองครั้ง"
+    },
+    "my": {
+     "text": "ထရီမယ်သိုပရင်-တစ်နေ့ကို၂၀၀မီလီဂရမ်သောက်ဆေး",
+     "status": "human",
+     "display": "ထ​ရီ​မယ်​သို​ပ​ရင်​-​တစ်​နေ့​ကို​၂​၀​၀​မီ​လီ​ဂ​ရမ်​သောက်​ဆေး",
+     "locked": true,
+     "lock_reason": "needs_clinical_review",
+     "audio": null
+    },
+    "mnw": {
+     "text": null,
+     "status": "draft",
+     "display": null
+    }
+   },
+   "source": "mymedicon-text-v0.8",
+   "notes": "Dose text. Burmese line omits 'twice a day' and says 'per day'. High risk; locked until clinically verified."
+  },
+  {
+   "id": "tb-malaria-001",
+   "domain": "tb-malaria",
+   "intent": "ask_cough_onset",
+   "risk": "low",
+   "expects": "free",
+   "choices": [],
+   "pictogram": "😮‍💨",
+   "lang": {
+    "en": {
+     "text": "When did you first begin to cough?",
+     "status": "machine",
+     "display": "When did you first begin to cough?"
+    },
+    "th": {
+     "text": "คุณเริ่มไอเมื่อไหร่?",
+     "status": "machine",
+     "display": "คุณเริ่มไอเมื่อไหร่?"
+    },
+    "my": {
+     "text": "ခင်ဗျားဘယ်အချိန်ကချောင်းစဆိုးခဲ့တာလဲ။",
+     "status": "human",
+     "display": "ခင်​ဗျား​ဘယ်​အ​ချိန်​က​ချောင်း​စ​ဆိုး​ခဲ့​တာ​လဲ​။",
+     "audio": {
+      "file": "audio/my/tb-malaria-001.ogg",
+      "kind": "synthetic",
+      "voice": "facebook/mms-tts-mya",
+      "date": "2026-10-13"
+     }
+    },
+    "mnw": {
+     "text": null,
+     "status": "draft",
+     "display": null
+    }
+   },
+   "source": "mymedicon-text-v0.8",
+   "notes": ""
+  },
+  {
+   "id": "tb-malaria-002",
+   "domain": "tb-malaria",
+   "intent": "ask_blood_in_sputum",
+   "risk": "medium",
+   "expects": "yes_no",
+   "choices": [],
+   "pictogram": "🩸",
+   "lang": {
+    "en": {
+     "text": "Do you have blood in your phlegm?",
+     "status": "machine",
+     "display": "Do you have blood in your phlegm?"
+    },
+    "th": {
+     "text": "มีเสมหะในเลือดหรือไม่?",
+     "status": "machine",
+     "display": "มีเสมหะในเลือดหรือไม่?"
+    },
+    "my": {
+     "text": "ခင်ဗျားရဲ့သလိပ်ထဲမှာသွေးပါလား။",
+     "status": "human",
+     "display": "ခင်​ဗျား​ရဲ့​သ​လိပ်​ထဲ​မှာ​သွေး​ပါ​လား​။",
+     "audio": {
+      "file": "audio/my/tb-malaria-002.ogg",
+      "kind": "synthetic",
+      "voice": "facebook/mms-tts-mya",
+      "date": "2026-10-13"
+     }
+    },
+    "mnw": {
+     "text": null,
+     "status": "draft",
+     "display": null
+    }
+   },
+   "source": "mymedicon-text-v0.8",
+   "notes": "KNOWN ERROR in the machine Thai: it says 'phlegm in the blood' instead of 'blood in the phlegm'. Left in on purpose as a reviewer test case; status is 'machine' so it is shown to the volunteer with a warning and never to the patient."
+  },
+  {
+   "id": "tb-malaria-003",
+   "domain": "tb-malaria",
+   "intent": "ask_night_sweats",
+   "risk": "low",
+   "expects": "yes_no",
+   "choices": [],
+   "pictogram": "🌙",
+   "lang": {
+    "en": {
+     "text": "Do you have sweats at night?",
+     "status": "machine",
+     "display": "Do you have sweats at night?"
+    },
+    "th": {
+     "text": "เหงื่อออกตอนกลางคืนหรือไม่?",
+     "status": "machine",
+     "display": "เหงื่อออกตอนกลางคืนหรือไม่?"
+    },
+    "my": {
+     "text": "ညဘက်ချွေးပြန်တာမျိုးရှိသလား။",
+     "status": "human",
+     "display": "ည​ဘက်​ချွေး​ပြန်​တာ​မျိုး​ရှိ​သ​လား​။",
+     "audio": {
+      "file": "audio/my/tb-malaria-003.ogg",
+      "kind": "synthetic",
+      "voice": "facebook/mms-tts-mya",
+      "date": "2026-10-13"
+     }
+    },
+    "mnw": {
+     "text": null,
+     "status": "draft",
+     "display": null
+    }
+   },
+   "source": "mymedicon-text-v0.8",
+   "notes": ""
+  },
+  {
+   "id": "tb-malaria-004",
+   "domain": "tb-malaria",
+   "intent": "ask_weight_loss",
+   "risk": "low",
+   "expects": "yes_no",
+   "choices": [],
+   "pictogram": "⚖️",
+   "lang": {
+    "en": {
+     "text": "Has there been any weight loss?",
+     "status": "machine",
+     "display": "Has there been any weight loss?"
+    },
+    "th": {
+     "text": "การลดน้ำหนักใดๆ?",
+     "status": "machine",
+     "display": "การลดน้ำหนักใดๆ?"
+    },
+    "my": {
+     "text": "ကိုယ်အလေးချိန်လျော့လား။",
+     "status": "human",
+     "display": "ကိုယ်​အ​လေး​ချိန်​လျော့​လား​။",
+     "audio": {
+      "file": "audio/my/tb-malaria-004.ogg",
+      "kind": "synthetic",
+      "voice": "facebook/mms-tts-mya",
+      "date": "2026-10-13"
+     }
+    },
+    "mnw": {
+     "text": null,
+     "status": "draft",
+     "display": null
+    }
+   },
+   "source": "mymedicon-text-v0.8",
+   "notes": "Machine Thai is a fragment, not a question. Needs a Thai reviewer."
+  },
+  {
+   "id": "tb-malaria-005",
+   "domain": "tb-malaria",
+   "intent": "inform_blood_tests",
+   "risk": "medium",
+   "expects": "none",
+   "choices": [],
+   "pictogram": "🧪",
+   "lang": {
+    "en": {
+     "text": "In order to determine what might have caused this, we now need to run certain blood tests.",
+     "status": "machine",
+     "display": "In order to determine what might have caused this, we now need to run certain blood tests."
+    },
+    "th": {
+     "text": "ตอนนี้เราจำเป็นต้องทำการตรวจเลือดเพื่อหาสาเหตุที่เป็นไปได้",
+     "status": "machine",
+     "display": "ตอนนี้เราจำเป็นต้องทำการตรวจเลือดเพื่อหาสาเหตุที่เป็นไปได้"
+    },
+    "my": {
+     "text": "အခုကျွန်တော်တို့ဒီဟာရဲ့အကြောင်းအရင်းကဘာဖြစ်နိုင်လဲဆိုတာရှာဖွေဖို့သွေးစစ်ချက်အချို့ကိုလုပ်ဆောင်ဖို့လိုအပ်တယ်။",
+     "status": "human",
+     "display": "အ​ခု​ကျွန်​တော်​တို့​ဒီ​ဟာ​ရဲ့​အ​ကြောင်း​အ​ရင်း​က​ဘာ​ဖြစ်​နိုင်​လဲ​ဆို​တာ​ရှာ​ဖွေ​ဖို့​သွေး​စစ်​ချက်​အ​ချို့​ကို​လုပ်​ဆောင်​ဖို့​လို​အပ်​တယ်​။",
+     "audio": {
+      "file": "audio/my/tb-malaria-005.ogg",
+      "kind": "synthetic",
+      "voice": "facebook/mms-tts-mya",
+      "date": "2026-10-13"
+     }
+    },
+    "mnw": {
+     "text": null,
+     "status": "draft",
+     "display": null
+    }
+   },
+   "source": "mymedicon-text-v0.8",
+   "notes": ""
+  },
+  {
+   "id": "triage-001",
+   "domain": "triage",
+   "intent": "greet",
+   "risk": "low",
+   "expects": "none",
+   "choices": [],
+   "pictogram": "👋",
+   "lang": {
+    "en": {
+     "text": "Hi there",
+     "status": "machine",
+     "display": "Hi there"
+    },
+    "th": {
+     "text": "สวัสดี",
+     "status": "machine",
+     "display": "สวัสดี"
+    },
+    "my": {
+     "text": "မင်္ဂလာပါ။",
+     "status": "human",
+     "display": "မင်္ဂ​လာ​ပါ​။",
+     "audio": {
+      "file": "audio/my/triage-001.ogg",
+      "kind": "synthetic",
+      "voice": "facebook/mms-tts-mya",
+      "date": "2026-10-13"
+     }
+    },
+    "mnw": {
+     "text": null,
+     "status": "draft",
+     "display": null
+    }
+   },
+   "source": "mymedicon-text-v0.8",
+   "notes": ""
+  },
+  {
+   "id": "triage-002",
+   "domain": "triage",
+   "intent": "ask_onset_duration",
+   "risk": "low",
+   "expects": "free",
+   "choices": [],
+   "pictogram": "🕒",
+   "lang": {
+    "en": {
+     "text": "When did it begin? or How long have you been experiencing these symptoms?",
+     "status": "machine",
+     "display": "When did it begin? or How long have you been experiencing these symptoms?"
+    },
+    "th": {
+     "text": "มันเริ่มเมื่อไหร่? หรือมีอาการเหล่านี้มานานแค่ไหนแล้ว?",
+     "status": "machine",
+     "display": "มันเริ่มเมื่อไหร่? หรือมีอาการเหล่านี้มานานแค่ไหนแล้ว?"
+    },
+    "my": {
+     "text": "ဘယ်အချိန်ကစဖြစ်ခဲ့တာလဲ။ခင်ဗျားဒီရောဂါလက္ခဏာဖြစ်နေတာဘယ်လောက်ကြာပြီလဲ။",
+     "status": "human",
+     "display": "ဘယ်​အ​ချိန်​က​စ​ဖြစ်​ခဲ့​တာ​လဲ​။​ခင်​ဗျား​ဒီ​ရော​ဂါ​လက္ခ​ဏာ​ဖြစ်​နေ​တာ​ဘယ်​လောက်​ကြာ​ပြီ​လဲ​။",
+     "audio": {
+      "file": "audio/my/triage-002.ogg",
+      "kind": "synthetic",
+      "voice": "facebook/mms-tts-mya",
+      "date": "2026-10-13"
+     }
+    },
+    "mnw": {
+     "text": null,
+     "status": "draft",
+     "display": null
+    }
+   },
+   "source": "mymedicon-text-v0.8",
+   "notes": ""
+  },
+  {
+   "id": "triage-003",
+   "domain": "triage",
+   "intent": "ask_trouble_breathing",
+   "risk": "medium",
+   "expects": "yes_no",
+   "choices": [],
+   "pictogram": "🫁",
+   "lang": {
+    "en": {
+     "text": "Are you having trouble breathing?",
+     "status": "machine",
+     "display": "Are you having trouble breathing?"
+    },
+    "th": {
+     "text": "คุณมีอาการหายใจลำบากหรือไม่?",
+     "status": "machine",
+     "display": "คุณมีอาการหายใจลำบากหรือไม่?"
+    },
+    "my": {
+     "text": "ခင်ဗျားအသက်ရှူမဝဖြစ်လား။",
+     "status": "human",
+     "display": "ခင်​ဗျား​အ​သက်​ရှူ​မ​ဝ​ဖြစ်​လား​။",
+     "audio": {
+      "file": "audio/my/triage-003.ogg",
+      "kind": "synthetic",
+      "voice": "facebook/mms-tts-mya",
+      "date": "2026-10-13"
+     }
+    },
+    "mnw": {
+     "text": null,
+     "status": "draft",
+     "display": null
+    }
+   },
+   "source": "mymedicon-text-v0.8",
+   "notes": ""
+  },
+  {
+   "id": "triage-004",
+   "domain": "triage",
+   "intent": "ask_cough",
+   "risk": "low",
+   "expects": "yes_no",
+   "choices": [],
+   "pictogram": "😮‍💨",
+   "lang": {
+    "en": {
+     "text": "Are you coughing?",
+     "status": "machine",
+     "display": "Are you coughing?"
+    },
+    "th": {
+     "text": "คุณมีอาการไอหรือไม่?",
+     "status": "machine",
+     "display": "คุณมีอาการไอหรือไม่?"
+    },
+    "my": {
+     "text": "ခင်ဗျားချောင်းဆိုးလား။",
+     "status": "human",
+     "display": "ခင်​ဗျား​ချောင်း​ဆိုး​လား​။",
+     "audio": {
+      "file": "audio/my/triage-004.ogg",
+      "kind": "synthetic",
+      "voice": "facebook/mms-tts-mya",
+      "date": "2026-10-13"
+     }
+    },
+    "mnw": {
+     "text": null,
+     "status": "draft",
+     "display": null
+    }
+   },
+   "source": "mymedicon-text-v0.8",
+   "notes": ""
+  },
+  {
+   "id": "triage-005",
+   "domain": "triage",
+   "intent": "ask_chest_pain",
+   "risk": "medium",
+   "expects": "yes_no",
+   "choices": [],
+   "pictogram": "❤️‍🩹",
+   "lang": {
+    "en": {
+     "text": "Does it hurt to the chest?",
+     "status": "machine",
+     "display": "Does it hurt to the chest?"
+    },
+    "th": {
+     "text": "คุณมีอาการเจ็บหน้าอกหรือไม่?",
+     "status": "machine",
+     "display": "คุณมีอาการเจ็บหน้าอกหรือไม่?"
+    },
+    "my": {
+     "text": "ခင်ဗျားရင်ဘတ်အောင့်တာရှိလား။",
+     "status": "human",
+     "display": "ခင်​ဗျား​ရင်​ဘတ်​အော​င့်​တာ​ရှိ​လား​။",
+     "audio": {
+      "file": "audio/my/triage-005.ogg",
+      "kind": "synthetic",
+      "voice": "facebook/mms-tts-mya",
+      "date": "2026-10-13"
+     }
+    },
+    "mnw": {
+     "text": null,
+     "status": "draft",
+     "display": null
+    }
+   },
+   "source": "mymedicon-text-v0.8",
+   "notes": ""
+  },
+  {
+   "id": "triage-006",
+   "domain": "triage",
+   "intent": "ask_point_to_pain",
+   "risk": "low",
+   "expects": "none",
+   "choices": [],
+   "pictogram": "👉",
+   "lang": {
+    "en": {
+     "text": "Can you point with one finger to where the pain is?",
+     "status": "machine",
+     "display": "Can you point with one finger to where the pain is?"
+    },
+    "th": {
+     "text": "คุณช่วยชี้ด้วยนิ้วเดียวไปยังจุดที่ปวดได้ไหม?",
+     "status": "machine",
+     "display": "คุณช่วยชี้ด้วยนิ้วเดียวไปยังจุดที่ปวดได้ไหม?"
+    },
+    "my": {
+     "text": "ခင်ဗျားလက်တစ်ချောင်းနဲ့နာကျင်မှုကဘယ်နားမှာလဲဆိုတာပြနိုင်မလား။",
+     "status": "human",
+     "display": "ခင်​ဗျား​လက်​တစ်​ချောင်း​နဲ့​နာ​ကျင်​မှု​က​ဘယ်​နား​မှာ​လဲ​ဆို​တာ​ပြ​နိုင်​မ​လား​။",
+     "audio": {
+      "file": "audio/my/triage-006.ogg",
+      "kind": "synthetic",
+      "voice": "facebook/mms-tts-mya",
+      "date": "2026-10-13"
+     }
+    },
+    "mnw": {
+     "text": null,
+     "status": "draft",
+     "display": null
+    }
+   },
+   "source": "mymedicon-text-v0.8",
+   "notes": ""
+  },
+  {
+   "id": "triage-007",
+   "domain": "triage",
+   "intent": "ask_onset_gradual_sudden",
+   "risk": "low",
+   "expects": "choice",
+   "choices": [
+    "slowly",
+    "suddenly"
+   ],
+   "pictogram": "📈",
+   "lang": {
+    "en": {
+     "text": "Did it start out slowly or all of a sudden?",
+     "status": "machine",
+     "display": "Did it start out slowly or all of a sudden?"
+    },
+    "th": {
+     "text": "มันมาแบบค่อยเป็นค่อยไปหรือกะทันหัน?",
+     "status": "machine",
+     "display": "มันมาแบบค่อยเป็นค่อยไปหรือกะทันหัน?"
+    },
+    "my": {
+     "text": "အဲဒါကတဖြည်းဖြည်းဖြစ်ပေါ်လာတာလားဒါမှမဟုတ်ရုတ်တရက်လား။",
+     "status": "human",
+     "display": "အဲ​ဒါ​က​တ​ဖြည်း​ဖြည်း​ဖြစ်​ပေါ်​လာ​တာ​လား​ဒါ​မှ​မ​ဟုတ်​ရုတ်​တ​ရက်​လား​။",
+     "audio": {
+      "file": "audio/my/triage-007.ogg",
+      "kind": "synthetic",
+      "voice": "facebook/mms-tts-mya",
+      "date": "2026-10-13"
+     }
+    },
+    "mnw": {
+     "text": null,
+     "status": "draft",
+     "display": null
+    }
+   },
+   "source": "mymedicon-text-v0.8",
+   "notes": ""
+  },
+  {
+   "id": "triage-008",
+   "domain": "triage",
+   "intent": "ask_fever_onset",
+   "risk": "low",
+   "expects": "free",
+   "choices": [],
+   "pictogram": "🌡️",
+   "lang": {
+    "en": {
+     "text": "When did the elevated temperature start to affect you?",
+     "status": "machine",
+     "display": "When did the elevated temperature start to affect you?"
+    },
+    "th": {
+     "text": "คุณเริ่มประสบกับอุณหภูมิสูงเมื่อใด",
+     "status": "machine",
+     "display": "คุณเริ่มประสบกับอุณหภูมิสูงเมื่อใด"
+    },
+    "my": {
+     "text": "ခင်ဗျားအပူချိန်တက်နေတာကိုဘယ်အချိန်ကစတင်တွေ့ကြုံနေခဲ့တာလဲ။",
+     "status": "human",
+     "display": "ခင်​ဗျား​အ​ပူ​ချိန်​တက်​နေ​တာ​ကို​ဘယ်​အ​ချိန်​က​စ​တင်​တွေ့​ကြုံ​နေ​ခဲ့​တာ​လဲ​။",
+     "audio": {
+      "file": "audio/my/triage-008.ogg",
+      "kind": "synthetic",
+      "voice": "facebook/mms-tts-mya",
+      "date": "2026-10-13"
+     }
+    },
+    "mnw": {
+     "text": null,
+     "status": "draft",
+     "display": null
+    }
+   },
+   "source": "mymedicon-text-v0.8",
+   "notes": ""
+  },
+  {
+   "id": "triage-009",
+   "domain": "triage",
+   "intent": "ask_chills",
+   "risk": "low",
+   "expects": "yes_no",
+   "choices": [],
+   "pictogram": "🥶",
+   "lang": {
+    "en": {
+     "text": "Are you shivering or do you have chills?",
+     "status": "machine",
+     "display": "Are you shivering or do you have chills?"
+    },
+    "th": {
+     "text": "คุณมีอาการหนาวสั่นหรือตัวสั่นหรือไม่?",
+     "status": "machine",
+     "display": "คุณมีอาการหนาวสั่นหรือตัวสั่นหรือไม่?"
+    },
+    "my": {
+     "text": "ခင်ဗျားချမ်းနေလားဒါမှမဟုတ်ခိုက်ခိုက်တုန်နေလား။",
+     "status": "human",
+     "display": "ခင်​ဗျား​ချမ်း​နေ​လား​ဒါ​မှ​မ​ဟုတ်​ခိုက်​ခိုက်​တုန်​နေ​လား​။",
+     "audio": {
+      "file": "audio/my/triage-009.ogg",
+      "kind": "synthetic",
+      "voice": "facebook/mms-tts-mya",
+      "date": "2026-10-13"
+     }
+    },
+    "mnw": {
+     "text": null,
+     "status": "draft",
+     "display": null
+    }
+   },
+   "source": "mymedicon-text-v0.8",
+   "notes": ""
+  },
+  {
+   "id": "triage-010",
+   "domain": "triage",
+   "intent": "ask_dizzy_faint",
+   "risk": "low",
+   "expects": "yes_no",
+   "choices": [],
+   "pictogram": "😵‍💫",
+   "lang": {
+    "en": {
+     "text": "Have you ever felt dizzy or faint?",
+     "status": "machine",
+     "display": "Have you ever felt dizzy or faint?"
+    },
+    "th": {
+     "text": "คุณเคยมีอาการวิงเวียนศีรษะหรือไม่?",
+     "status": "machine",
+     "display": "คุณเคยมีอาการวิงเวียนศีรษะหรือไม่?"
+    },
+    "my": {
+     "text": "ခင်ဗျားခေါင်းရီဝေဝေဖြစ်ဖူးလား။",
+     "status": "human",
+     "display": "ခင်​ဗျား​ခေါင်း​ရီ​ဝေ​ဝေ​ဖြစ်​ဖူး​လား​။",
+     "audio": {
+      "file": "audio/my/triage-010.ogg",
+      "kind": "synthetic",
+      "voice": "facebook/mms-tts-mya",
+      "date": "2026-10-13"
+     }
+    },
+    "mnw": {
+     "text": null,
+     "status": "draft",
+     "display": null
+    }
+   },
+   "source": "mymedicon-text-v0.8",
+   "notes": ""
+  },
+  {
+   "id": "triage-011",
+   "domain": "triage",
+   "intent": "ask_pain_now",
+   "risk": "low",
+   "expects": "yes_no",
+   "choices": [],
+   "pictogram": "😣",
+   "lang": {
+    "en": {
+     "text": "Are you in pain at the moment?",
+     "status": "machine",
+     "display": "Are you in pain at the moment?"
+    },
+    "th": {
+     "text": "ช่วงนี้คุณปวดฉี่?",
+     "status": "machine",
+     "display": "ช่วงนี้คุณปวดฉี่?"
+    },
+    "my": {
+     "text": "ခင်ဗျားအခုနာကျင်နေလား။",
+     "status": "human",
+     "display": "ခင်​ဗျား​အ​ခု​နာ​ကျင်​နေ​လား​။",
+     "audio": {
+      "file": "audio/my/triage-011.ogg",
+      "kind": "synthetic",
+      "voice": "facebook/mms-tts-mya",
+      "date": "2026-10-13"
+     }
+    },
+    "mnw": {
+     "text": null,
+     "status": "draft",
+     "display": null
+    }
+   },
+   "source": "mymedicon-text-v0.8",
+   "notes": "Machine Thai is garbled ('ปวดฉี่' means painful urination). Needs a Thai reviewer."
+  },
+  {
+   "id": "triage-012",
+   "domain": "triage",
+   "intent": "ask_diarrhea_onset",
+   "risk": "low",
+   "expects": "free",
+   "choices": [],
+   "pictogram": "🚽",
+   "lang": {
+    "en": {
+     "text": "When did you start experiencing diarrhoea?",
+     "status": "machine",
+     "display": "When did you start experiencing diarrhoea?"
+    },
+    "th": {
+     "text": "คุณเริ่มมีอาการท้องร่วงเมื่อไหร่?",
+     "status": "machine",
+     "display": "คุณเริ่มมีอาการท้องร่วงเมื่อไหร่?"
+    },
+    "my": {
+     "text": "ခင်ဗျားဘယ်အချိန်ကစပြီးဝမ်းသွားနေခဲ့တာလဲ။",
+     "status": "human",
+     "display": "ခင်​ဗျား​ဘယ်​အ​ချိန်​က​စ​ပြီး​ဝမ်း​သွား​နေ​ခဲ့​တာ​လဲ​။",
+     "audio": {
+      "file": "audio/my/triage-012.ogg",
+      "kind": "synthetic",
+      "voice": "facebook/mms-tts-mya",
+      "date": "2026-10-13"
+     }
+    },
+    "mnw": {
+     "text": null,
+     "status": "draft",
+     "display": null
+    }
+   },
+   "source": "mymedicon-text-v0.8",
+   "notes": ""
+  },
+  {
+   "id": "triage-013",
+   "domain": "triage",
+   "intent": "ask_any_questions",
+   "risk": "low",
+   "expects": "yes_no",
+   "choices": [],
+   "pictogram": "❓",
+   "lang": {
+    "en": {
+     "text": "Do you have any questions for me?",
+     "status": "machine",
+     "display": "Do you have any questions for me?"
+    },
+    "th": {
+     "text": "คุณต้องการถามอะไรฉันไหม",
+     "status": "machine",
+     "display": "คุณต้องการถามอะไรฉันไหม"
+    },
+    "my": {
+     "text": "ခင်ဗျားကျွန်တော့်ကိုတစ်ခုခုမေးဖို့လိုအပ်လား။",
+     "status": "human",
+     "display": "ခင်​ဗျား​ကျွန်​တော့်​ကို​တစ်​ခု​ခု​မေး​ဖို့​လို​အပ်​လား​။",
+     "audio": {
+      "file": "audio/my/triage-013.ogg",
+      "kind": "synthetic",
+      "voice": "facebook/mms-tts-mya",
+      "date": "2026-10-13"
+     }
+    },
+    "mnw": {
+     "text": null,
+     "status": "draft",
+     "display": null
+    }
+   },
+   "source": "mymedicon-text-v0.8",
+   "notes": ""
+  }
+ ],
+ "answers": [
+  {
+   "id": "ans-yes",
+   "pictogram": "✅",
+   "lang": {
+    "en": {
+     "text": "Yes",
+     "status": "human",
+     "display": "Yes"
+    },
+    "th": {
+     "text": "ใช่",
+     "status": "draft",
+     "display": "ใช่"
+    },
+    "my": {
+     "text": "ဟုတ်ကဲ့",
+     "status": "draft",
+     "display": "ဟုတ်​ကဲ့"
+    },
+    "mnw": {
+     "text": null,
+     "status": "draft",
+     "display": null
+    }
+   }
+  },
+  {
+   "id": "ans-no",
+   "pictogram": "❌",
+   "lang": {
+    "en": {
+     "text": "No",
+     "status": "human",
+     "display": "No"
+    },
+    "th": {
+     "text": "ไม่ใช่",
+     "status": "draft",
+     "display": "ไม่ใช่"
+    },
+    "my": {
+     "text": "မဟုတ်ပါ",
+     "status": "draft",
+     "display": "မ​ဟုတ်​ပါ"
+    },
+    "mnw": {
+     "text": null,
+     "status": "draft",
+     "display": null
+    }
+   }
+  },
+  {
+   "id": "ans-dont-know",
+   "pictogram": "🤷",
+   "lang": {
+    "en": {
+     "text": "I don't know",
+     "status": "human",
+     "display": "I don't know"
+    },
+    "th": {
+     "text": "ไม่ทราบ",
+     "status": "draft",
+     "display": "ไม่ทราบ"
+    },
+    "my": {
+     "text": "မသိပါ",
+     "status": "draft",
+     "display": "မ​သိ​ပါ"
+    },
+    "mnw": {
+     "text": null,
+     "status": "draft",
+     "display": null
+    }
+   }
+  },
+  {
+   "id": "ans-a-little",
+   "pictogram": "🔹",
+   "lang": {
+    "en": {
+     "text": "A little",
+     "status": "human",
+     "display": "A little"
+    },
+    "th": {
+     "text": "นิดหน่อย",
+     "status": "draft",
+     "display": "นิดหน่อย"
+    },
+    "my": {
+     "text": "နည်းနည်း",
+     "status": "draft",
+     "display": "နည်း​နည်း"
+    },
+    "mnw": {
+     "text": null,
+     "status": "draft",
+     "display": null
+    }
+   }
+  },
+  {
+   "id": "ans-a-lot",
+   "pictogram": "🔷",
+   "lang": {
+    "en": {
+     "text": "A lot",
+     "status": "human",
+     "display": "A lot"
+    },
+    "th": {
+     "text": "มาก",
+     "status": "draft",
+     "display": "มาก"
+    },
+    "my": {
+     "text": "အများကြီး",
+     "status": "draft",
+     "display": "အ​များ​ကြီး"
+    },
+    "mnw": {
+     "text": null,
+     "status": "draft",
+     "display": null
+    }
+   }
+  },
+  {
+   "id": "ans-today",
+   "pictogram": "📅",
+   "lang": {
+    "en": {
+     "text": "Today",
+     "status": "human",
+     "display": "Today"
+    },
+    "th": {
+     "text": "วันนี้",
+     "status": "draft",
+     "display": "วันนี้"
+    },
+    "my": {
+     "text": "ဒီနေ့",
+     "status": "draft",
+     "display": "ဒီ​နေ့"
+    },
+    "mnw": {
+     "text": null,
+     "status": "draft",
+     "display": null
+    }
+   }
+  },
+  {
+   "id": "ans-yesterday",
+   "pictogram": "📅",
+   "lang": {
+    "en": {
+     "text": "Yesterday",
+     "status": "human",
+     "display": "Yesterday"
+    },
+    "th": {
+     "text": "เมื่อวาน",
+     "status": "draft",
+     "display": "เมื่อวาน"
+    },
+    "my": {
+     "text": "မနေ့က",
+     "status": "draft",
+     "display": "မ​နေ့​က"
+    },
+    "mnw": {
+     "text": null,
+     "status": "draft",
+     "display": null
+    }
+   }
+  },
+  {
+   "id": "ans-days-ago",
+   "pictogram": "📅",
+   "lang": {
+    "en": {
+     "text": "A few days ago",
+     "status": "human",
+     "display": "A few days ago"
+    },
+    "th": {
+     "text": "สองสามวันก่อน",
+     "status": "draft",
+     "display": "สองสามวันก่อน"
+    },
+    "my": {
+     "text": "လွန်ခဲ့တဲ့ရက်အနည်းငယ်က",
+     "status": "draft",
+     "display": "လွန်​ခဲ့​တဲ့​ရက်​အ​နည်း​ငယ်​က"
+    },
+    "mnw": {
+     "text": null,
+     "status": "draft",
+     "display": null
+    }
+   }
+  },
+  {
+   "id": "ans-weeks-ago",
+   "pictogram": "📅",
+   "lang": {
+    "en": {
+     "text": "Weeks ago",
+     "status": "human",
+     "display": "Weeks ago"
+    },
+    "th": {
+     "text": "หลายสัปดาห์ก่อน",
+     "status": "draft",
+     "display": "หลายสัปดาห์ก่อน"
+    },
+    "my": {
+     "text": "လွန်ခဲ့တဲ့အပတ်တွေက",
+     "status": "draft",
+     "display": "လွန်​ခဲ့​တဲ့​အ​ပတ်​တွေ​က"
+    },
+    "mnw": {
+     "text": null,
+     "status": "draft",
+     "display": null
+    }
+   }
+  },
+  {
+   "id": "ans-please-repeat",
+   "pictogram": "🔁",
+   "lang": {
+    "en": {
+     "text": "Please say that again",
+     "status": "human",
+     "display": "Please say that again"
+    },
+    "th": {
+     "text": "ช่วยพูดอีกครั้ง",
+     "status": "draft",
+     "display": "ช่วยพูดอีกครั้ง"
+    },
+    "my": {
+     "text": "ထပ်ပြောပေးပါ",
+     "status": "draft",
+     "display": "ထပ်​ပြော​ပေး​ပါ"
+    },
+    "mnw": {
+     "text": null,
+     "status": "draft",
+     "display": null
+    }
+   }
+  },
+  {
+   "id": "ans-need-interpreter",
+   "pictogram": "🗣️",
+   "lang": {
+    "en": {
+     "text": "I need an interpreter",
+     "status": "human",
+     "display": "I need an interpreter"
+    },
+    "th": {
+     "text": "ฉันต้องการล่าม",
+     "status": "draft",
+     "display": "ฉันต้องการล่าม"
+    },
+    "my": {
+     "text": "ကျွန်တော်/ကျွန်မ စကားပြန်လိုအပ်ပါတယ်",
+     "status": "draft",
+     "display": "ကျွန်​တော်​/​ကျွန်​မ စ​ကား​ပြန်​လို​အပ်​ပါ​တယ်"
+    },
+    "mnw": {
+     "text": null,
+     "status": "draft",
+     "display": null
+    }
+   }
+  }
+ ],
+ "sources": {
+  "mymedicon-text-v0.8": {
+   "title": "myMediCon text corpus, version 0.8 (2025-02-09)",
+   "url": "https://github.com/ye-kyaw-thu/myMediCon",
+   "license": "CC-BY-NC-SA-4.0",
+   "attribution": "Mya Ei San, Ye Kyaw Thu, Thepchai Supnithi, Sasiporn Usanavasin (2022), 'Improving Neural Machine Translation for Low-resource English-Myanmar-Thai Language Pairs with SwitchOut Data Augmentation Algorithm', iSAI-NLP 2022. Speech work: Hay Man Htun et al. (2024), 'myMediCon: End-to-End Burmese Automatic Speech Recognition for Medical Conversations', LREC-COLING 2024.",
+   "languages": {
+    "en": "Quillbot paraphrase of an English clinical handbook",
+    "my": "manual translation by university students",
+    "th": "Google Translate output"
+   },
+   "notes": "Because the content license is non-commercial share-alike, everything derived from it in this repository is also CC BY-NC-SA 4.0."
+  },
+  "saphan-authored": {
+   "title": "Phrases written directly for this project",
+   "url": "",
+   "license": "CC-BY-NC-SA-4.0",
+   "attribution": "Saphan contributors",
+   "notes": "Same license as the seed so the collection stays consistent."
+  }
+ },
+ "skipped": [
+  "child-health-001",
+  "fever-001",
+  "fever-002",
+  "injury-001",
+  "pharmacy-001"
+ ]
+}

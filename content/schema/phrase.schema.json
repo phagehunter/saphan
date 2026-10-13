@@ -1,0 +1,327 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/phagehunter/saphan/content/schema/phrase.schema.json",
+  "title": "Saphan phrase record",
+  "description": "One clinical phrase with its translations, review state, audio, and provenance. One file per phrase under content/phrases/<domain>/<id>.json.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "domain",
+    "intent",
+    "speaker",
+    "risk",
+    "expects",
+    "pictogram",
+    "text",
+    "status",
+    "review",
+    "audio",
+    "source"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9-]*-[0-9]{3}$",
+      "description": "domain-NNN, must match the file name"
+    },
+    "domain": {
+      "type": "string",
+      "enum": [
+        "fever",
+        "tb",
+        "tb-malaria",
+        "triage",
+        "antenatal",
+        "child-health",
+        "injury",
+        "pharmacy",
+        "medication",
+        "diarrhea-cholera",
+        "insurance-consent",
+        "ncd",
+        "mental-health",
+        "skin-wound"
+      ],
+      "description": "Topic folder. Order reflects the 2026-10-13 disease-burden ranking. tb-malaria and medication are kept for the seed records; new fever phrases go in fever, new drug phrases in pharmacy."
+    },
+    "intent": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]*$",
+      "description": "stable machine name for what the phrase does"
+    },
+    "speaker": {
+      "type": "string",
+      "enum": [
+        "provider",
+        "patient",
+        "either"
+      ]
+    },
+    "risk": {
+      "type": "string",
+      "enum": [
+        "low",
+        "medium",
+        "high"
+      ],
+      "description": "high = consent, dosing, prognosis: patient-facing output needs clinical verification"
+    },
+    "expects": {
+      "type": "string",
+      "enum": [
+        "none",
+        "yes_no",
+        "date",
+        "number",
+        "choice",
+        "free"
+      ]
+    },
+    "choices": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "pictogram": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 16
+    },
+    "text": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "en",
+        "th",
+        "my",
+        "mnw"
+      ],
+      "properties": {
+        "en": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "th": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "my": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "mnw": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        }
+      }
+    },
+    "status": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "en",
+        "th",
+        "my",
+        "mnw"
+      ],
+      "properties": {
+        "en": {
+          "$ref": "#/$defs/status"
+        },
+        "th": {
+          "$ref": "#/$defs/status"
+        },
+        "my": {
+          "$ref": "#/$defs/status"
+        },
+        "mnw": {
+          "$ref": "#/$defs/status"
+        }
+      }
+    },
+    "review": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "en": {
+          "$ref": "#/$defs/review"
+        },
+        "th": {
+          "$ref": "#/$defs/review"
+        },
+        "my": {
+          "$ref": "#/$defs/review"
+        },
+        "mnw": {
+          "$ref": "#/$defs/review"
+        }
+      }
+    },
+    "audio": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "my",
+        "mnw"
+      ],
+      "properties": {
+        "th": {
+          "$ref": "#/$defs/audio"
+        },
+        "my": {
+          "$ref": "#/$defs/audio"
+        },
+        "mnw": {
+          "$ref": "#/$defs/audio"
+        }
+      }
+    },
+    "codes": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "icd11": {
+          "type": "string",
+          "pattern": "^https?://id\\.who\\.int/icd/"
+        },
+        "snomed": {
+          "type": "string",
+          "pattern": "^[0-9]{6,18}$"
+        }
+      }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "license"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "key in content/sources.json"
+        },
+        "line": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "license": {
+          "type": "string"
+        },
+        "source_text": {
+          "type": "object"
+        },
+        "note": {
+          "type": "string"
+        }
+      }
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "$defs": {
+    "status": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "machine",
+        "human",
+        "clinical"
+      ],
+      "description": "draft = placeholder or unverified author text; machine = produced by software; human = written or checked by a fluent human; clinical = checked by a clinician fluent in that language"
+    },
+    "review": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "reviewer",
+        "role",
+        "date"
+      ],
+      "properties": {
+        "reviewer": {
+          "type": "string",
+          "minLength": 2
+        },
+        "role": {
+          "type": "string",
+          "enum": [
+            "translator",
+            "native-speaker",
+            "nurse",
+            "physician",
+            "pharmacist",
+            "midwife",
+            "health-volunteer",
+            "other"
+          ]
+        },
+        "organization": {
+          "type": "string"
+        },
+        "date": {
+          "type": "string",
+          "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+        },
+        "back_translation": {
+          "type": "string"
+        },
+        "comment": {
+          "type": "string"
+        }
+      }
+    },
+    "audio": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "required": [
+        "file",
+        "kind"
+      ],
+      "properties": {
+        "file": {
+          "type": "string",
+          "pattern": "^audio/(th|my|mnw)/[a-z0-9-]+\\.(ogg|opus|wav|mp3)$"
+        },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "human",
+            "synthetic"
+          ]
+        },
+        "recorded_by": {
+          "type": "string"
+        },
+        "voice": {
+          "type": "string",
+          "description": "model id for synthetic clips"
+        },
+        "date": {
+          "type": "string",
+          "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+        }
+      }
+    }
+  }
+}

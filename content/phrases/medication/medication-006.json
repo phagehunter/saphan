@@ -1,0 +1,44 @@
+{
+  "id": "medication-006",
+  "domain": "medication",
+  "intent": "ask_side_effects",
+  "speaker": "provider",
+  "risk": "low",
+  "expects": "yes_no",
+  "choices": [],
+  "pictogram": "💊",
+  "text": {
+    "en": "Does the drug have any side effects?",
+    "th": "มีผลข้างเคียงของยาหรือไม่?",
+    "my": "ဆေးရဲ့ဘေးထွက်ဆိုးကျိုးတွေရှိလား။",
+    "mnw": null
+  },
+  "status": {
+    "en": "machine",
+    "th": "machine",
+    "my": "human",
+    "mnw": "draft"
+  },
+  "review": {},
+  "audio": {
+    "my": {
+      "file": "audio/my/medication-006.ogg",
+      "kind": "synthetic",
+      "voice": "facebook/mms-tts-mya",
+      "date": "2026-10-13"
+    },
+    "mnw": null
+  },
+  "source": {
+    "id": "mymedicon-text-v0.8",
+    "line": 1796,
+    "license": "CC-BY-NC-SA-4.0",
+    "source_text": {
+      "en": "Does the drug have any side effects?",
+      "th": "มี ผลข้างเคียง ขอ งย าหรื อไม ่?",
+      "my": "ဆေး ရဲ့ ဘေးထွက် ဆိုးကျိုး တွေ ရှိ လား ။"
+    },
+    "note": "English is a Quillbot paraphrase of the clinical handbook; Burmese was human-translated by university students; Thai is Google Translate output. Whitespace removed from Thai and Burmese for display."
+  },
+  "notes": ""
+}

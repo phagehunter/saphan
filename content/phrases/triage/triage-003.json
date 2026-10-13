@@ -1,0 +1,44 @@
+{
+  "id": "triage-003",
+  "domain": "triage",
+  "intent": "ask_trouble_breathing",
+  "speaker": "provider",
+  "risk": "medium",
+  "expects": "yes_no",
+  "choices": [],
+  "pictogram": "🫁",
+  "text": {
+    "en": "Are you having trouble breathing?",
+    "th": "คุณมีอาการหายใจลำบากหรือไม่?",
+    "my": "ခင်ဗျားအသက်ရှူမဝဖြစ်လား။",
+    "mnw": null
+  },
+  "status": {
+    "en": "machine",
+    "th": "machine",
+    "my": "human",
+    "mnw": "draft"
+  },
+  "review": {},
+  "audio": {
+    "my": {
+      "file": "audio/my/triage-003.ogg",
+      "kind": "synthetic",
+      "voice": "facebook/mms-tts-mya",
+      "date": "2026-10-13"
+    },
+    "mnw": null
+  },
+  "source": {
+    "id": "mymedicon-text-v0.8",
+    "line": 391,
+    "license": "CC-BY-NC-SA-4.0",
+    "source_text": {
+      "en": "Are you having trouble breathing?",
+      "th": "คุณ มีอาการ หายใจ ลำ บา กหรื อไม ่?",
+      "my": "ခင်ဗျား အသက်ရှူမဝ ဖြစ် လား ။"
+    },
+    "note": "English is a Quillbot paraphrase of the clinical handbook; Burmese was human-translated by university students; Thai is Google Translate output. Whitespace removed from Thai and Burmese for display."
+  },
+  "notes": ""
+}

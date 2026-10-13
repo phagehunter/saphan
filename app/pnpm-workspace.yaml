@@ -1,0 +1,4 @@
+# pnpm 11 blocks dependency install scripts unless allowed here. esbuild needs its script
+# to place its platform binary; nothing else does.
+allowBuilds:
+  esbuild: true

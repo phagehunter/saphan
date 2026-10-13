@@ -1,0 +1,33 @@
+{
+  "id": "child-health-001",
+  "domain": "child-health",
+  "intent": "bring_vaccine_book",
+  "speaker": "provider",
+  "risk": "medium",
+  "expects": "yes_no",
+  "choices": [],
+  "pictogram": "👶",
+  "text": {
+    "en": "Your child needs vaccines. Do you have the child's vaccination book?",
+    "th": "ลูกของคุณต้องได้รับวัคซีน คุณมีสมุดวัคซีนของเด็กไหม",
+    "my": null,
+    "mnw": null
+  },
+  "status": {
+    "en": "draft",
+    "th": "draft",
+    "my": "draft",
+    "mnw": "draft"
+  },
+  "review": {},
+  "audio": {
+    "my": null,
+    "mnw": null
+  },
+  "source": {
+    "id": "saphan-authored",
+    "license": "CC-BY-NC-SA-4.0",
+    "note": "Written 2026-10-13 from the disease-burden report. English and Thai are unreviewed drafts by the scaffold author."
+  },
+  "notes": "1.5 million Myanmar under-fives missed basic vaccination; diphtheria deaths in Mae Sot 2024. This record is skipped at build until Burmese or Mon reaches status 'human'."
+}

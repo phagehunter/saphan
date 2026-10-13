@@ -1,0 +1,17 @@
+{
+  "mymedicon-text-v0.8": {
+    "title": "myMediCon text corpus, version 0.8 (2025-02-09)",
+    "url": "https://github.com/ye-kyaw-thu/myMediCon",
+    "license": "CC-BY-NC-SA-4.0",
+    "attribution": "Mya Ei San, Ye Kyaw Thu, Thepchai Supnithi, Sasiporn Usanavasin (2022), 'Improving Neural Machine Translation for Low-resource English-Myanmar-Thai Language Pairs with SwitchOut Data Augmentation Algorithm', iSAI-NLP 2022. Speech work: Hay Man Htun et al. (2024), 'myMediCon: End-to-End Burmese Automatic Speech Recognition for Medical Conversations', LREC-COLING 2024.",
+    "languages": { "en": "Quillbot paraphrase of an English clinical handbook", "my": "manual translation by university students", "th": "Google Translate output" },
+    "notes": "Because the content license is non-commercial share-alike, everything derived from it in this repository is also CC BY-NC-SA 4.0."
+  },
+  "saphan-authored": {
+    "title": "Phrases written directly for this project",
+    "url": "",
+    "license": "CC-BY-NC-SA-4.0",
+    "attribution": "Saphan contributors",
+    "notes": "Same license as the seed so the collection stays consistent."
+  }
+}

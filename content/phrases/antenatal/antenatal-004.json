@@ -1,0 +1,44 @@
+{
+  "id": "antenatal-004",
+  "domain": "antenatal",
+  "intent": "ask_bleeding",
+  "speaker": "provider",
+  "risk": "medium",
+  "expects": "yes_no",
+  "choices": [],
+  "pictogram": "🩸",
+  "text": {
+    "en": "Is there bleeding?",
+    "th": "มันมีเลือดออกหรือไม่?",
+    "my": "သွေးထွက်လား။",
+    "mnw": null
+  },
+  "status": {
+    "en": "machine",
+    "th": "machine",
+    "my": "human",
+    "mnw": "draft"
+  },
+  "review": {},
+  "audio": {
+    "my": {
+      "file": "audio/my/antenatal-004.ogg",
+      "kind": "synthetic",
+      "voice": "facebook/mms-tts-mya",
+      "date": "2026-10-13"
+    },
+    "mnw": null
+  },
+  "source": {
+    "id": "mymedicon-text-v0.8",
+    "line": 3015,
+    "license": "CC-BY-NC-SA-4.0",
+    "source_text": {
+      "en": "Is there bleeding?",
+      "th": "มัน มี เลือด ออ กหรื อไม ่?",
+      "my": "သွေး ထွက် လား ။"
+    },
+    "note": "English is a Quillbot paraphrase of the clinical handbook; Burmese was human-translated by university students; Thai is Google Translate output. Whitespace removed from Thai and Burmese for display."
+  },
+  "notes": ""
+}

@@ -1,0 +1,44 @@
+{
+  "id": "triage-010",
+  "domain": "triage",
+  "intent": "ask_dizzy_faint",
+  "speaker": "provider",
+  "risk": "low",
+  "expects": "yes_no",
+  "choices": [],
+  "pictogram": "😵‍💫",
+  "text": {
+    "en": "Have you ever felt dizzy or faint?",
+    "th": "คุณเคยมีอาการวิงเวียนศีรษะหรือไม่?",
+    "my": "ခင်ဗျားခေါင်းရီဝေဝေဖြစ်ဖူးလား။",
+    "mnw": null
+  },
+  "status": {
+    "en": "machine",
+    "th": "machine",
+    "my": "human",
+    "mnw": "draft"
+  },
+  "review": {},
+  "audio": {
+    "my": {
+      "file": "audio/my/triage-010.ogg",
+      "kind": "synthetic",
+      "voice": "facebook/mms-tts-mya",
+      "date": "2026-10-13"
+    },
+    "mnw": null
+  },
+  "source": {
+    "id": "mymedicon-text-v0.8",
+    "line": 688,
+    "license": "CC-BY-NC-SA-4.0",
+    "source_text": {
+      "en": "Have you ever felt dizzy or faint?",
+      "th": "คุณ เคย มีอาการ วิ งเว ีย นศีรษ ะหรื อไม ่?",
+      "my": "ခင်ဗျား ခေါင်း ရီဝေဝေ ဖြစ် ဖူး လား ။"
+    },
+    "note": "English is a Quillbot paraphrase of the clinical handbook; Burmese was human-translated by university students; Thai is Google Translate output. Whitespace removed from Thai and Burmese for display."
+  },
+  "notes": ""
+}

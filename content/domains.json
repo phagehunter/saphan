@@ -1,0 +1,159 @@
+{
+  "_comment": "Topic order and labels for the app. Order follows docs/2026-10-13-disease-burden-report.md; edit this file (not code) to re-rank or rename. Burmese labels are unreviewed drafts; Mon is empty until a Mon speaker fills them. 'show_when_empty' keeps a topic visible on the home screen even before it has phrases.",
+  "domains": [
+    {
+      "id": "fever",
+      "pictogram": "🌡️",
+      "label": {
+        "en": "Fever: malaria and dengue",
+        "th": "ไข้ มาลาเรีย ไข้เลือดออก",
+        "my": "အဖျား၊ ငှက်ဖျား၊ သွေးလွန်တုပ်ကွေး",
+        "mnw": null
+      },
+      "show_when_empty": true
+    },
+    {
+      "id": "tb",
+      "pictogram": "🫁",
+      "label": {
+        "en": "Cough and TB",
+        "th": "ไอและวัณโรค",
+        "my": "ချောင်းဆိုးနှင့်တီဘီ",
+        "mnw": null
+      },
+      "show_when_empty": false
+    },
+    {
+      "id": "antenatal",
+      "pictogram": "🤰",
+      "label": {
+        "en": "Pregnancy and birth",
+        "th": "ฝากครรภ์และคลอด",
+        "my": "ကိုယ်ဝန်နှင့်မွေးဖွား",
+        "mnw": null
+      },
+      "show_when_empty": false
+    },
+    {
+      "id": "child-health",
+      "pictogram": "👶",
+      "label": {
+        "en": "Children and vaccines",
+        "th": "เด็กและวัคซีน",
+        "my": "ကလေးနှင့်ကာကွယ်ဆေး",
+        "mnw": null
+      },
+      "show_when_empty": true
+    },
+    {
+      "id": "injury",
+      "pictogram": "🩹",
+      "label": {
+        "en": "Injury, first aid, snakebite",
+        "th": "บาดเจ็บ ปฐมพยาบาล งูกัด",
+        "my": "ဒဏ်ရာ၊ ရှေးဦးသူနာပြု၊ မြွေကိုက်",
+        "mnw": null
+      },
+      "show_when_empty": true
+    },
+    {
+      "id": "pharmacy",
+      "pictogram": "💊",
+      "label": {
+        "en": "Pharmacy and medicines",
+        "th": "ยาและการใช้ยา",
+        "my": "ဆေးနှင့်ဆေးသုံးနည်း",
+        "mnw": null
+      },
+      "show_when_empty": true
+    },
+    {
+      "id": "triage",
+      "pictogram": "🩺",
+      "label": {
+        "en": "Triage and symptoms",
+        "th": "คัดกรองและอาการ",
+        "my": "လက္ခဏာများ",
+        "mnw": null
+      },
+      "show_when_empty": false
+    },
+    {
+      "id": "diarrhea-cholera",
+      "pictogram": "🚰",
+      "label": {
+        "en": "Diarrhea and cholera",
+        "th": "ท้องร่วงและอหิวาต์",
+        "my": "ဝမ်းလျှောနှင့်ကာလဝမ်း",
+        "mnw": null
+      },
+      "show_when_empty": false
+    },
+    {
+      "id": "insurance-consent",
+      "pictogram": "📋",
+      "label": {
+        "en": "Registration, insurance, referral",
+        "th": "ลงทะเบียน ประกัน ส่งต่อ",
+        "my": "မှတ်ပုံတင်၊ အာမခံ၊ လွှဲပြောင်း",
+        "mnw": null
+      },
+      "show_when_empty": false
+    },
+    {
+      "id": "ncd",
+      "pictogram": "🫀",
+      "label": {
+        "en": "Blood pressure and diabetes",
+        "th": "ความดันและเบาหวาน",
+        "my": "သွေးပေါင်နှင့်ဆီးချို",
+        "mnw": null
+      },
+      "show_when_empty": false
+    },
+    {
+      "id": "mental-health",
+      "pictogram": "🧠",
+      "label": {
+        "en": "Stress, sleep, alcohol",
+        "th": "ความเครียด การนอน สุรา",
+        "my": "စိတ်ဖိစီးမှု၊ အိပ်စက်ခြင်း၊ အရက်",
+        "mnw": null
+      },
+      "show_when_empty": false
+    },
+    {
+      "id": "skin-wound",
+      "pictogram": "🩻",
+      "label": {
+        "en": "Skin and wounds",
+        "th": "ผิวหนังและแผล",
+        "my": "အရေပြားနှင့်ဒဏ်ရာ",
+        "mnw": null
+      },
+      "show_when_empty": false
+    },
+    {
+      "id": "tb-malaria",
+      "pictogram": "🦟",
+      "label": {
+        "en": "TB and malaria",
+        "th": "วัณโรคและมาลาเรีย",
+        "my": "တီဘီနှင့်ငှက်ဖျား",
+        "mnw": null
+      },
+      "show_when_empty": false
+    },
+    {
+      "id": "medication",
+      "pictogram": "💊",
+      "label": {
+        "en": "Medication",
+        "th": "ยา",
+        "my": "ဆေးဝါး",
+        "mnw": null
+      },
+      "show_when_empty": false
+    }
+  ]
+}

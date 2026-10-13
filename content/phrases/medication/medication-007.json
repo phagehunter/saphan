@@ -1,0 +1,44 @@
+{
+  "id": "medication-007",
+  "domain": "medication",
+  "intent": "dose_aspirin_75_daily",
+  "speaker": "provider",
+  "risk": "high",
+  "expects": "none",
+  "choices": [],
+  "pictogram": "💊",
+  "text": {
+    "en": "75 milligrams of aspirin once a day",
+    "th": "แอสไพริน 75 มก. วันละครั้ง",
+    "my": "အက်စပရင်၇၅မီလီဂရမ်နေ့စဉ်တစ်ကြိမ်",
+    "mnw": null
+  },
+  "status": {
+    "en": "machine",
+    "th": "machine",
+    "my": "human",
+    "mnw": "draft"
+  },
+  "review": {},
+  "audio": {
+    "my": {
+      "file": "audio/my/medication-007.ogg",
+      "kind": "synthetic",
+      "voice": "facebook/mms-tts-mya",
+      "date": "2026-10-13"
+    },
+    "mnw": null
+  },
+  "source": {
+    "id": "mymedicon-text-v0.8",
+    "line": 1936,
+    "license": "CC-BY-NC-SA-4.0",
+    "source_text": {
+      "en": "75 milligrams of aspirin once a day",
+      "th": "แอสไพริน  75   มก.   วัน ละ ครั้ง",
+      "my": "အက်စပရင် ၇၅ မီလီဂရမ် နေ့စဉ် တစ်ကြိမ်"
+    },
+    "note": "English is a Quillbot paraphrase of the clinical handbook; Burmese was human-translated by university students; Thai is Google Translate output. Whitespace removed from Thai and Burmese for display."
+  },
+  "notes": "Dose text. High risk: patient-facing text and audio stay locked until a clinician verifies every language."
+}

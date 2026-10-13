@@ -1,0 +1,44 @@
+{
+  "id": "antenatal-002",
+  "domain": "antenatal",
+  "intent": "inform_pregnancy_test",
+  "speaker": "provider",
+  "risk": "medium",
+  "expects": "none",
+  "choices": [],
+  "pictogram": "🧪",
+  "text": {
+    "en": "We must take a pregnancy test.",
+    "th": "เราจำเป็นต้องทำการทดสอบการตั้งครรภ์",
+    "my": "ကိုယ်ဝန်ရှိမရှိကျွန်တော်တို့စစ်ဆေးဖို့လိုပါတယ်။",
+    "mnw": null
+  },
+  "status": {
+    "en": "machine",
+    "th": "machine",
+    "my": "human",
+    "mnw": "draft"
+  },
+  "review": {},
+  "audio": {
+    "my": {
+      "file": "audio/my/antenatal-002.ogg",
+      "kind": "synthetic",
+      "voice": "facebook/mms-tts-mya",
+      "date": "2026-10-13"
+    },
+    "mnw": null
+  },
+  "source": {
+    "id": "mymedicon-text-v0.8",
+    "line": 2973,
+    "license": "CC-BY-NC-SA-4.0",
+    "source_text": {
+      "en": "We must take a pregnancy test.",
+      "th": "เรา จำเป็น ต้อง ทำ การทดสอบ การตั้งครรภ์",
+      "my": "ကိုယ်ဝန် ရှိ မရှိ ကျွန်တော် တို့ စစ်ဆေး ဖို့ လို ပါ တယ် ။"
+    },
+    "note": "English is a Quillbot paraphrase of the clinical handbook; Burmese was human-translated by university students; Thai is Google Translate output. Whitespace removed from Thai and Burmese for display."
+  },
+  "notes": ""
+}

@@ -1,0 +1,33 @@
+{
+  "id": "fever-001",
+  "domain": "fever",
+  "intent": "no_nsaid_with_fever",
+  "speaker": "provider",
+  "risk": "high",
+  "expects": "none",
+  "choices": [],
+  "pictogram": "🌡️",
+  "text": {
+    "en": "Do not take ibuprofen or aspirin when you have a fever. Take paracetamol only.",
+    "th": "ถ้ามีไข้ ห้ามกินไอบูโพรเฟนหรือแอสไพริน กินพาราเซตามอลเท่านั้น",
+    "my": null,
+    "mnw": null
+  },
+  "status": {
+    "en": "draft",
+    "th": "draft",
+    "my": "draft",
+    "mnw": "draft"
+  },
+  "review": {},
+  "audio": {
+    "my": null,
+    "mnw": null
+  },
+  "source": {
+    "id": "saphan-authored",
+    "license": "CC-BY-NC-SA-4.0",
+    "note": "Written 2026-10-13 from the disease-burden report. English and Thai are unreviewed drafts by the scaffold author."
+  },
+  "notes": "Dengue deaths in Thailand are linked to NSAID use before diagnosis (DDC weekly report 2025). This record is skipped at build until Burmese or Mon reaches status 'human'."
+}

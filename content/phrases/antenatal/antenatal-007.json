@@ -1,0 +1,44 @@
+{
+  "id": "antenatal-007",
+  "domain": "antenatal",
+  "intent": "consent_breast_exam",
+  "speaker": "provider",
+  "risk": "high",
+  "expects": "yes_no",
+  "choices": [],
+  "pictogram": "🩺",
+  "text": {
+    "en": "I am here to examine you, and as part of that examination, I will touch and look at your breasts. Are you okay with that?",
+    "th": "ฉันมาที่นี่เพื่อตรวจสอบคุณการตรวจของฉันจะเกี่ยวข้องกับการดูและสัมผัสหน้าอกของคุณตกลงกับคุณไหม",
+    "my": "ကျွန်တော်ခင်ဗျားကိုစမ်းသပ်ဖို့ရောက်ရှိနေပါတယ်။ကျွန်တော်ခင်ဗျားရဲ့ရင်သားကိုထိပြီးစစ်ဆေးကြည့်ရှုဖို့ပါ၀င်ပါတယ်။အဲဒါအဆင်ပြေပါသလား။",
+    "mnw": null
+  },
+  "status": {
+    "en": "machine",
+    "th": "machine",
+    "my": "human",
+    "mnw": "draft"
+  },
+  "review": {},
+  "audio": {
+    "my": {
+      "file": "audio/my/antenatal-007.ogg",
+      "kind": "synthetic",
+      "voice": "facebook/mms-tts-mya",
+      "date": "2026-10-13"
+    },
+    "mnw": null
+  },
+  "source": {
+    "id": "mymedicon-text-v0.8",
+    "line": 127,
+    "license": "CC-BY-NC-SA-4.0",
+    "source_text": {
+      "en": "I am here to examine you, and as part of that examination, I will touch and look at your breasts. Are you okay with that?",
+      "th": "ฉัน มา ที่นี่ เพื่อ ตรวจสอบ คุณ   การตรวจ ของฉัน จะ เกี่ยวข้องกับ การดู และ สัมผัส หน้าอก ของคุณ   ตกลง กับ คุณ ไหม",
+      "my": "ကျွန်တော် ခင်ဗျား ကို စမ်းသပ် ဖို့ ရောက်ရှိ နေ ပါ တယ် ။ ကျွန်တော် ခင်ဗျား ရဲ့ ရင်သား ကို ထိ ပြီး စစ်ဆေး ကြည့်ရှု ဖို့ ပါ၀င် ပါ တယ် ။ အဲဒါ အဆင်ပြေ ပါ သလား ။"
+    },
+    "note": "English is a Quillbot paraphrase of the clinical handbook; Burmese was human-translated by university students; Thai is Google Translate output. Whitespace removed from Thai and Burmese for display."
+  },
+  "notes": "Consent for a physical exam. High risk; locked until clinically verified."
+}

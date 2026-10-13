@@ -1,0 +1,44 @@
+{
+  "id": "medication-004",
+  "domain": "medication",
+  "intent": "ask_painkillers",
+  "speaker": "provider",
+  "risk": "low",
+  "expects": "yes_no",
+  "choices": [],
+  "pictogram": "💊",
+  "text": {
+    "en": "Are you taking any painkillers?",
+    "th": "คุณทานยาแก้ปวดหรือไม่?",
+    "my": "ခင်ဗျားအကိုက်အခဲပျောက်ဆေးတစ်ခုခုသောက်နေလား။",
+    "mnw": null
+  },
+  "status": {
+    "en": "machine",
+    "th": "machine",
+    "my": "human",
+    "mnw": "draft"
+  },
+  "review": {},
+  "audio": {
+    "my": {
+      "file": "audio/my/medication-004.ogg",
+      "kind": "synthetic",
+      "voice": "facebook/mms-tts-mya",
+      "date": "2026-10-13"
+    },
+    "mnw": null
+  },
+  "source": {
+    "id": "mymedicon-text-v0.8",
+    "line": 2276,
+    "license": "CC-BY-NC-SA-4.0",
+    "source_text": {
+      "en": "Are you taking any painkillers ?",
+      "th": "คุณ ทาน ยา แก ้ปว ดหรื อไม ่?",
+      "my": "ခင်ဗျား အကိုက်အခဲ ပျောက် ဆေး တစ်ခုခု သောက် နေ လား ။"
+    },
+    "note": "English is a Quillbot paraphrase of the clinical handbook; Burmese was human-translated by university students; Thai is Google Translate output. Whitespace removed from Thai and Burmese for display."
+  },
+  "notes": ""
+}

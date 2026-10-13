@@ -1,0 +1,44 @@
+{
+  "id": "antenatal-003",
+  "domain": "antenatal",
+  "intent": "explain_pregnancy_test_routine",
+  "speaker": "provider",
+  "risk": "medium",
+  "expects": "none",
+  "choices": [],
+  "pictogram": "🧪",
+  "text": {
+    "en": "Because some medications are not safe to provide to pregnant women, we routinely do pregnancy tests on all women.",
+    "th": "เรามักจะทำการทดสอบการตั้งครรภ์ในสตรีทุกคนตามปกติเนื่องจากมียาบางชนิดที่ไม่สามารถให้กับสตรีมีครรภ์ได้",
+    "my": "ကျွန်တော်တို့အမျိုးသမီးတိုင်းကိုကိုယ်ဝန်ရှိမရှိစစ်ဆေးပါတယ်၊တချို့ဆေးတွေကကိုယ်ဝန်ဆောင်အမျိုးသမီးများကိုပေးဖို့မသင့်တော်တာကြောင့်ဖြစ်ပါတယ်။",
+    "mnw": null
+  },
+  "status": {
+    "en": "machine",
+    "th": "machine",
+    "my": "human",
+    "mnw": "draft"
+  },
+  "review": {},
+  "audio": {
+    "my": {
+      "file": "audio/my/antenatal-003.ogg",
+      "kind": "synthetic",
+      "voice": "facebook/mms-tts-mya",
+      "date": "2026-10-13"
+    },
+    "mnw": null
+  },
+  "source": {
+    "id": "mymedicon-text-v0.8",
+    "line": 2974,
+    "license": "CC-BY-NC-SA-4.0",
+    "source_text": {
+      "en": "Because some medications are not safe to provide to pregnant women, we routinely do pregnancy tests on all women.",
+      "th": "เรา มักจะ ทำ การทดสอบ การตั้งครรภ์ ใน สตรี ทุกคน ตาม ปกติ   เนื่องจาก มี ยา บาง ชนิด ที่ ไม่สามารถ ให้กับ สตรี มีครรภ์ ได้",
+      "my": "ကျွန်တော် တို့ အမျိုးသမီး တိုင်း ကို ကိုယ်ဝန် ရှိ မရှိ စစ်ဆေး ပါ တယ် ၊ တချို့ ဆေး တွေ က ကိုယ်ဝန်ဆောင် အမျိုးသမီး များ ကို ပေး ဖို့ မသင့်တော် တာကြောင့် ဖြစ် ပါ တယ် ။"
+    },
+    "note": "English is a Quillbot paraphrase of the clinical handbook; Burmese was human-translated by university students; Thai is Google Translate output. Whitespace removed from Thai and Burmese for display."
+  },
+  "notes": ""
+}

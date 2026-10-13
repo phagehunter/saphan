@@ -1,0 +1,44 @@
+{
+  "id": "medication-002",
+  "domain": "medication",
+  "intent": "ask_drug_allergies",
+  "speaker": "provider",
+  "risk": "medium",
+  "expects": "yes_no",
+  "choices": [],
+  "pictogram": "💊",
+  "text": {
+    "en": "Are you allergic to any medications?",
+    "th": "คุณมีอาการแพ้ยาใดๆหรือไม่?",
+    "my": "ခင်ဗျားမှာဆေးတွေနဲ့ဓာတ်မတည့်မှုရှိလား။",
+    "mnw": null
+  },
+  "status": {
+    "en": "machine",
+    "th": "machine",
+    "my": "human",
+    "mnw": "draft"
+  },
+  "review": {},
+  "audio": {
+    "my": {
+      "file": "audio/my/medication-002.ogg",
+      "kind": "synthetic",
+      "voice": "facebook/mms-tts-mya",
+      "date": "2026-10-13"
+    },
+    "mnw": null
+  },
+  "source": {
+    "id": "mymedicon-text-v0.8",
+    "line": 871,
+    "license": "CC-BY-NC-SA-4.0",
+    "source_text": {
+      "en": "Are you allergic to any medications?",
+      "th": "คุณ มีอาการ แพ้ ยา ใด  ๆ  หรื อไม ่?",
+      "my": "ခင်ဗျား မှာ ဆေး တွေ နဲ့ ဓာတ်မတည့် မှု ရှိ လား ။"
+    },
+    "note": "English is a Quillbot paraphrase of the clinical handbook; Burmese was human-translated by university students; Thai is Google Translate output. Whitespace removed from Thai and Burmese for display."
+  },
+  "notes": ""
+}

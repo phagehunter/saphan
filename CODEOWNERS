@@ -1,0 +1,17 @@
+# Required reviewers by language. Replace the placeholders with real GitHub
+# user names once reviewers are confirmed (open question 11: none yet).
+# Until then the repository owner reviews everything.
+
+*                                   @phagehunter
+
+# Thai clinical text
+content/phrases/**                  @phagehunter   # TODO: add Thai clinician, e.g. @thai-reviewer
+
+# Burmese
+# content/phrases/**  @burmese-reviewer
+
+# Mon (Mon National Health Committee or Mon community reviewer)
+# content/phrases/**  @mon-reviewer
+
+# Audio recordings
+app/static/audio/**                 @phagehunter

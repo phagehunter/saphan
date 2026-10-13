@@ -1,0 +1,44 @@
+{
+  "id": "triage-009",
+  "domain": "triage",
+  "intent": "ask_chills",
+  "speaker": "provider",
+  "risk": "low",
+  "expects": "yes_no",
+  "choices": [],
+  "pictogram": "🥶",
+  "text": {
+    "en": "Are you shivering or do you have chills?",
+    "th": "คุณมีอาการหนาวสั่นหรือตัวสั่นหรือไม่?",
+    "my": "ခင်ဗျားချမ်းနေလားဒါမှမဟုတ်ခိုက်ခိုက်တုန်နေလား။",
+    "mnw": null
+  },
+  "status": {
+    "en": "machine",
+    "th": "machine",
+    "my": "human",
+    "mnw": "draft"
+  },
+  "review": {},
+  "audio": {
+    "my": {
+      "file": "audio/my/triage-009.ogg",
+      "kind": "synthetic",
+      "voice": "facebook/mms-tts-mya",
+      "date": "2026-10-13"
+    },
+    "mnw": null
+  },
+  "source": {
+    "id": "mymedicon-text-v0.8",
+    "line": 737,
+    "license": "CC-BY-NC-SA-4.0",
+    "source_text": {
+      "en": "Are you shivering or do you have chills?",
+      "th": "คุณ มีอาการ หนา วสั่ นหรื อตั วสั่ นหรื อไม ่?",
+      "my": "ခင်ဗျား ချမ်း နေ လား ဒါမှမဟုတ် ခိုက်ခိုက် တုန် နေ လား ။"
+    },
+    "note": "English is a Quillbot paraphrase of the clinical handbook; Burmese was human-translated by university students; Thai is Google Translate output. Whitespace removed from Thai and Burmese for display."
+  },
+  "notes": ""
+}

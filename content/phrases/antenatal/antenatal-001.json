@@ -1,0 +1,44 @@
+{
+  "id": "antenatal-001",
+  "domain": "antenatal",
+  "intent": "ask_last_period",
+  "speaker": "provider",
+  "risk": "low",
+  "expects": "date",
+  "choices": [],
+  "pictogram": "📆",
+  "text": {
+    "en": "When did you most recently get a period?",
+    "th": "ประจำเดือนครั้งสุดท้ายของคุณคือเมื่อไหร่?",
+    "my": "ခင်ဗျားနောက်ဆုံးရာသီလာတာဘယ်အချိန်ကပါလဲ။",
+    "mnw": null
+  },
+  "status": {
+    "en": "machine",
+    "th": "machine",
+    "my": "human",
+    "mnw": "draft"
+  },
+  "review": {},
+  "audio": {
+    "my": {
+      "file": "audio/my/antenatal-001.ogg",
+      "kind": "synthetic",
+      "voice": "facebook/mms-tts-mya",
+      "date": "2026-10-13"
+    },
+    "mnw": null
+  },
+  "source": {
+    "id": "mymedicon-text-v0.8",
+    "line": 2907,
+    "license": "CC-BY-NC-SA-4.0",
+    "source_text": {
+      "en": "When did you most recently get a period?",
+      "th": "ประจำเดือน ครั้ง สุดท้าย ของ คุ ณคื อเ มื่ อไ หร่?",
+      "my": "ခင်ဗျား နောက်ဆုံး ရာသီ လာ တာ ဘယ်အချိန် က ပါ လဲ ။"
+    },
+    "note": "English is a Quillbot paraphrase of the clinical handbook; Burmese was human-translated by university students; Thai is Google Translate output. Whitespace removed from Thai and Burmese for display."
+  },
+  "notes": ""
+}

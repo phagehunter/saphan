@@ -1,0 +1,40 @@
+import { sveltekit } from '@sveltejs/kit/vite';
+import tailwindcss from '@tailwindcss/vite';
+import { SvelteKitPWA } from '@vite-pwa/sveltekit';
+import { defineConfig } from 'vite';
+
+// Avoids a dependency on @types/node just for one environment variable.
+declare const process: { env: Record<string, string | undefined> };
+const base = process.env.BASE_PATH ?? '';
+
+export default defineConfig({
+	plugins: [
+		tailwindcss(),
+		sveltekit(),
+		SvelteKitPWA({
+			registerType: 'autoUpdate',
+			strategies: 'generateSW',
+			manifest: {
+				name: 'Saphan: health phrases Thai / Burmese / Mon',
+				short_name: 'Saphan',
+				description: 'Verified clinical phrases with audio for health volunteers. Works offline.',
+				start_url: `${base}/`,
+				scope: `${base}/`,
+				display: 'standalone',
+				background_color: '#f6f8f7',
+				theme_color: '#0f766e',
+				lang: 'th',
+				icons: [
+					{ src: 'icons/icon-192.svg', sizes: '192x192', type: 'image/svg+xml', purpose: 'any' },
+					{ src: 'icons/icon-512.svg', sizes: '512x512', type: 'image/svg+xml', purpose: 'any' }
+				]
+			},
+			workbox: {
+				// Precache everything the phrasebook needs, audio included, so Mode A works with no signal.
+				globPatterns: ['client/**/*.{js,css,ico,png,svg,woff2,json}', 'prerendered/**/*.html', 'client/audio/**/*.{wav,ogg,opus,mp3}'],
+				maximumFileSizeToCacheInBytes: 10 * 1024 * 1024
+			},
+			kit: { includeVersionFile: true }
+		})
+	]
+});

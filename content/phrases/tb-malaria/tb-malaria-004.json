@@ -1,0 +1,44 @@
+{
+  "id": "tb-malaria-004",
+  "domain": "tb-malaria",
+  "intent": "ask_weight_loss",
+  "speaker": "provider",
+  "risk": "low",
+  "expects": "yes_no",
+  "choices": [],
+  "pictogram": "⚖️",
+  "text": {
+    "en": "Has there been any weight loss?",
+    "th": "การลดน้ำหนักใดๆ?",
+    "my": "ကိုယ်အလေးချိန်လျော့လား။",
+    "mnw": null
+  },
+  "status": {
+    "en": "machine",
+    "th": "machine",
+    "my": "human",
+    "mnw": "draft"
+  },
+  "review": {},
+  "audio": {
+    "my": {
+      "file": "audio/my/tb-malaria-004.ogg",
+      "kind": "synthetic",
+      "voice": "facebook/mms-tts-mya",
+      "date": "2026-10-13"
+    },
+    "mnw": null
+  },
+  "source": {
+    "id": "mymedicon-text-v0.8",
+    "line": 521,
+    "license": "CC-BY-NC-SA-4.0",
+    "source_text": {
+      "en": "Has there been any weight loss?",
+      "th": "การ ลดน้ำหนัก ใด  ๆ  ?",
+      "my": "ကိုယ် အလေးချိန် လျော့ လား ။"
+    },
+    "note": "English is a Quillbot paraphrase of the clinical handbook; Burmese was human-translated by university students; Thai is Google Translate output. Whitespace removed from Thai and Burmese for display."
+  },
+  "notes": "Machine Thai is a fragment, not a question. Needs a Thai reviewer."
+}

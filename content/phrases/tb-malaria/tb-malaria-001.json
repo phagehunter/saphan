@@ -1,0 +1,44 @@
+{
+  "id": "tb-malaria-001",
+  "domain": "tb-malaria",
+  "intent": "ask_cough_onset",
+  "speaker": "provider",
+  "risk": "low",
+  "expects": "free",
+  "choices": [],
+  "pictogram": "😮‍💨",
+  "text": {
+    "en": "When did you first begin to cough?",
+    "th": "คุณเริ่มไอเมื่อไหร่?",
+    "my": "ခင်ဗျားဘယ်အချိန်ကချောင်းစဆိုးခဲ့တာလဲ။",
+    "mnw": null
+  },
+  "status": {
+    "en": "machine",
+    "th": "machine",
+    "my": "human",
+    "mnw": "draft"
+  },
+  "review": {},
+  "audio": {
+    "my": {
+      "file": "audio/my/tb-malaria-001.ogg",
+      "kind": "synthetic",
+      "voice": "facebook/mms-tts-mya",
+      "date": "2026-10-13"
+    },
+    "mnw": null
+  },
+  "source": {
+    "id": "mymedicon-text-v0.8",
+    "line": 624,
+    "license": "CC-BY-NC-SA-4.0",
+    "source_text": {
+      "en": "When did you first begin to cough?",
+      "th": "คุณ เร ิ่ มไ อเ มื่ อไ หร่?",
+      "my": "ခင်ဗျား ဘယ် အချိန် က ချောင်း စ ဆိုး ခဲ့ တာ လဲ ။"
+    },
+    "note": "English is a Quillbot paraphrase of the clinical handbook; Burmese was human-translated by university students; Thai is Google Translate output. Whitespace removed from Thai and Burmese for display."
+  },
+  "notes": ""
+}

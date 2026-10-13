@@ -1,0 +1,47 @@
+{
+  "id": "triage-007",
+  "domain": "triage",
+  "intent": "ask_onset_gradual_sudden",
+  "speaker": "provider",
+  "risk": "low",
+  "expects": "choice",
+  "choices": [
+    "slowly",
+    "suddenly"
+  ],
+  "pictogram": "📈",
+  "text": {
+    "en": "Did it start out slowly or all of a sudden?",
+    "th": "มันมาแบบค่อยเป็นค่อยไปหรือกะทันหัน?",
+    "my": "အဲဒါကတဖြည်းဖြည်းဖြစ်ပေါ်လာတာလားဒါမှမဟုတ်ရုတ်တရက်လား။",
+    "mnw": null
+  },
+  "status": {
+    "en": "machine",
+    "th": "machine",
+    "my": "human",
+    "mnw": "draft"
+  },
+  "review": {},
+  "audio": {
+    "my": {
+      "file": "audio/my/triage-007.ogg",
+      "kind": "synthetic",
+      "voice": "facebook/mms-tts-mya",
+      "date": "2026-10-13"
+    },
+    "mnw": null
+  },
+  "source": {
+    "id": "mymedicon-text-v0.8",
+    "line": 625,
+    "license": "CC-BY-NC-SA-4.0",
+    "source_text": {
+      "en": "Did it start out slowly or all of a sudden?",
+      "th": "มัน มา แบ บค่อ ยเป็ นค่อ ยไ ปหรื อก ะทั นหั น?",
+      "my": "အဲဒါ က တဖြည်းဖြည်း ဖြစ် ပေါ် လာ တာ လား ဒါမှမဟုတ် ရုတ်တရက် လား ။"
+    },
+    "note": "English is a Quillbot paraphrase of the clinical handbook; Burmese was human-translated by university students; Thai is Google Translate output. Whitespace removed from Thai and Burmese for display."
+  },
+  "notes": ""
+}

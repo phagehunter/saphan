@@ -1,0 +1,44 @@
+{
+  "id": "triage-006",
+  "domain": "triage",
+  "intent": "ask_point_to_pain",
+  "speaker": "provider",
+  "risk": "low",
+  "expects": "none",
+  "choices": [],
+  "pictogram": "👉",
+  "text": {
+    "en": "Can you point with one finger to where the pain is?",
+    "th": "คุณช่วยชี้ด้วยนิ้วเดียวไปยังจุดที่ปวดได้ไหม?",
+    "my": "ခင်ဗျားလက်တစ်ချောင်းနဲ့နာကျင်မှုကဘယ်နားမှာလဲဆိုတာပြနိုင်မလား။",
+    "mnw": null
+  },
+  "status": {
+    "en": "machine",
+    "th": "machine",
+    "my": "human",
+    "mnw": "draft"
+  },
+  "review": {},
+  "audio": {
+    "my": {
+      "file": "audio/my/triage-006.ogg",
+      "kind": "synthetic",
+      "voice": "facebook/mms-tts-mya",
+      "date": "2026-10-13"
+    },
+    "mnw": null
+  },
+  "source": {
+    "id": "mymedicon-text-v0.8",
+    "line": 470,
+    "license": "CC-BY-NC-SA-4.0",
+    "source_text": {
+      "en": "Can you point with one finger to where the pain is ?",
+      "th": "คุณ ช่วย ชี้ ด้วย นิ้ว เดียว ไปยัง จุด ที่ ปวด ได้ ไห ม?",
+      "my": "ခင်ဗျား လက်တစ်ချောင်း နဲ့ နာကျင် မှု က ဘယ်နား မှာ လဲ ဆို တာ ပြ နိုင် မလား ။"
+    },
+    "note": "English is a Quillbot paraphrase of the clinical handbook; Burmese was human-translated by university students; Thai is Google Translate output. Whitespace removed from Thai and Burmese for display."
+  },
+  "notes": ""
+}

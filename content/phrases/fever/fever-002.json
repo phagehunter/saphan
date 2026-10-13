@@ -1,0 +1,33 @@
+{
+  "id": "fever-002",
+  "domain": "fever",
+  "intent": "primaquine_full_14_days",
+  "speaker": "provider",
+  "risk": "high",
+  "expects": "none",
+  "choices": [],
+  "pictogram": "💊",
+  "text": {
+    "en": "Take the malaria tablets every day for all 14 days, even when you feel well.",
+    "th": "กินยามาลาเรียทุกวันให้ครบ 14 วัน แม้จะรู้สึกดีขึ้นแล้ว",
+    "my": null,
+    "mnw": null
+  },
+  "status": {
+    "en": "draft",
+    "th": "draft",
+    "my": "draft",
+    "mnw": "draft"
+  },
+  "review": {},
+  "audio": {
+    "my": null,
+    "mnw": null
+  },
+  "source": {
+    "id": "saphan-authored",
+    "license": "CC-BY-NC-SA-4.0",
+    "note": "Written 2026-10-13 from the disease-burden report. English and Thai are unreviewed drafts by the scaffold author."
+  },
+  "notes": "P. vivax is about 90 percent of Thai cases; relapse prevention depends on completing primaquine. Dose itself is never in a phrase. This record is skipped at build until Burmese or Mon reaches status 'human'."
+}

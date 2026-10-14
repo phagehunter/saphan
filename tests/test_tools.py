@@ -146,6 +146,18 @@ class BuildTests(unittest.TestCase):
         out = build.compile_phrase(rec)
         self.assertNotIn("locked", out["lang"]["my"])
 
+    def test_thai_mon_variant_carried_with_lock_flag(self):
+        rec = copy.deepcopy(SAMPLE)
+        rec["text"]["mnw"] = "ၚ"
+        rec["status"]["mnw"] = "human"
+        rec["review"]["mnw"] = {"reviewer": "Test Person", "role": "native-speaker", "date": "2026-10-14"}
+        rec["variants"] = {"mnw-TH": {"text": "ၚၚ", "status": "draft"}}
+        out = build.compile_phrase(rec)
+        self.assertTrue(out["lang"]["mnw"]["variant_th"]["locked"])
+        rec["variants"]["mnw-TH"] = {"text": "ၚၚ", "status": "human", "review": {"reviewer": "T", "role": "native-speaker", "date": "2026-10-14"}}
+        out = build.compile_phrase(rec)
+        self.assertFalse(out["lang"]["mnw"]["variant_th"]["locked"])
+
     def test_machine_only_patient_text_is_skipped(self):
         rec = copy.deepcopy(SAMPLE)
         rec["status"]["my"] = "machine"

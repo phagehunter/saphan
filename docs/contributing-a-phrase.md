@@ -58,9 +58,10 @@ fluent Thai speaker and you add a review record), and open a pull request.
 
 ## C. Record audio
 
-Open the app, go to Record, choose the phrase and your language, record, save
-the file, and email it to the maintainer or attach it to a pull request. The
-maintainer converts it and adds it to `app/static/audio/<lang>/`.
+Open the app, go to Record, choose the phrase and the language (Burmese, Mon, or Mon in the
+Thai-side wording), record, save the file, and email it to the maintainer or attach it to a
+pull request. The maintainer converts it and adds it to `app/static/audio/<lang>/` (Thai-side
+Mon clips go under `audio/mnw/<id>.th.ogg` and into `variants.mnw-TH.audio`).
 
 ## What the checker refuses
 

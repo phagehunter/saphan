@@ -79,7 +79,7 @@
 				{:else}
 					<AudioButton clip={e.audio} />
 				{/if}
-				{#if e.variant_th}
+				{#if e.variant_th && !e.variant_th.locked}
 					<div class="card-flat p-3 mt-1" style="background: var(--surface-2)">
 						<p class="text-xs font-semibold uppercase tracking-wide mb-1" style="color: var(--muted)">{$t('thai_mon_wording')}</p>
 						<p class="font-my text-xl" lang="mnw">{e.variant_th.display}</p>

@@ -67,8 +67,12 @@ def compile_phrase(rec: dict) -> dict | None:
             entry["reviewed_by"] = f"{r['reviewer']} ({r['role']}, {r['date']})"
         if lang == "mnw" and "mnw-TH" in rec.get("variants", {}):
             var = rec["variants"]["mnw-TH"]
-            if STATUS_RANK[var["status"]] >= need:
-                entry["variant_th"] = {"text": var["text"], "display": with_zwsp(var["text"], "mnw"), "status": var["status"], "audio": var.get("audio")}
+            locked = STATUS_RANK[var["status"]] < need
+            entry["variant_th"] = {
+                "text": var["text"], "display": with_zwsp(var["text"], "mnw"), "status": var["status"],
+                "audio": None if locked else var.get("audio"), "locked": locked,
+                "lock_reason": ("needs_clinical_review" if rec["risk"] == "high" else "unreviewed") if locked else None,
+            }
         langs[lang] = entry
     return {
         "id": rec["id"],

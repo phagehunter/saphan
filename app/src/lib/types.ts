@@ -19,7 +19,7 @@ export interface LangEntry {
 	lock_reason?: 'unreviewed' | 'needs_clinical_review';
 	audio?: AudioClip | null;
 	reviewed_by?: string;
-	variant_th?: { text: string; display: string; status: Status; audio?: AudioClip | null };
+	variant_th?: { text: string; display: string; status: Status; audio?: AudioClip | null; locked?: boolean; lock_reason?: 'unreviewed' | 'needs_clinical_review' | null };
 }
 
 export interface Phrase {

@@ -11,7 +11,7 @@
     "en": "Are you coughing?",
     "th": "คุณมีอาการไอหรือไม่?",
     "my": "ခင်ဗျားချောင်းဆိုးလား။",
-    "mnw": null
+    "mnw": "ဗှ်ေ သ္ဍက် ဟာ"
   },
   "status": {
     "en": "machine",
@@ -40,5 +40,12 @@
     },
     "note": "English is a Quillbot paraphrase of the clinical handbook; Burmese was human-translated by university students; Thai is Google Translate output. Whitespace removed from Thai and Burmese for display."
   },
-  "notes": ""
+  "notes": " Mon text (main and mnw-TH) is a maintainer-assembled draft from dictionary entries (ဗှ်ေ you, သ္ဍက် to cough, ဟာ question particle), not a translation by a Mon speaker. Status draft keeps it away from patients until reviewed.",
+  "variants": {
+    "mnw-TH": {
+      "text": "ဗှ်ေ သ္ဍက် ဟာ",
+      "status": "draft",
+      "note": "SAMPLE ONLY, added 2026-10-14 to demonstrate the Thai-side wording field. Same words as the main Mon draft; a Sangkhlaburi Mon speaker should replace it with the local way of asking \"Are you coughing?\" and name themselves as reviewer."
+    }
+  }
 }

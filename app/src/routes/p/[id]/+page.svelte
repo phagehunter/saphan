@@ -79,11 +79,18 @@
 				{:else}
 					<AudioButton clip={e.audio} />
 				{/if}
-				{#if e.variant_th && !e.variant_th.locked}
+				{#if e.variant_th}
 					<div class="card-flat p-3 mt-1" style="background: var(--surface-2)">
-						<p class="text-xs font-semibold uppercase tracking-wide mb-1" style="color: var(--muted)">{$t('thai_mon_wording')}</p>
-						<p class="font-my text-xl" lang="mnw">{e.variant_th.display}</p>
-						{#if !e.locked}<AudioButton clip={e.variant_th.audio} />{/if}
+						<div class="flex items-center justify-between mb-1">
+							<p class="text-xs font-semibold uppercase tracking-wide" style="color: var(--muted)">{$t('thai_mon_wording')}</p>
+							<StatusBadge status={e.variant_th.status} />
+						</div>
+						<p class="font-my text-xl" lang="mnw" style={e.variant_th.locked ? 'color: var(--lock)' : ''}>{e.variant_th.display}</p>
+						{#if e.variant_th.locked}
+							<p class="text-xs mt-1" style="color: var(--lock)">🔒 {$t(e.variant_th.lock_reason === 'needs_clinical_review' ? 'locked_clinical' : 'locked_unreviewed')}</p>
+						{:else}
+							<AudioButton clip={e.variant_th.audio} />
+						{/if}
 					</div>
 				{/if}
 			{:else}

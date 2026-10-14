@@ -1051,13 +1051,24 @@
      }
     },
     "mnw": {
-     "text": null,
+     "text": "ဗှ်ေ သ္ဍက် ဟာ",
      "status": "draft",
-     "display": null
+     "display": "ဗှ်ေ သ္ဍက် ဟာ",
+     "locked": true,
+     "lock_reason": "unreviewed",
+     "audio": null,
+     "variant_th": {
+      "text": "ဗှ်ေ သ္ဍက် ဟာ",
+      "display": "ဗှ်ေ သ္ဍက် ဟာ",
+      "status": "draft",
+      "audio": null,
+      "locked": true,
+      "lock_reason": "unreviewed"
+     }
     }
    },
    "source": "mymedicon-text-v0.8",
-   "notes": ""
+   "notes": " Mon text (main and mnw-TH) is a maintainer-assembled draft from dictionary entries (ဗှ်ေ you, သ္ဍက် to cough, ဟာ question particle), not a translation by a Mon speaker. Status draft keeps it away from patients until reviewed."
   },
   {
    "id": "triage-005",

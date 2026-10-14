@@ -8,6 +8,9 @@ declare const process: { env: Record<string, string | undefined> };
 const base = process.env.BASE_PATH ?? '';
 
 export default defineConfig({
+	// transformers.js is browser-only here and large; load it lazily, never during prerender.
+	optimizeDeps: { exclude: ['@huggingface/transformers'] },
+	ssr: { external: ['@huggingface/transformers'] },
 	plugins: [
 		tailwindcss(),
 		sveltekit(),
@@ -33,8 +36,14 @@ export default defineConfig({
 				// Precache everything the phrasebook needs, audio included, so Mode A works with no signal.
 				globPatterns: ['client/**/*.{js,css,ico,png,svg,woff2,json}', 'prerendered/**/*.html', 'client/audio/**/*.{wav,ogg,opus,mp3}'],
 				// The 2.9 MB lexicon is a reviewer tool: fetched on first open, then kept offline.
-				globIgnores: ['client/lexicon/**'],
+				globIgnores: ['client/lexicon/**', 'client/ort/**'],
 				runtimeCaching: [
+					{
+						// ONNX runtime WASM (ours) and Whisper model files (Hugging Face): cache after first download.
+						urlPattern: ({ url }) => url.pathname.includes('/ort/') || url.hostname === 'huggingface.co' || url.hostname.endsWith('.hf.co'),
+						handler: 'CacheFirst',
+						options: { cacheName: 'saphan-models', expiration: { maxEntries: 40, maxAgeSeconds: 60 * 60 * 24 * 365 }, cacheableResponse: { statuses: [0, 200] } }
+					},
 					{
 						urlPattern: ({ url }) => url.pathname.includes('/lexicon/') && url.pathname.endsWith('.json'),
 						handler: 'CacheFirst',

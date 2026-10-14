@@ -77,14 +77,14 @@ export class WebSpeechEngine implements SpeechEngine {
 }
 
 export interface OnDeviceConfig {
-	enabled: boolean;      // feature flag: false until the transformers.js package is approved and installed
+	enabled: boolean;      // feature flag; the transformers.js package was approved and installed 2026-10-14
 	modelId: string;       // e.g. 'onnx-community/whisper-base' or a Thai fine-tune exported to ONNX
 	approxMB: number;
 	minDeviceMemoryGB: number;
 }
 
 export const ON_DEVICE: OnDeviceConfig = {
-	enabled: false,
+	enabled: true,
 	modelId: 'onnx-community/whisper-base',
 	approxMB: 80,
 	minDeviceMemoryGB: 3
@@ -128,6 +128,11 @@ export class OnDeviceEngine implements SpeechEngine {
 					audio.set(c, o);
 					o += c.length;
 				}
+				// Whisper invents text on silence, so refuse clips with almost no energy.
+				let energy = 0;
+				for (let i = 0; i < audio.length; i++) energy += audio[i] * audio[i];
+				const rms = Math.sqrt(energy / Math.max(1, audio.length));
+				if (audio.length < 16000 * 0.5 || rms < 0.005) return onError('No speech heard.');
 				try {
 					const { transcribe } = await import('./ondevice');
 					onFinal(await transcribe(audio, lang, ON_DEVICE.modelId, onPartial));

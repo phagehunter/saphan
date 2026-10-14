@@ -1,4 +1,7 @@
-# pnpm 11 blocks dependency install scripts unless allowed here. esbuild needs its script
-# to place its platform binary; nothing else does.
+# pnpm 11 blocks dependency install scripts unless decided here. esbuild needs its script to
+# place its platform binary. onnxruntime-node and protobufjs are Node-only parts of
+# @huggingface/transformers; the app uses the browser (WASM) backend, so their scripts stay off.
 allowBuilds:
   esbuild: true
+  onnxruntime-node: false
+  protobufjs: false

@@ -8,7 +8,8 @@ carries a visible review badge, and nothing unreviewed ever reaches a patient.
 Status: **scaffold with a worked example**. 34 phrases across four topics,
 seeded from the myMediCon medical text corpus, a validator, a build step, the
 app's phrasebook mode working end to end with synthetic Burmese audio, a 26,857-entry Mon
-lexicon for reviewers, and the speech and free-text modes present as labeled stubs. Builds and type-checks
+lexicon for reviewers, Thai speech search (Mode B) using the phone's built-in recognizer,
+and the free-text mode present as a labeled stub. Builds and type-checks
 clean. Not deployed. No partners confirmed. Mon slots empty.
 
 Working name only. See `docs/2026-10-13-decisions.md`.
@@ -87,6 +88,20 @@ It uses Meta's MMS voices (CC BY-NC 4.0), writes Opus clips, and marks every
 clip "computer voice" in the app. Run it with `--lang mnw` once Mon text exists.
 On a fresh clone, recreate the environment first: `uv venv .venv-tts --python 3.12`
 then `uv pip install --python .venv-tts/bin/python torch transformers scipy soundfile`.
+
+## Mode B: speech search
+
+The Listen tab turns spoken or typed Thai (or English) into a ranked list of verified phrases.
+Matching compares character bigrams, which is why it copes with Thai's missing word spaces and
+with recognizer quirks. Two engines, picked automatically:
+
+- the phone's built-in recognizer (Chrome on Android), zero download, needs a connection,
+  labeled "online" because the audio goes to the phone maker's service;
+- on-device Whisper via transformers.js, downloaded once, works offline afterwards. Behind a
+  feature flag until the `@huggingface/transformers` package is approved; see
+  `app/src/lib/speech/ondevice.ts` for the three-step switch-on.
+
+Matcher tests: `pnpm run test` in `app/` (Node's built-in test runner, no extra packages).
 
 ## Add a phrase or a translation
 

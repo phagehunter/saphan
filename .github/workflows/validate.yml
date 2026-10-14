@@ -44,6 +44,8 @@ jobs:
       - run: python3 -m tools.build
       - run: pnpm run check
         working-directory: app
+      - run: pnpm run test
+        working-directory: app
       - run: pnpm run build
         working-directory: app
         env:

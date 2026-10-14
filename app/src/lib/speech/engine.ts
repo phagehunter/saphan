@@ -86,9 +86,10 @@ export interface OnDeviceConfig {
 
 export const ON_DEVICE: OnDeviceConfig = {
 	enabled: true,
-	modelId: 'onnx-community/whisper-base',
+	// Thai fine-tune (Thonburian Whisper small) converted 2026-10-14; see docs/mode-b-on-device.md.
+	modelId: 'phagehunter/whisper-th-small-onnx',
 	dtype: 'q8',
-	approxMB: 80,
+	approxMB: 290,
 	minDeviceMemoryGB: 3
 };
 

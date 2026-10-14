@@ -7,9 +7,9 @@
  * WebAssembly files are served from this site (static/ort/), not from a CDN, for the same
  * reason.
  *
- * Model: 'onnx-community/whisper-base' (multilingual). Thai accuracy zero-shot is mediocre;
- * the real target is a Thai fine-tune (Thonburian Whisper small) exported to ONNX, which needs
- * a one-time conversion on a laptop (see docs/mode-b-on-device.md).
+ * Model: 'phagehunter/whisper-th-small-onnx', our browser conversion of Thonburian Whisper
+ * small (Thai fine-tune, Apache-2.0). The multilingual 'onnx-community/whisper-base' still
+ * works as a fallback id. See docs/mode-b-on-device.md.
  */
 import { base } from '$app/paths';
 

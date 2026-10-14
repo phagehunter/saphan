@@ -6,19 +6,21 @@ Enabled 2026-10-14 after the project lead approved the `@huggingface/transformer
 ## What happens on the phone
 1. The Listen tab prefers the on-device engine when the phone reports at least 3 GB of memory
    and has a microphone API; otherwise it falls back to the phone's built-in recognizer.
-2. On the first tap, the app downloads the Whisper model (`onnx-community/whisper-base`,
-   about 80 MB in 8-bit form) from the Hugging Face Hub and the ONNX runtime (14 MB, served
-   from this site under `/ort/`). Both are kept in the browser's cache, so later use is offline.
+2. On the first tap, the app downloads the Thai Whisper model
+   (`phagehunter/whisper-th-small-onnx`, 8-bit, about 290 MB) from the Hugging Face Hub and
+   the ONNX runtime (14 to 27 MB depending on the browser, served from this site under `/ort/`).
+   Both are kept in the browser's cache, so later use is offline. Best done on Wi-Fi.
 3. Audio is captured at 16 kHz for up to 8 seconds (or until Stop), transcribed in a
    WebAssembly worker, and matched against the verified phrases. The raw transcript is shown
    to the volunteer only.
 
 ## Expectations
-- `whisper-base` is multilingual and was not tuned for Thai. Expect rough transcripts on
-  short clinic phrases; the bigram matcher tolerates a lot, but a Thai-tuned model will do
-  far better.
-- Transcribing 5 seconds of audio takes several seconds on a mid-range phone in WebAssembly.
-  WebGPU would be faster but is rare on low-end Android; the engine asks for `wasm`.
+- The model is Thonburian Whisper small, tuned for Thai (WER 13 on Common Voice). In our
+  browser test it got three clinic sentences nearly right and the matcher found the correct
+  phrase first every time.
+- Transcribing a 3-second clip took about 8.5 s on a laptop in WebAssembly; expect 15 to 30 s
+  on a mid-range phone. WebGPU would be faster but is rare on low-end Android; the engine asks
+  for `wasm`. The phone's built-in recognizer remains the fast, online alternative.
 
 ## Thai-tuned model: converted 2026-10-14
 
@@ -30,8 +32,10 @@ In the browser it transcribed three synthetic Thai clinic sentences nearly perfe
 (about 8.5 s per clip on a laptop; the matcher found the right phrase first every time, 82-92%).
 Sizes: 8-bit 92 MB encoder + 195 MB decoder; 4-bit 60 MB + 137 MB (slower, same accuracy).
 
-To switch the app to it once the files are hosted: set `ON_DEVICE.modelId` to the Hub repo id
-(or to a folder name under `/models/` on this site), `dtype: 'q8'`, and `approxMB: 290`.
+Hosted at https://huggingface.co/phagehunter/whisper-th-small-onnx (Apache-2.0) and wired in as
+`ON_DEVICE.modelId` with `dtype: 'q8'`, `approxMB: 290`. To test a newer conversion before
+uploading, drop the folder under `app/static/models/<name>/` (git-ignored) and set `modelId`
+to `<name>`.
 
 ## How the conversion was done (for the record)
 Thonburian Whisper small (`biodatlab/whisper-th-small-combined`, Apache-2.0, WER 13 on

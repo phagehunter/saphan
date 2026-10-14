@@ -97,9 +97,9 @@ with recognizer quirks. Two engines, picked automatically:
 
 - the phone's built-in recognizer (Chrome on Android), zero download, needs a connection,
   labeled "online" because the audio goes to the phone maker's service;
-- on-device Whisper via transformers.js, downloaded once, works offline afterwards. Behind a
-  feature flag until the `@huggingface/transformers` package is approved; see
-  `app/src/lib/speech/ondevice.ts` for the three-step switch-on.
+- on-device Thai Whisper (Thonburian Whisper small converted to ONNX, hosted at
+  huggingface.co/phagehunter/whisper-th-small-onnx), about 290 MB downloaded once, works
+  offline afterwards; see `docs/mode-b-on-device.md`.
 
 Matcher tests: `pnpm run test` in `app/` (Node's built-in test runner, no extra packages).
 

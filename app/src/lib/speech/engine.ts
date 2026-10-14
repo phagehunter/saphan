@@ -78,7 +78,8 @@ export class WebSpeechEngine implements SpeechEngine {
 
 export interface OnDeviceConfig {
 	enabled: boolean;      // feature flag; the transformers.js package was approved and installed 2026-10-14
-	modelId: string;       // e.g. 'onnx-community/whisper-base' or a Thai fine-tune exported to ONNX
+	modelId: string;       // Hub id (with '/') or a folder under /models/ on this site (no '/')
+	dtype: 'q8' | 'q4' | 'fp32';
 	approxMB: number;
 	minDeviceMemoryGB: number;
 }
@@ -86,6 +87,7 @@ export interface OnDeviceConfig {
 export const ON_DEVICE: OnDeviceConfig = {
 	enabled: true,
 	modelId: 'onnx-community/whisper-base',
+	dtype: 'q8',
 	approxMB: 80,
 	minDeviceMemoryGB: 3
 };
@@ -135,7 +137,7 @@ export class OnDeviceEngine implements SpeechEngine {
 				if (audio.length < 16000 * 0.5 || rms < 0.005) return onError('No speech heard.');
 				try {
 					const { transcribe } = await import('./ondevice');
-					onFinal(await transcribe(audio, lang, ON_DEVICE.modelId, onPartial));
+					onFinal(await transcribe(audio, lang, ON_DEVICE.modelId, onPartial, ON_DEVICE.dtype));
 				} catch (e) {
 					onError('On-device transcription failed: ' + (e as Error).message);
 				}

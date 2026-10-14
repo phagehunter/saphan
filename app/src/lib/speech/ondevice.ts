@@ -19,18 +19,26 @@ type Pipe = (audio: Float32Array, opts: Record<string, unknown>) => Promise<{ te
 let pipePromise: Promise<Pipe> | null = null;
 let loadedModel = '';
 
-async function load(modelId: string, onProgress?: (msg: string) => void): Promise<Pipe> {
-	if (pipePromise && loadedModel === modelId) return pipePromise;
-	loadedModel = modelId;
+export type Dtype = 'q8' | 'q4' | 'fp32';
+
+async function load(modelId: string, onProgress?: (msg: string) => void, dtype: Dtype = 'q8'): Promise<Pipe> {
+	const key = `${modelId}@${dtype}`;
+	if (pipePromise && loadedModel === key) return pipePromise;
+	loadedModel = key;
 	pipePromise = (async () => {
 		const tf = await import('@huggingface/transformers');
-		tf.env.allowLocalModels = false;
+		// A model id with a slash is a Hugging Face Hub repo; without one it is a folder served by
+		// this site under /models/<id>/ (used for our own converted Thai model).
+		const hub = modelId.includes('/');
+		tf.env.allowRemoteModels = hub;
+		tf.env.allowLocalModels = !hub;
+		tf.env.localModelPath = `${base}/models/`;
 		tf.env.useBrowserCache = true;
 		// Serve the WASM runtime from our own origin so the PWA stays self-contained.
 		tf.env.backends.onnx.wasm!.wasmPaths = `${base}/ort/`;
 		const seen = new Map<string, number>();
 		const asr = await tf.pipeline('automatic-speech-recognition', modelId, {
-			dtype: 'q8',
+			dtype,
 			device: 'wasm',
 			progress_callback: (p: { status: string; file?: string; progress?: number }) => {
 				if (p.status === 'progress' && p.file) {
@@ -49,9 +57,10 @@ export async function transcribe(
 	audio16k: Float32Array,
 	lang: 'th' | 'en' | 'my',
 	modelId: string,
-	onProgress?: (msg: string) => void
+	onProgress?: (msg: string) => void,
+	dtype: Dtype = 'q8'
 ): Promise<string> {
-	const asr = await load(modelId, onProgress);
+	const asr = await load(modelId, onProgress, dtype);
 	onProgress?.('Transcribing…');
 	const out = await asr(audio16k, { language: WHISPER_LANG[lang], task: 'transcribe', chunk_length_s: 30 });
 	const text = Array.isArray(out) ? out.map((o) => o.text).join(' ') : out.text;
@@ -59,6 +68,6 @@ export async function transcribe(
 }
 
 /** Lets the Listen screen pre-download the model on request (e.g. while on Wi-Fi). */
-export async function prefetch(modelId: string, onProgress?: (msg: string) => void) {
-	await load(modelId, onProgress);
+export async function prefetch(modelId: string, onProgress?: (msg: string) => void, dtype: Dtype = 'q8') {
+	await load(modelId, onProgress, dtype);
 }

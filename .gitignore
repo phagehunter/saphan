@@ -17,3 +17,6 @@ app/.env.*
 
 # Copied from node_modules at build time (scripts/copy-ort.mjs)
 app/static/ort/
+
+# Local model test files (large; hosted elsewhere in production)
+app/static/models/

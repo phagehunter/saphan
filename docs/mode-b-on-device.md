@@ -20,7 +20,20 @@ Enabled 2026-10-14 after the project lead approved the `@huggingface/transformer
 - Transcribing 5 seconds of audio takes several seconds on a mid-range phone in WebAssembly.
   WebGPU would be faster but is rare on low-end Android; the engine asks for `wasm`.
 
-## Upgrading to a Thai-tuned model (one-time, on a laptop)
+## Thai-tuned model: converted 2026-10-14
+
+Thonburian Whisper small was exported and quantized on the project lead's Mac (approved
+packages: optimum, onnx, onnxruntime, onnx-ir, torch, transformers in `.venv-export`). The
+converted model lives outside the repository in
+`project_myMediCon/2026-10-14-whisper-th-small-onnx/` with its own README and test results.
+In the browser it transcribed three synthetic Thai clinic sentences nearly perfectly at 8-bit
+(about 8.5 s per clip on a laptop; the matcher found the right phrase first every time, 82-92%).
+Sizes: 8-bit 92 MB encoder + 195 MB decoder; 4-bit 60 MB + 137 MB (slower, same accuracy).
+
+To switch the app to it once the files are hosted: set `ON_DEVICE.modelId` to the Hub repo id
+(or to a folder name under `/models/` on this site), `dtype: 'q8'`, and `approxMB: 290`.
+
+## How the conversion was done (for the record)
 Thonburian Whisper small (`biodatlab/whisper-th-small-combined`, Apache-2.0, WER 13 on
 Common Voice) is the target. It ships as PyTorch weights, so it must be exported to ONNX once:
 

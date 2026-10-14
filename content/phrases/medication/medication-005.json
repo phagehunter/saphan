@@ -6,7 +6,7 @@
   "risk": "high",
   "expects": "none",
   "choices": [],
-  "pictogram": "📅",
+  "pictogram": "hi:objects/calendar",
   "text": {
     "en": "Always take your medication as directed; try to take it at the same time every day and don't miss any doses.",
     "th": "ใช้ยาตามที่กำหนดอย่าพลาดปริมาณใดๆและพยายามใช้ยานี้ในเวลาเดียวกันทุกวัน",

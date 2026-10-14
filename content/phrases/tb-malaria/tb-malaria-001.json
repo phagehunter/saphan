@@ -6,7 +6,7 @@
   "risk": "low",
   "expects": "free",
   "choices": [],
-  "pictogram": "😮‍💨",
+  "pictogram": "hi:conditions/coughing-alt",
   "text": {
     "en": "When did you first begin to cough?",
     "th": "คุณเริ่มไอเมื่อไหร่?",

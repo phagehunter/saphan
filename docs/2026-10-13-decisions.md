@@ -18,5 +18,5 @@ Recorded here so nobody has to reconstruct them from chat.
 | 11 | No reviewers confirmed yet. CODEOWNERS holds placeholders; all `human` statuses in the seed rest on the corpus's documented human translation, not on a project reviewer. |
 | 12 | Low-end Android only. iPhone is not a target; nothing prevents it from working there. |
 | 13 | No usage logging. Favorites and recents stay in the phone's local database. |
-| 14 | Pictograms: emoji for the scaffold (zero download, every phone has them); Health Icons (MIT) planned as the upgrade. |
+| 14 | Pictograms: emoji for the scaffold; replaced 2026-10-14 by Health Icons (CC0), inlined and colored with CSS, emoji kept as fallback. |
 | 15 | Synthetic placeholder clips with Meta MMS voices, labeled "computer voice". Script written, not yet run (needs install approval). |

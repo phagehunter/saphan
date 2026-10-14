@@ -150,6 +150,10 @@ def check_phrase(path: Path, schema: dict, sources: dict) -> tuple[list[str], li
         if unverified:
             warns.append(f"{where}: high-risk phrase; patient output stays locked for {unverified} until clinically verified")
 
+    pic = rec["pictogram"]
+    if pic.startswith("hi:") and not (CONTENT / "icons" / "healthicons" / (pic[3:].replace("/", "__") + ".svg")).exists():
+        errors.append(f"{where}: pictogram '{pic}' has no file in content/icons/healthicons/")
+
     if rec["domain"] not in DOMAIN_IDS:
         errors.append(f"{where}: domain '{rec['domain']}' is not listed in content/domains.json")
 

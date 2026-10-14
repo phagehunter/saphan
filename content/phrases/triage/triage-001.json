@@ -6,7 +6,7 @@
   "risk": "low",
   "expects": "none",
   "choices": [],
-  "pictogram": "👋",
+  "pictogram": "hi:people/health-worker",
   "text": {
     "en": "Hi there",
     "th": "สวัสดี",

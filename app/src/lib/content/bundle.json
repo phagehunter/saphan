@@ -1,9 +1,9 @@
 {
- "version": "2026-10-13",
+ "version": "2026-10-14",
  "domains": [
   {
    "id": "fever",
-   "pictogram": "🌡️",
+   "pictogram": "hi:devices/thermometer",
    "label": {
     "en": "Fever: malaria and dengue",
     "th": "ไข้ มาลาเรีย ไข้เลือดออก",
@@ -15,7 +15,7 @@
   },
   {
    "id": "antenatal",
-   "pictogram": "🤰",
+   "pictogram": "hi:people/pregnant",
    "label": {
     "en": "Pregnancy and birth",
     "th": "ฝากครรภ์และคลอด",
@@ -27,7 +27,7 @@
   },
   {
    "id": "child-health",
-   "pictogram": "👶",
+   "pictogram": "hi:devices/syringe-vaccine",
    "label": {
     "en": "Children and vaccines",
     "th": "เด็กและวัคซีน",
@@ -39,7 +39,7 @@
   },
   {
    "id": "injury",
-   "pictogram": "🩹",
+   "pictogram": "hi:objects/bandage-adhesive",
    "label": {
     "en": "Injury, first aid, snakebite",
     "th": "บาดเจ็บ ปฐมพยาบาล งูกัด",
@@ -51,7 +51,7 @@
   },
   {
    "id": "pharmacy",
-   "pictogram": "💊",
+   "pictogram": "hi:medications/medicines",
    "label": {
     "en": "Pharmacy and medicines",
     "th": "ยาและการใช้ยา",
@@ -63,7 +63,7 @@
   },
   {
    "id": "triage",
-   "pictogram": "🩺",
+   "pictogram": "hi:devices/stethoscope",
    "label": {
     "en": "Triage and symptoms",
     "th": "คัดกรองและอาการ",
@@ -75,7 +75,7 @@
   },
   {
    "id": "tb-malaria",
-   "pictogram": "🦟",
+   "pictogram": "hi:zoonoses/mosquito",
    "label": {
     "en": "TB and malaria",
     "th": "วัณโรคและมาลาเรีย",
@@ -87,7 +87,7 @@
   },
   {
    "id": "medication",
-   "pictogram": "💊",
+   "pictogram": "hi:medications/blister-pills_oval_x14",
    "label": {
     "en": "Medication",
     "th": "ยา",
@@ -106,7 +106,7 @@
    "risk": "low",
    "expects": "date",
    "choices": [],
-   "pictogram": "📆",
+   "pictogram": "hi:objects/calendar",
    "lang": {
     "en": {
      "text": "When did you most recently get a period?",
@@ -145,7 +145,7 @@
    "risk": "medium",
    "expects": "none",
    "choices": [],
-   "pictogram": "🧪",
+   "pictogram": "hi:diagnostics/rdt-result_positive",
    "lang": {
     "en": {
      "text": "We must take a pregnancy test.",
@@ -184,7 +184,7 @@
    "risk": "medium",
    "expects": "none",
    "choices": [],
-   "pictogram": "🧪",
+   "pictogram": "hi:diagnostics/rdt-result_positive",
    "lang": {
     "en": {
      "text": "Because some medications are not safe to provide to pregnant women, we routinely do pregnancy tests on all women.",
@@ -223,7 +223,7 @@
    "risk": "medium",
    "expects": "yes_no",
    "choices": [],
-   "pictogram": "🩸",
+   "pictogram": "hi:body/blood-drop",
    "lang": {
     "en": {
      "text": "Is there bleeding?",
@@ -262,7 +262,7 @@
    "risk": "low",
    "expects": "yes_no",
    "choices": [],
-   "pictogram": "🤱",
+   "pictogram": "hi:people/lactation",
    "lang": {
     "en": {
      "text": "Does your child receive breast milk?",
@@ -301,7 +301,7 @@
    "risk": "high",
    "expects": "none",
    "choices": [],
-   "pictogram": "👶",
+   "pictogram": "hi:people/baby-0306m",
    "lang": {
     "en": {
      "text": "You should not be concerned; this condition won't harm your baby.",
@@ -337,7 +337,7 @@
    "risk": "high",
    "expects": "yes_no",
    "choices": [],
-   "pictogram": "🩺",
+   "pictogram": "hi:devices/stethoscope",
    "lang": {
     "en": {
      "text": "I am here to examine you, and as part of that examination, I will touch and look at your breasts. Are you okay with that?",
@@ -373,7 +373,7 @@
    "risk": "medium",
    "expects": "yes_no",
    "choices": [],
-   "pictogram": "🤝",
+   "pictogram": "hi:symbols/question",
    "lang": {
     "en": {
      "text": "I have some personal inquiries for you. Is that okay?",
@@ -412,7 +412,7 @@
    "risk": "medium",
    "expects": "yes_no",
    "choices": [],
-   "pictogram": "⚠️",
+   "pictogram": "hi:conditions/allergies",
    "lang": {
     "en": {
      "text": "Do you have any allergies?",
@@ -451,7 +451,7 @@
    "risk": "medium",
    "expects": "yes_no",
    "choices": [],
-   "pictogram": "💊",
+   "pictogram": "hi:conditions/allergies",
    "lang": {
     "en": {
      "text": "Are you allergic to any medications?",
@@ -490,7 +490,7 @@
    "risk": "low",
    "expects": "yes_no",
    "choices": [],
-   "pictogram": "💊",
+   "pictogram": "hi:medications/blister-pills_round_x4",
    "lang": {
     "en": {
      "text": "Have you taken any antibiotics recently?",
@@ -529,7 +529,7 @@
    "risk": "low",
    "expects": "yes_no",
    "choices": [],
-   "pictogram": "💊",
+   "pictogram": "hi:medications/medicines",
    "lang": {
     "en": {
      "text": "Are you taking any painkillers?",
@@ -568,7 +568,7 @@
    "risk": "high",
    "expects": "none",
    "choices": [],
-   "pictogram": "📅",
+   "pictogram": "hi:objects/calendar",
    "lang": {
     "en": {
      "text": "Always take your medication as directed; try to take it at the same time every day and don't miss any doses.",
@@ -604,7 +604,7 @@
    "risk": "low",
    "expects": "yes_no",
    "choices": [],
-   "pictogram": "💊",
+   "pictogram": "hi:medications/medicines",
    "lang": {
     "en": {
      "text": "Does the drug have any side effects?",
@@ -643,7 +643,7 @@
    "risk": "high",
    "expects": "none",
    "choices": [],
-   "pictogram": "💊",
+   "pictogram": "hi:medications/blister-pills_oval_x1",
    "lang": {
     "en": {
      "text": "75 milligrams of aspirin once a day",
@@ -679,7 +679,7 @@
    "risk": "high",
    "expects": "none",
    "choices": [],
-   "pictogram": "💊",
+   "pictogram": "hi:medications/blister-pills_oval_x1",
    "lang": {
     "en": {
      "text": "Trimethoprim 200 mg taken twice a day by mouth",
@@ -715,7 +715,7 @@
    "risk": "low",
    "expects": "free",
    "choices": [],
-   "pictogram": "😮‍💨",
+   "pictogram": "hi:conditions/coughing-alt",
    "lang": {
     "en": {
      "text": "When did you first begin to cough?",
@@ -754,7 +754,7 @@
    "risk": "medium",
    "expects": "yes_no",
    "choices": [],
-   "pictogram": "🩸",
+   "pictogram": "hi:body/blood-drop",
    "lang": {
     "en": {
      "text": "Do you have blood in your phlegm?",
@@ -793,7 +793,7 @@
    "risk": "low",
    "expects": "yes_no",
    "choices": [],
-   "pictogram": "🌙",
+   "pictogram": "hi:conditions/sweating",
    "lang": {
     "en": {
      "text": "Do you have sweats at night?",
@@ -832,7 +832,7 @@
    "risk": "low",
    "expects": "yes_no",
    "choices": [],
-   "pictogram": "⚖️",
+   "pictogram": "hi:devices/weight",
    "lang": {
     "en": {
      "text": "Has there been any weight loss?",
@@ -871,7 +871,7 @@
    "risk": "medium",
    "expects": "none",
    "choices": [],
-   "pictogram": "🧪",
+   "pictogram": "hi:devices/test-tubes",
    "lang": {
     "en": {
      "text": "In order to determine what might have caused this, we now need to run certain blood tests.",
@@ -910,7 +910,7 @@
    "risk": "low",
    "expects": "none",
    "choices": [],
-   "pictogram": "👋",
+   "pictogram": "hi:people/health-worker",
    "lang": {
     "en": {
      "text": "Hi there",
@@ -949,7 +949,7 @@
    "risk": "low",
    "expects": "free",
    "choices": [],
-   "pictogram": "🕒",
+   "pictogram": "hi:objects/calendar",
    "lang": {
     "en": {
      "text": "When did it begin? or How long have you been experiencing these symptoms?",
@@ -988,7 +988,7 @@
    "risk": "medium",
    "expects": "yes_no",
    "choices": [],
-   "pictogram": "🫁",
+   "pictogram": "hi:body/lungs",
    "lang": {
     "en": {
      "text": "Are you having trouble breathing?",
@@ -1027,7 +1027,7 @@
    "risk": "low",
    "expects": "yes_no",
    "choices": [],
-   "pictogram": "😮‍💨",
+   "pictogram": "hi:conditions/coughing-alt",
    "lang": {
     "en": {
      "text": "Are you coughing?",
@@ -1066,7 +1066,7 @@
    "risk": "medium",
    "expects": "yes_no",
    "choices": [],
-   "pictogram": "❤️‍🩹",
+   "pictogram": "hi:body/heart-organ",
    "lang": {
     "en": {
      "text": "Does it hurt to the chest?",
@@ -1105,7 +1105,7 @@
    "risk": "low",
    "expects": "none",
    "choices": [],
-   "pictogram": "👉",
+   "pictogram": "hi:conditions/pain",
    "lang": {
     "en": {
      "text": "Can you point with one finger to where the pain is?",
@@ -1147,7 +1147,7 @@
     "slowly",
     "suddenly"
    ],
-   "pictogram": "📈",
+   "pictogram": "hi:symbols/question",
    "lang": {
     "en": {
      "text": "Did it start out slowly or all of a sudden?",
@@ -1186,7 +1186,7 @@
    "risk": "low",
    "expects": "free",
    "choices": [],
-   "pictogram": "🌡️",
+   "pictogram": "hi:devices/thermometer",
    "lang": {
     "en": {
      "text": "When did the elevated temperature start to affect you?",
@@ -1225,7 +1225,7 @@
    "risk": "low",
    "expects": "yes_no",
    "choices": [],
-   "pictogram": "🥶",
+   "pictogram": "hi:conditions/chills",
    "lang": {
     "en": {
      "text": "Are you shivering or do you have chills?",
@@ -1264,7 +1264,7 @@
    "risk": "low",
    "expects": "yes_no",
    "choices": [],
-   "pictogram": "😵‍💫",
+   "pictogram": "hi:emotions/dizzy",
    "lang": {
     "en": {
      "text": "Have you ever felt dizzy or faint?",
@@ -1303,7 +1303,7 @@
    "risk": "low",
    "expects": "yes_no",
    "choices": [],
-   "pictogram": "😣",
+   "pictogram": "hi:conditions/pain",
    "lang": {
     "en": {
      "text": "Are you in pain at the moment?",
@@ -1342,7 +1342,7 @@
    "risk": "low",
    "expects": "free",
    "choices": [],
-   "pictogram": "🚽",
+   "pictogram": "hi:conditions/diarrhea",
    "lang": {
     "en": {
      "text": "When did you start experiencing diarrhoea?",
@@ -1381,7 +1381,7 @@
    "risk": "low",
    "expects": "yes_no",
    "choices": [],
-   "pictogram": "❓",
+   "pictogram": "hi:symbols/question-circle",
    "lang": {
     "en": {
      "text": "Do you have any questions for me?",
@@ -1417,7 +1417,7 @@
  "answers": [
   {
    "id": "ans-yes",
-   "pictogram": "✅",
+   "pictogram": "hi:symbols/yes",
    "lang": {
     "en": {
      "text": "Yes",
@@ -1443,7 +1443,7 @@
   },
   {
    "id": "ans-no",
-   "pictogram": "❌",
+   "pictogram": "hi:symbols/no",
    "lang": {
     "en": {
      "text": "No",
@@ -1469,7 +1469,7 @@
   },
   {
    "id": "ans-dont-know",
-   "pictogram": "🤷",
+   "pictogram": "hi:symbols/question-circle",
    "lang": {
     "en": {
      "text": "I don't know",
@@ -1495,7 +1495,7 @@
   },
   {
    "id": "ans-a-little",
-   "pictogram": "🔹",
+   "pictogram": "hi:symbols/low-bars",
    "lang": {
     "en": {
      "text": "A little",
@@ -1521,7 +1521,7 @@
   },
   {
    "id": "ans-a-lot",
-   "pictogram": "🔷",
+   "pictogram": "hi:symbols/high-bars",
    "lang": {
     "en": {
      "text": "A lot",
@@ -1547,7 +1547,7 @@
   },
   {
    "id": "ans-today",
-   "pictogram": "📅",
+   "pictogram": "hi:objects/calendar",
    "lang": {
     "en": {
      "text": "Today",
@@ -1573,7 +1573,7 @@
   },
   {
    "id": "ans-yesterday",
-   "pictogram": "📅",
+   "pictogram": "hi:objects/calendar",
    "lang": {
     "en": {
      "text": "Yesterday",
@@ -1599,7 +1599,7 @@
   },
   {
    "id": "ans-days-ago",
-   "pictogram": "📅",
+   "pictogram": "hi:objects/calendar",
    "lang": {
     "en": {
      "text": "A few days ago",
@@ -1625,7 +1625,7 @@
   },
   {
    "id": "ans-weeks-ago",
-   "pictogram": "📅",
+   "pictogram": "hi:objects/calendar",
    "lang": {
     "en": {
      "text": "Weeks ago",
@@ -1651,7 +1651,7 @@
   },
   {
    "id": "ans-please-repeat",
-   "pictogram": "🔁",
+   "pictogram": "hi:symbols/communication",
    "lang": {
     "en": {
      "text": "Please say that again",
@@ -1677,7 +1677,7 @@
   },
   {
    "id": "ans-need-interpreter",
-   "pictogram": "🗣️",
+   "pictogram": "hi:people/community-healthworker",
    "lang": {
     "en": {
      "text": "I need an interpreter",

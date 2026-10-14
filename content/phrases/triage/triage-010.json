@@ -6,7 +6,7 @@
   "risk": "low",
   "expects": "yes_no",
   "choices": [],
-  "pictogram": "😵‍💫",
+  "pictogram": "hi:emotions/dizzy",
   "text": {
     "en": "Have you ever felt dizzy or faint?",
     "th": "คุณเคยมีอาการวิงเวียนศีรษะหรือไม่?",

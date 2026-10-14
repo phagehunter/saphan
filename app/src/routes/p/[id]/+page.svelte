@@ -8,6 +8,7 @@
 	import StatusBadge from '$lib/components/StatusBadge.svelte';
 	import AudioButton from '$lib/components/AudioButton.svelte';
 	import AnswerGrid from '$lib/components/AnswerGrid.svelte';
+	import Pictogram from '$lib/components/Pictogram.svelte';
 
 	let { data } = $props();
 	let p = $derived(data.phrase);
@@ -28,7 +29,7 @@
 	<section class="fixed inset-0 z-20 flex flex-col p-6 gap-6" style="background: var(--surface)">
 		<button class="self-start tap px-4 card" onclick={() => (patientMode = false)}>← {$t('back')}</button>
 		<div class="flex-1 flex flex-col justify-center gap-6">
-			<p class="text-6xl text-center" aria-hidden="true">{p.pictogram}</p>
+			<p class="flex justify-center" style="color: var(--brand)"><Pictogram name={p.pictogram} size={96} /></p>
 			{#if patient.text && !patient.locked}
 				<p class="font-my text-4xl leading-relaxed text-center" lang={$settings.patientLang}>{patient.display}</p>
 				<AudioButton clip={patient.audio} big />
@@ -42,7 +43,7 @@
 
 <article class="flex flex-col gap-4">
 	<header class="flex items-start gap-3">
-		<span class="text-5xl" aria-hidden="true">{p.pictogram}</span>
+		<span style="color: var(--brand)"><Pictogram name={p.pictogram} size={56} /></span>
 		<div class="flex-1">
 			<h1 class="text-2xl font-bold leading-snug" lang={primary}>{p.lang[primary].text}</h1>
 			<div class="flex flex-wrap gap-2 mt-1 items-center">

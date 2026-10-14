@@ -6,7 +6,7 @@
   "risk": "low",
   "expects": "yes_no",
   "choices": [],
-  "pictogram": "😮‍💨",
+  "pictogram": "hi:conditions/coughing-alt",
   "text": {
     "en": "Are you coughing?",
     "th": "คุณมีอาการไอหรือไม่?",

@@ -3,6 +3,7 @@
 	import { settings } from '$lib/settings';
 	import { t } from '$lib/i18n';
 	import type { Phrase } from '$lib/types';
+	import Pictogram from './Pictogram.svelte';
 	let { phrase, onpick }: { phrase: Phrase; onpick?: (id: string) => void } = $props();
 	// Which reply buttons make sense for this phrase.
 	const sets: Record<Phrase['expects'], string[]> = {
@@ -34,7 +35,7 @@
 			onclick={() => { chosen = a.id; onpick?.(a.id); }}
 			aria-pressed={chosen === a.id}
 		>
-			<span class="text-2xl" aria-hidden="true">{a.pictogram}</span>
+			<span style="color: var(--brand)"><Pictogram name={a.pictogram} size={28} /></span>
 			<span class="font-my text-xl leading-tight">{pl.text ? pl.display : (a.lang.my.display ?? '—')}</span>
 			<span class="text-sm" style="color: var(--muted)">{a.lang.th.text}</span>
 			{#if pl.status === 'draft'}<span class="badge badge-draft">draft</span>{/if}

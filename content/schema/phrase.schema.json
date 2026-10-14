@@ -88,7 +88,8 @@
     "pictogram": {
       "type": "string",
       "minLength": 1,
-      "maxLength": 16
+      "maxLength": 64,
+      "description": "Either 'hi:<category>/<name>' naming a file in content/icons/healthicons/, or a plain emoji as fallback."
     },
     "text": {
       "type": "object",

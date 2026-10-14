@@ -6,7 +6,7 @@
   "risk": "medium",
   "expects": "yes_no",
   "choices": [],
-  "pictogram": "💊",
+  "pictogram": "hi:medications/blister-pills_oval_x4",
   "text": {
     "en": "Do not buy loose pill packs from the shop for pain. Have you taken any?",
     "th": "อย่าซื้อยาชุดจากร้านมากินแก้ปวด คุณเคยกินยาชุดไหม",

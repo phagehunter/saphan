@@ -3,7 +3,7 @@
   "domains": [
     {
       "id": "fever",
-      "pictogram": "🌡️",
+      "pictogram": "hi:devices/thermometer",
       "label": {
         "en": "Fever: malaria and dengue",
         "th": "ไข้ มาลาเรีย ไข้เลือดออก",
@@ -14,7 +14,7 @@
     },
     {
       "id": "tb",
-      "pictogram": "🫁",
+      "pictogram": "hi:conditions/tb",
       "label": {
         "en": "Cough and TB",
         "th": "ไอและวัณโรค",
@@ -25,7 +25,7 @@
     },
     {
       "id": "antenatal",
-      "pictogram": "🤰",
+      "pictogram": "hi:people/pregnant",
       "label": {
         "en": "Pregnancy and birth",
         "th": "ฝากครรภ์และคลอด",
@@ -36,7 +36,7 @@
     },
     {
       "id": "child-health",
-      "pictogram": "👶",
+      "pictogram": "hi:devices/syringe-vaccine",
       "label": {
         "en": "Children and vaccines",
         "th": "เด็กและวัคซีน",
@@ -47,7 +47,7 @@
     },
     {
       "id": "injury",
-      "pictogram": "🩹",
+      "pictogram": "hi:objects/bandage-adhesive",
       "label": {
         "en": "Injury, first aid, snakebite",
         "th": "บาดเจ็บ ปฐมพยาบาล งูกัด",
@@ -58,7 +58,7 @@
     },
     {
       "id": "pharmacy",
-      "pictogram": "💊",
+      "pictogram": "hi:medications/medicines",
       "label": {
         "en": "Pharmacy and medicines",
         "th": "ยาและการใช้ยา",
@@ -69,7 +69,7 @@
     },
     {
       "id": "triage",
-      "pictogram": "🩺",
+      "pictogram": "hi:devices/stethoscope",
       "label": {
         "en": "Triage and symptoms",
         "th": "คัดกรองและอาการ",
@@ -80,7 +80,7 @@
     },
     {
       "id": "diarrhea-cholera",
-      "pictogram": "🚰",
+      "pictogram": "hi:conditions/diarrhea",
       "label": {
         "en": "Diarrhea and cholera",
         "th": "ท้องร่วงและอหิวาต์",
@@ -91,7 +91,7 @@
     },
     {
       "id": "insurance-consent",
-      "pictogram": "📋",
+      "pictogram": "hi:objects/insurance-card",
       "label": {
         "en": "Registration, insurance, referral",
         "th": "ลงทะเบียน ประกัน ส่งต่อ",
@@ -102,7 +102,7 @@
     },
     {
       "id": "ncd",
-      "pictogram": "🫀",
+      "pictogram": "hi:symbols/heart-cardiogram",
       "label": {
         "en": "Blood pressure and diabetes",
         "th": "ความดันและเบาหวาน",
@@ -113,7 +113,7 @@
     },
     {
       "id": "mental-health",
-      "pictogram": "🧠",
+      "pictogram": "hi:symbols/mental-health",
       "label": {
         "en": "Stress, sleep, alcohol",
         "th": "ความเครียด การนอน สุรา",
@@ -124,7 +124,7 @@
     },
     {
       "id": "skin-wound",
-      "pictogram": "🩻",
+      "pictogram": "hi:emotions/bandaged",
       "label": {
         "en": "Skin and wounds",
         "th": "ผิวหนังและแผล",
@@ -135,7 +135,7 @@
     },
     {
       "id": "tb-malaria",
-      "pictogram": "🦟",
+      "pictogram": "hi:zoonoses/mosquito",
       "label": {
         "en": "TB and malaria",
         "th": "วัณโรคและมาลาเรีย",
@@ -146,7 +146,7 @@
     },
     {
       "id": "medication",
-      "pictogram": "💊",
+      "pictogram": "hi:medications/blister-pills_oval_x14",
       "label": {
         "en": "Medication",
         "th": "ยา",

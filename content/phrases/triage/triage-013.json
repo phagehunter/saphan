@@ -6,7 +6,7 @@
   "risk": "low",
   "expects": "yes_no",
   "choices": [],
-  "pictogram": "❓",
+  "pictogram": "hi:symbols/question-circle",
   "text": {
     "en": "Do you have any questions for me?",
     "th": "คุณต้องการถามอะไรฉันไหม",

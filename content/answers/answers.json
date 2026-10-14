@@ -1,16 +1,181 @@
 {
   "_comment": "Patient reply buttons. The volunteer reads them aloud or the patient taps. Thai and Burmese here were written by the scaffold author and are UNREVIEWED (status draft). Mon is empty until a Mon speaker fills it.",
   "answers": [
-    { "id": "ans-yes", "pictogram": "✅", "text": { "en": "Yes", "th": "ใช่", "my": "ဟုတ်ကဲ့", "mnw": null }, "status": { "en": "human", "th": "draft", "my": "draft", "mnw": "draft" } },
-    { "id": "ans-no", "pictogram": "❌", "text": { "en": "No", "th": "ไม่ใช่", "my": "မဟုတ်ပါ", "mnw": null }, "status": { "en": "human", "th": "draft", "my": "draft", "mnw": "draft" } },
-    { "id": "ans-dont-know", "pictogram": "🤷", "text": { "en": "I don't know", "th": "ไม่ทราบ", "my": "မသိပါ", "mnw": null }, "status": { "en": "human", "th": "draft", "my": "draft", "mnw": "draft" } },
-    { "id": "ans-a-little", "pictogram": "🔹", "text": { "en": "A little", "th": "นิดหน่อย", "my": "နည်းနည်း", "mnw": null }, "status": { "en": "human", "th": "draft", "my": "draft", "mnw": "draft" } },
-    { "id": "ans-a-lot", "pictogram": "🔷", "text": { "en": "A lot", "th": "มาก", "my": "အများကြီး", "mnw": null }, "status": { "en": "human", "th": "draft", "my": "draft", "mnw": "draft" } },
-    { "id": "ans-today", "pictogram": "📅", "text": { "en": "Today", "th": "วันนี้", "my": "ဒီနေ့", "mnw": null }, "status": { "en": "human", "th": "draft", "my": "draft", "mnw": "draft" } },
-    { "id": "ans-yesterday", "pictogram": "📅", "text": { "en": "Yesterday", "th": "เมื่อวาน", "my": "မနေ့က", "mnw": null }, "status": { "en": "human", "th": "draft", "my": "draft", "mnw": "draft" } },
-    { "id": "ans-days-ago", "pictogram": "📅", "text": { "en": "A few days ago", "th": "สองสามวันก่อน", "my": "လွန်ခဲ့တဲ့ရက်အနည်းငယ်က", "mnw": null }, "status": { "en": "human", "th": "draft", "my": "draft", "mnw": "draft" } },
-    { "id": "ans-weeks-ago", "pictogram": "📅", "text": { "en": "Weeks ago", "th": "หลายสัปดาห์ก่อน", "my": "လွန်ခဲ့တဲ့အပတ်တွေက", "mnw": null }, "status": { "en": "human", "th": "draft", "my": "draft", "mnw": "draft" } },
-    { "id": "ans-please-repeat", "pictogram": "🔁", "text": { "en": "Please say that again", "th": "ช่วยพูดอีกครั้ง", "my": "ထပ်ပြောပေးပါ", "mnw": null }, "status": { "en": "human", "th": "draft", "my": "draft", "mnw": "draft" } },
-    { "id": "ans-need-interpreter", "pictogram": "🗣️", "text": { "en": "I need an interpreter", "th": "ฉันต้องการล่าม", "my": "ကျွန်တော်/ကျွန်မ စကားပြန်လိုအပ်ပါတယ်", "mnw": null }, "status": { "en": "human", "th": "draft", "my": "draft", "mnw": "draft" } }
+    {
+      "id": "ans-yes",
+      "pictogram": "hi:symbols/yes",
+      "text": {
+        "en": "Yes",
+        "th": "ใช่",
+        "my": "ဟုတ်ကဲ့",
+        "mnw": null
+      },
+      "status": {
+        "en": "human",
+        "th": "draft",
+        "my": "draft",
+        "mnw": "draft"
+      }
+    },
+    {
+      "id": "ans-no",
+      "pictogram": "hi:symbols/no",
+      "text": {
+        "en": "No",
+        "th": "ไม่ใช่",
+        "my": "မဟုတ်ပါ",
+        "mnw": null
+      },
+      "status": {
+        "en": "human",
+        "th": "draft",
+        "my": "draft",
+        "mnw": "draft"
+      }
+    },
+    {
+      "id": "ans-dont-know",
+      "pictogram": "hi:symbols/question-circle",
+      "text": {
+        "en": "I don't know",
+        "th": "ไม่ทราบ",
+        "my": "မသိပါ",
+        "mnw": null
+      },
+      "status": {
+        "en": "human",
+        "th": "draft",
+        "my": "draft",
+        "mnw": "draft"
+      }
+    },
+    {
+      "id": "ans-a-little",
+      "pictogram": "hi:symbols/low-bars",
+      "text": {
+        "en": "A little",
+        "th": "นิดหน่อย",
+        "my": "နည်းနည်း",
+        "mnw": null
+      },
+      "status": {
+        "en": "human",
+        "th": "draft",
+        "my": "draft",
+        "mnw": "draft"
+      }
+    },
+    {
+      "id": "ans-a-lot",
+      "pictogram": "hi:symbols/high-bars",
+      "text": {
+        "en": "A lot",
+        "th": "มาก",
+        "my": "အများကြီး",
+        "mnw": null
+      },
+      "status": {
+        "en": "human",
+        "th": "draft",
+        "my": "draft",
+        "mnw": "draft"
+      }
+    },
+    {
+      "id": "ans-today",
+      "pictogram": "hi:objects/calendar",
+      "text": {
+        "en": "Today",
+        "th": "วันนี้",
+        "my": "ဒီနေ့",
+        "mnw": null
+      },
+      "status": {
+        "en": "human",
+        "th": "draft",
+        "my": "draft",
+        "mnw": "draft"
+      }
+    },
+    {
+      "id": "ans-yesterday",
+      "pictogram": "hi:objects/calendar",
+      "text": {
+        "en": "Yesterday",
+        "th": "เมื่อวาน",
+        "my": "မနေ့က",
+        "mnw": null
+      },
+      "status": {
+        "en": "human",
+        "th": "draft",
+        "my": "draft",
+        "mnw": "draft"
+      }
+    },
+    {
+      "id": "ans-days-ago",
+      "pictogram": "hi:objects/calendar",
+      "text": {
+        "en": "A few days ago",
+        "th": "สองสามวันก่อน",
+        "my": "လွန်ခဲ့တဲ့ရက်အနည်းငယ်က",
+        "mnw": null
+      },
+      "status": {
+        "en": "human",
+        "th": "draft",
+        "my": "draft",
+        "mnw": "draft"
+      }
+    },
+    {
+      "id": "ans-weeks-ago",
+      "pictogram": "hi:objects/calendar",
+      "text": {
+        "en": "Weeks ago",
+        "th": "หลายสัปดาห์ก่อน",
+        "my": "လွန်ခဲ့တဲ့အပတ်တွေက",
+        "mnw": null
+      },
+      "status": {
+        "en": "human",
+        "th": "draft",
+        "my": "draft",
+        "mnw": "draft"
+      }
+    },
+    {
+      "id": "ans-please-repeat",
+      "pictogram": "hi:symbols/communication",
+      "text": {
+        "en": "Please say that again",
+        "th": "ช่วยพูดอีกครั้ง",
+        "my": "ထပ်ပြောပေးပါ",
+        "mnw": null
+      },
+      "status": {
+        "en": "human",
+        "th": "draft",
+        "my": "draft",
+        "mnw": "draft"
+      }
+    },
+    {
+      "id": "ans-need-interpreter",
+      "pictogram": "hi:people/community-healthworker",
+      "text": {
+        "en": "I need an interpreter",
+        "th": "ฉันต้องการล่าม",
+        "my": "ကျွန်တော်/ကျွန်မ စကားပြန်လိုအပ်ပါတယ်",
+        "mnw": null
+      },
+      "status": {
+        "en": "human",
+        "th": "draft",
+        "my": "draft",
+        "mnw": "draft"
+      }
+    }
   ]
 }

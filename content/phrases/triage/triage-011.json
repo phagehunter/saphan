@@ -6,7 +6,7 @@
   "risk": "low",
   "expects": "yes_no",
   "choices": [],
-  "pictogram": "😣",
+  "pictogram": "hi:conditions/pain",
   "text": {
     "en": "Are you in pain at the moment?",
     "th": "ช่วงนี้คุณปวดฉี่?",

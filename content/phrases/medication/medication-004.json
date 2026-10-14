@@ -6,7 +6,7 @@
   "risk": "low",
   "expects": "yes_no",
   "choices": [],
-  "pictogram": "💊",
+  "pictogram": "hi:medications/medicines",
   "text": {
     "en": "Are you taking any painkillers?",
     "th": "คุณทานยาแก้ปวดหรือไม่?",

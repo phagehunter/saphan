@@ -6,7 +6,7 @@
   "risk": "low",
   "expects": "date",
   "choices": [],
-  "pictogram": "📆",
+  "pictogram": "hi:objects/calendar",
   "text": {
     "en": "When did you most recently get a period?",
     "th": "ประจำเดือนครั้งสุดท้ายของคุณคือเมื่อไหร่?",

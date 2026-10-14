@@ -6,7 +6,7 @@
   "risk": "low",
   "expects": "yes_no",
   "choices": [],
-  "pictogram": "🥶",
+  "pictogram": "hi:conditions/chills",
   "text": {
     "en": "Are you shivering or do you have chills?",
     "th": "คุณมีอาการหนาวสั่นหรือตัวสั่นหรือไม่?",

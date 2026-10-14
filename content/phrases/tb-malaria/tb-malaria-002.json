@@ -6,7 +6,7 @@
   "risk": "medium",
   "expects": "yes_no",
   "choices": [],
-  "pictogram": "🩸",
+  "pictogram": "hi:body/blood-drop",
   "text": {
     "en": "Do you have blood in your phlegm?",
     "th": "มีเสมหะในเลือดหรือไม่?",

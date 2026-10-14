@@ -6,7 +6,7 @@
   "risk": "medium",
   "expects": "none",
   "choices": [],
-  "pictogram": "🧪",
+  "pictogram": "hi:diagnostics/rdt-result_positive",
   "text": {
     "en": "Because some medications are not safe to provide to pregnant women, we routinely do pregnancy tests on all women.",
     "th": "เรามักจะทำการทดสอบการตั้งครรภ์ในสตรีทุกคนตามปกติเนื่องจากมียาบางชนิดที่ไม่สามารถให้กับสตรีมีครรภ์ได้",

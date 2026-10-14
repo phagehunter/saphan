@@ -5,6 +5,7 @@
 	import { settings } from '$lib/settings';
 	import { listRecent, listFavorites } from '$lib/db';
 	import PhraseRow from '$lib/components/PhraseRow.svelte';
+	import Pictogram from '$lib/components/Pictogram.svelte';
 	import { onMount } from 'svelte';
 
 	let query = $state('');
@@ -50,14 +51,14 @@
 	<div class="grid grid-cols-2 gap-3 mb-6">
 		{#each ready as d (d.id)}
 			<a href="{base}/d/{d.id}/" class="card tap pressable p-4 flex flex-col gap-2">
-				<span class="text-3xl leading-none" aria-hidden="true">{d.pictogram}</span>
+				<span style="color: var(--brand)"><Pictogram name={d.pictogram} size={36} /></span>
 				<span class="font-bold leading-tight">{d.label[$settings.uiLang] ?? d.label.en}</span>
 				<span class="text-xs font-semibold" style="color: var(--brand)">{d.count} {$t('phrases')}</span>
 			</a>
 		{/each}
 		{#each upcoming as d (d.id)}
 			<div class="card-flat tap p-4 flex flex-col gap-2 opacity-70" aria-disabled="true" style="border-style: dashed">
-				<span class="text-3xl leading-none grayscale" aria-hidden="true">{d.pictogram}</span>
+				<span style="color: var(--muted)"><Pictogram name={d.pictogram} size={36} /></span>
 				<span class="font-bold leading-tight">{d.label[$settings.uiLang] ?? d.label.en}</span>
 				<span class="text-xs" style="color: var(--muted)">{$t('no_translation')}</span>
 			</div>

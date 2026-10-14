@@ -6,7 +6,7 @@
   "risk": "medium",
   "expects": "yes_no",
   "choices": [],
-  "pictogram": "⚠️",
+  "pictogram": "hi:conditions/allergies",
   "text": {
     "en": "Do you have any allergies?",
     "th": "คุณแพ้อะไรไหม?",

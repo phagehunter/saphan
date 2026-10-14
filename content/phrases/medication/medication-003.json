@@ -6,7 +6,7 @@
   "risk": "low",
   "expects": "yes_no",
   "choices": [],
-  "pictogram": "💊",
+  "pictogram": "hi:medications/blister-pills_round_x4",
   "text": {
     "en": "Have you taken any antibiotics recently?",
     "th": "คุณเพิ่งได้รับยาปฏิชีวนะหรือไม่?",

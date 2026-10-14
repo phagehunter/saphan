@@ -36,7 +36,7 @@ export default defineConfig({
 				// Precache everything the phrasebook needs, audio included, so Mode A works with no signal.
 				globPatterns: ['client/**/*.{js,css,ico,png,svg,woff2,json}', 'prerendered/**/*.html', 'client/audio/**/*.{wav,ogg,opus,mp3}'],
 				// The 2.9 MB lexicon is a reviewer tool: fetched on first open, then kept offline.
-				globIgnores: ['client/lexicon/**', 'client/ort/**'],
+				globIgnores: ['client/lexicon/**', 'client/ort/**', 'client/models/**'],
 				runtimeCaching: [
 					{
 						// ONNX runtime WASM (ours) and Whisper model files (Hugging Face): cache after first download.

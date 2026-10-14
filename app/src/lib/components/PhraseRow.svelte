@@ -3,6 +3,7 @@
 	import { base } from '$app/paths';
 	import { settings } from '$lib/settings';
 	import StatusBadge from './StatusBadge.svelte';
+	import Pictogram from './Pictogram.svelte';
 	let { phrase }: { phrase: Phrase } = $props();
 	let patient = $derived(phrase.lang[$settings.patientLang]);
 	let primary = $derived(($settings.uiLang === 'en' ? 'en' : 'th') as 'en' | 'th');
@@ -10,7 +11,7 @@
 </script>
 
 <a href="{base}/p/{phrase.id}/" class="card-flat tap pressable flex items-center gap-3 p-3">
-	<span class="text-2xl w-9 text-center shrink-0" aria-hidden="true">{phrase.pictogram}</span>
+	<span class="w-9 flex justify-center shrink-0" style="color: var(--brand)"><Pictogram name={phrase.pictogram} size={30} /></span>
 	<span class="flex-1 min-w-0">
 		<span class="block font-semibold leading-snug">{phrase.lang[primary].text}</span>
 		{#if $settings.showEnglish || primary === 'en'}

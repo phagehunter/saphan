@@ -6,7 +6,7 @@
   "risk": "medium",
   "expects": "yes_no",
   "choices": [],
-  "pictogram": "💊",
+  "pictogram": "hi:conditions/allergies",
   "text": {
     "en": "Are you allergic to any medications?",
     "th": "คุณมีอาการแพ้ยาใดๆหรือไม่?",

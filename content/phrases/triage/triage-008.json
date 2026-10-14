@@ -6,7 +6,7 @@
   "risk": "low",
   "expects": "free",
   "choices": [],
-  "pictogram": "🌡️",
+  "pictogram": "hi:devices/thermometer",
   "text": {
     "en": "When did the elevated temperature start to affect you?",
     "th": "คุณเริ่มประสบกับอุณหภูมิสูงเมื่อใด",

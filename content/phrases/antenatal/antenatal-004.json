@@ -6,7 +6,7 @@
   "risk": "medium",
   "expects": "yes_no",
   "choices": [],
-  "pictogram": "🩸",
+  "pictogram": "hi:body/blood-drop",
   "text": {
     "en": "Is there bleeding?",
     "th": "มันมีเลือดออกหรือไม่?",

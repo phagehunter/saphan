@@ -6,7 +6,7 @@
   "risk": "medium",
   "expects": "yes_no",
   "choices": [],
-  "pictogram": "🫁",
+  "pictogram": "hi:body/lungs",
   "text": {
     "en": "Are you having trouble breathing?",
     "th": "คุณมีอาการหายใจลำบากหรือไม่?",

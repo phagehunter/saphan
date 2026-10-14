@@ -6,7 +6,7 @@
   "risk": "medium",
   "expects": "yes_no",
   "choices": [],
-  "pictogram": "👶",
+  "pictogram": "hi:devices/syringe-vaccine",
   "text": {
     "en": "Your child needs vaccines. Do you have the child's vaccination book?",
     "th": "ลูกของคุณต้องได้รับวัคซีน คุณมีสมุดวัคซีนของเด็กไหม",

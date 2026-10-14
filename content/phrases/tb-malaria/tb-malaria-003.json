@@ -6,7 +6,7 @@
   "risk": "low",
   "expects": "yes_no",
   "choices": [],
-  "pictogram": "🌙",
+  "pictogram": "hi:conditions/sweating",
   "text": {
     "en": "Do you have sweats at night?",
     "th": "เหงื่อออกตอนกลางคืนหรือไม่?",

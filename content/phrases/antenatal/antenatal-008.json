@@ -6,7 +6,7 @@
   "risk": "medium",
   "expects": "yes_no",
   "choices": [],
-  "pictogram": "🤝",
+  "pictogram": "hi:symbols/question",
   "text": {
     "en": "I have some personal inquiries for you. Is that okay?",
     "th": "ฉันต้องการถามคำถามส่วนตัวกับคุณ ไม่เป็นไร?",

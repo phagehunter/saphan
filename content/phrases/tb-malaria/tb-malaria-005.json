@@ -6,7 +6,7 @@
   "risk": "medium",
   "expects": "none",
   "choices": [],
-  "pictogram": "🧪",
+  "pictogram": "hi:devices/test-tubes",
   "text": {
     "en": "In order to determine what might have caused this, we now need to run certain blood tests.",
     "th": "ตอนนี้เราจำเป็นต้องทำการตรวจเลือดเพื่อหาสาเหตุที่เป็นไปได้",

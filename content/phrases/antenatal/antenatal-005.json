@@ -6,7 +6,7 @@
   "risk": "low",
   "expects": "yes_no",
   "choices": [],
-  "pictogram": "🤱",
+  "pictogram": "hi:people/lactation",
   "text": {
     "en": "Does your child receive breast milk?",
     "th": "คุณให้นมลูกหรือไม่?",

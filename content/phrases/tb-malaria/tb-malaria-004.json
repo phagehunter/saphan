@@ -6,7 +6,7 @@
   "risk": "low",
   "expects": "yes_no",
   "choices": [],
-  "pictogram": "⚖️",
+  "pictogram": "hi:devices/weight",
   "text": {
     "en": "Has there been any weight loss?",
     "th": "การลดน้ำหนักใดๆ?",

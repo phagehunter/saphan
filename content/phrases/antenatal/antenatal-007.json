@@ -6,7 +6,7 @@
   "risk": "high",
   "expects": "yes_no",
   "choices": [],
-  "pictogram": "🩺",
+  "pictogram": "hi:devices/stethoscope",
   "text": {
     "en": "I am here to examine you, and as part of that examination, I will touch and look at your breasts. Are you okay with that?",
     "th": "ฉันมาที่นี่เพื่อตรวจสอบคุณการตรวจของฉันจะเกี่ยวข้องกับการดูและสัมผัสหน้าอกของคุณตกลงกับคุณไหม",

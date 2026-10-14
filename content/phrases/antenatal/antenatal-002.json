@@ -6,7 +6,7 @@
   "risk": "medium",
   "expects": "none",
   "choices": [],
-  "pictogram": "🧪",
+  "pictogram": "hi:diagnostics/rdt-result_positive",
   "text": {
     "en": "We must take a pregnancy test.",
     "th": "เราจำเป็นต้องทำการทดสอบการตั้งครรภ์",

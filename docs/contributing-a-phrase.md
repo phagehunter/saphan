@@ -40,6 +40,14 @@ Open the app's Lexicon tab (📖). It searches 26,857 entries from two open dict
 English, Burmese, and Thai. It is a reviewer tool: never paste a dictionary phrase straight into
 a record without a fluent speaker checking the sentence.
 
+## A4. Pictograms
+
+Each phrase, topic, and answer has a `pictogram`. Use a Health Icons name as
+`hi:<category>/<name>` (browse https://healthicons.org, outline style, public domain), download
+that SVG into `content/icons/healthicons/` as `<category>__<name>.svg`, and run
+`python3 -m tools.build_icons`. A plain emoji also works as a fallback. The checker refuses an
+`hi:` name whose file is missing.
+
 ## B. Add a brand-new phrase
 
 Copy an existing file in the same topic folder, rename it to the next number

@@ -6,7 +6,7 @@
   "risk": "low",
   "expects": "none",
   "choices": [],
-  "pictogram": "👉",
+  "pictogram": "hi:conditions/pain",
   "text": {
     "en": "Can you point with one finger to where the pain is?",
     "th": "คุณช่วยชี้ด้วยนิ้วเดียวไปยังจุดที่ปวดได้ไหม?",

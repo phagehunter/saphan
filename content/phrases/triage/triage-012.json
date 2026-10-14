@@ -6,7 +6,7 @@
   "risk": "low",
   "expects": "free",
   "choices": [],
-  "pictogram": "🚽",
+  "pictogram": "hi:conditions/diarrhea",
   "text": {
     "en": "When did you start experiencing diarrhoea?",
     "th": "คุณเริ่มมีอาการท้องร่วงเมื่อไหร่?",

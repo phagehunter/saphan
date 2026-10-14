@@ -6,7 +6,7 @@
   "risk": "medium",
   "expects": "yes_no",
   "choices": [],
-  "pictogram": "❤️‍🩹",
+  "pictogram": "hi:body/heart-organ",
   "text": {
     "en": "Does it hurt to the chest?",
     "th": "คุณมีอาการเจ็บหน้าอกหรือไม่?",

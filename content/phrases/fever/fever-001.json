@@ -6,7 +6,7 @@
   "risk": "high",
   "expects": "none",
   "choices": [],
-  "pictogram": "🌡️",
+  "pictogram": "hi:devices/thermometer",
   "text": {
     "en": "Do not take ibuprofen or aspirin when you have a fever. Take paracetamol only.",
     "th": "ถ้ามีไข้ ห้ามกินไอบูโพรเฟนหรือแอสไพริน กินพาราเซตามอลเท่านั้น",

@@ -50,6 +50,10 @@ python3 -m tools.build_lexicon
 ```
 
 ```bash
+python3 -m tools.build_icons
+```
+
+```bash
 python3 -m unittest discover -s tests
 ```
 
@@ -117,6 +121,7 @@ the checker tells you if anything is wrong.
 | `content/phrases/` | the phrases, one file each, grouped by topic |
 | `content/answers/answers.json` | patient reply buttons (yes, no, a little, ...) |
 | `content/sources.json` | where text came from and under what license |
+| `content/icons/healthicons/` | the 44 Health Icons (CC0) the content references; `python3 -m tools.build_icons` bundles them |
 | `content/lexicon/` | two open Mon dictionaries (CC BY 4.0, MIT) and the build step for the Lexicon screen |
 | `content/domains.json` | topic order, labels, and pictograms; edit this to re-rank topics, no code change needed |
 | `tools/` | validator, builder, syllable breaker, audio script |

@@ -18,6 +18,9 @@
 		{ href: '/record/', key: 'record', ico: '⏺' },
 		{ href: '/about/', key: 'about', ico: 'ℹ️' }
 	];
+	// Public origin of the deployed site; the pathname already carries the base path on GitHub Pages.
+	const SITE = 'https://curtishoffmann.com';
+	let canonical = $derived(SITE + page.url.pathname);
 	function active(href: string) {
 		const p = page.url.pathname.replace(base, '') || '/';
 		return href === '/' ? p === '/' || p.startsWith('/d/') || p.startsWith('/p/') : p.startsWith(href);
@@ -25,9 +28,15 @@
 </script>
 
 <svelte:head>
-	<title>{$t('app_name')}</title>
-	<meta name="description" content={$t('tagline')} />
+	<title>{$t('page_title')}</title>
+	<meta name="description" content={$t('meta_description')} />
 	<meta name="theme-color" content="#0d7a6f" />
+	<link rel="canonical" href={canonical} />
+	<meta property="og:url" content={canonical} />
+	<meta property="og:title" content={$t('page_title')} />
+	<meta property="og:description" content={$t('meta_description')} />
+	<meta name="twitter:title" content={$t('page_title')} />
+	<meta name="twitter:description" content={$t('meta_description')} />
 </svelte:head>
 
 <div class="min-h-dvh flex flex-col" class:text-lg={$settings.largeText}>

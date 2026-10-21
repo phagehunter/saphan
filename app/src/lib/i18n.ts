@@ -8,6 +8,9 @@ import type { Lang } from './types';
 const strings: Record<string, Partial<Record<Lang, string>>> = {
 	app_name: { th: 'สะพาน', en: 'Saphan', my: 'တံတား' },
 	tagline: { th: 'ประโยคสุขภาพ ไทย · พม่า · มอญ', en: 'Health phrases Thai · Burmese · Mon', my: 'ကျန်းမာရေးစကားစု ထိုင်း · မြန်မာ · မွန်' },
+	page_title: { th: 'สะพาน · ประโยคสุขภาพ ไทย พม่า มอญ พร้อมเสียง | Saphan', en: 'Saphan · Verified health phrases in Thai, Burmese and Mon' },
+	meta_description: { th: 'สะพาน: ประโยคสุขภาพที่ผ่านการตรวจแล้ว ไทย พม่า มอญ พร้อมเสียง สำหรับ อสม. และ อสต. | Saphan: verified health phrases in Thai, Burmese and Mon.', en: 'Saphan (สะพาน): verified health phrases in Thai, Burmese and Mon, with audio, for health volunteers on the Thailand–Myanmar border. Free, works offline.' },
+	home_intro: { th: 'ประโยคสุขภาพที่ผ่านการตรวจแล้ว ภาษาไทย พม่า และมอญ พร้อมเสียง สำหรับ อสม. อสต. และเจ้าหน้าที่คลินิก แตะประโยคภาษาไทย ผู้ป่วยจะเห็นและได้ยินคำแปล', en: 'Verified health phrases in Thai, Burmese and Mon, with audio, for village and migrant health volunteers and clinic staff. Tap a Thai phrase; the patient sees and hears the translation.' },
 	search: { th: 'ค้นหาประโยค…', en: 'Search phrases…', my: 'စကားစုရှာရန်…' },
 	domains: { th: 'หมวด', en: 'Topics', my: 'အကြောင်းအရာ' },
 	recent: { th: 'ใช้ล่าสุด', en: 'Recent', my: 'မကြာသေးမီက' },

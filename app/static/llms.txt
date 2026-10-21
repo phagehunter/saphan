@@ -1,0 +1,30 @@
+# Saphan (สะพาน)
+
+> A free, open-source phrasebook by Curtis Hoffmann with verified health phrases in Thai, Burmese, Mon and English, with audio, for village health volunteers (อสม.), migrant health volunteers (อสต.) and clinic staff in Kanchanaburi, Thailand, who serve Burmese- and Mon-speaking patients. A volunteer taps a phrase in Thai; the patient sees and hears it in Burmese or Mon. Every translation carries a visible review badge, and nothing unreviewed reaches a patient. Saphan means "bridge" in Thai. The app works offline after the first visit.
+
+Site: https://curtishoffmann.com/saphan/
+Source: https://github.com/phagehunter/saphan
+
+## Pages
+
+- Home, phrasebook by topic with search: https://curtishoffmann.com/saphan/
+- Listen, speak or type Thai to find a verified phrase: https://curtishoffmann.com/saphan/listen/
+- Mon lexicon, a 26,857-entry lookup across Mon, English, Burmese and Thai for translators and reviewers: https://curtishoffmann.com/saphan/lexicon/
+- Record, a recording screen for native speakers: https://curtishoffmann.com/saphan/record/
+- About, badges, sources and licenses: https://curtishoffmann.com/saphan/about/
+- Topic pages are under /d/ and phrase pages under /p/; the sitemap lists them: https://curtishoffmann.com/saphan/sitemap.xml
+
+## Content and status (October 2026)
+
+- Topics are ranked by the region's disease burden: fever (malaria and dengue), cough and TB, pregnancy and birth, children and vaccines, injury, pharmacy, triage, medicines.
+- 34 phrase records across 8 topics, seeded from the myMediCon medical corpus. Burmese is human-translated; Thai is machine-translated and awaiting review; Mon awaits translators.
+- Audio: synthetic Burmese voice (Meta MMS-TTS) as labeled placeholders until human recordings arrive.
+- Safety gates: a phrase reaches a patient only after a fluent speaker reviews it; high-risk phrases (consent, doses, prognosis) also need a clinician. Machine translation is off by default.
+- Thai speech recognition runs on the phone (Thonburian Whisper small, ONNX).
+- The app is not an interpreter and is not for consent or medication dosing.
+
+## License and contact
+
+- App code: MIT. Content: CC BY-NC-SA 4.0. Synthetic voices: CC BY-NC 4.0. Mon lexicon sources: Nenemin95 Mon-Eng-Mya-Pali lexicon (CC BY 4.0) and MonDictDB (MIT).
+- Author: Curtis Hoffmann, https://curtishoffmann.com/
+- Contribute or report issues: https://github.com/phagehunter/saphan (see docs/contributing-a-phrase.md)

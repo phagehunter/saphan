@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { base } from '$app/paths';
 	import { bundle, search, phrase } from '$lib/content';
-	import { t } from '$lib/i18n';
+	import { t, translate } from '$lib/i18n';
 	import { settings } from '$lib/settings';
 	import { listRecent, listFavorites } from '$lib/db';
 	import PhraseRow from '$lib/components/PhraseRow.svelte';
@@ -19,6 +19,14 @@
 		favorites = await listFavorites();
 	});
 </script>
+
+<section class="mb-4">
+	<h1 class="text-2xl font-extrabold tracking-tight" style="color: var(--brand)">{$t('app_name')}</h1>
+	<p class="text-sm mt-1" style="color: var(--muted)">{$t('home_intro')}</p>
+	{#if $settings.uiLang !== 'en'}
+		<p class="text-sm mt-1" lang="en" style="color: var(--muted)">{translate('home_intro', 'en')}</p>
+	{/if}
+</section>
 
 <section class="mb-5">
 	<label class="block relative">

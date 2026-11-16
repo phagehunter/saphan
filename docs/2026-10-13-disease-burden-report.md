@@ -1,4 +1,4 @@
-# Disease burden deep dive: Thailand, Myanmar, and the Kanchanaburi border, and what it means for the phrasebook
+# Disease burden in Thailand, Myanmar, and the Kanchanaburi border, and what it means for the phrasebook
 
 Date: 2026-10-13. Prepared by the system for the project lead. American English.
 Sources: WHO TB database (2024 data from the 2025 Global TB Report), WHO Mekong malaria

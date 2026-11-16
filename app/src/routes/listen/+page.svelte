@@ -120,5 +120,5 @@
 	{#if caps}
 		<p class="mt-3">Memory {caps.deviceMemoryGB ?? '?'} GB · {caps.cores ?? '?'} cores · {caps.online ? 'online' : 'offline'} · data saver {caps.saveData ? 'on' : 'off'} · WebGPU {caps.webgpu ? 'yes' : 'no'}</p>
 	{/if}
-	<p class="mt-3">On-device model planned: <code>{ON_DEVICE.modelId}</code> (~{ON_DEVICE.approxMB} MB, needs ≥{ON_DEVICE.minDeviceMemoryGB} GB). Burmese and Mon speech input are not offered here: Burmese would need a server or a cloud service, and Mon has no on-device path yet.</p>
+	<p class="mt-3">On-device model: <code>{ON_DEVICE.modelId}</code> (about {ON_DEVICE.approxMB} MB download, needs at least {ON_DEVICE.minDeviceMemoryGB} GB of memory). Burmese and Mon speech input are not offered here: Burmese would need a server or a cloud service, and Mon has no on-device path yet.</p>
 </details>
